@@ -21,3 +21,5 @@ Footer.add({
 		initial: true,
 	}
 });
+
+Footer.register();
