@@ -6,7 +6,7 @@ const Footer = new Keystone.List('Footers');
 
 Footer.add({
 	link: {
-		type: Types.Text,
+		type: Types.Url,
 		required: true,
 		initial: true,
 	},
@@ -14,6 +14,7 @@ Footer.add({
 		type: Types.Text,
 		required: true,
 		initial: true,
+		multiline: true,
 	},
 	phone: {
 		type: Types.Text,
