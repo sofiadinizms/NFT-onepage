@@ -2,10 +2,10 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const OurBlog = new keystone.List('OurBlog');
+const ArticleCarousel = new keystone.List('ArticleCarousel');
 
-OurBlog.add({
-  description: {
+ArticleCarousel.add({
+  title: {
     type: Types.Text,
     required: true,
     initial: true,
@@ -16,7 +16,7 @@ OurBlog.add({
     require: true,
     initial: true,
   },
-  blogLink: {
+  link: {
     type: Types.Text,
     required: true,
     initial: true,
@@ -24,4 +24,4 @@ OurBlog.add({
   }
 });
 
-OurBlog.register();
+ArticleCarousel.register();
