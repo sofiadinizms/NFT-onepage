@@ -4,8 +4,8 @@ const cors = require('cors');
 
 const Post = keystone.list('Posts');
 const OurClients = keystone.list('OurClients');
-const OurBlog = keystone.list('OurBlogs');
-const ArticleCarousel = keystone.list('ArticleCarousels');
+const OurBlog = keystone.list('OurBlog');
+const ArticleCarousel = keystone.list('ArticleCarousel');
 
 module.exports = (app) => {
   app.use(cors());

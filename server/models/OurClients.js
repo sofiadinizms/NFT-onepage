@@ -11,9 +11,10 @@ OurClients.add({
     initial: true,
     index: true,
   },
-  picture: {
+  image: {
     type: Types.CloudinaryImages,
     require: true,
+    initial: true,
   },
   testimony: {
     type: Types.Text,
