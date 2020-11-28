@@ -2,7 +2,7 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const Banner = new keystone.List('Banner');
+const Banner = new keystone.List('Banners');
 
 Banner.add({
   valueProposition: {
