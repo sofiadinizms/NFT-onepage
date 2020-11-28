@@ -12,8 +12,8 @@ WhoWeAre.add({
   },
   image: {
     type: Types.CloudinaryImages,
-    require: true,
-    inicial: true,
+    required: true,
+    initial: true,
   },
 });
 

@@ -3,8 +3,7 @@ const keystone = require('keystone');
 const cors = require('cors');
 
 const Post = keystone.list('Posts');
-const Banner = keystone.list('Banners');
-const WhoWeAre = keystone.list('WhoWeAres');
+const WhoWeAre = keystone.list('WhoWeAre');
 
 module.exports = (app) => {
   app.use(cors());
