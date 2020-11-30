@@ -1,11 +1,20 @@
 import {
   PostList,
 } from './components';
+import drawerToogleButton from './components/SideDrawer/DrawerToggleButton';
 
-function App() {
-  return (
-    <PostList />
-  );
+import Toolbar from './components/Toolbar/Toolbar'
+
+import Toolbar from './components/Toolbar/Toolbar'
+
+class App extends Component {
+	render() {
+		return (
+			<div className="App">
+				<Toolbar></Toolbar>
+			</div>
+		);
+	};	
 }
 
 export default App;
