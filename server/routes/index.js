@@ -6,6 +6,8 @@ const Post = keystone.list('Posts');
 const OurClients = keystone.list('OurClients');
 const OurBlog = keystone.list('OurBlog');
 const ArticleCarousel = keystone.list('ArticleCarousel');
+const WhoWeAre = keystone.list('WhoWeAre');
+
 
 module.exports = (app) => {
   app.use(cors());
@@ -54,7 +56,19 @@ module.exports = (app) => {
     });
   });
 
+  app.get('/api/whoWeAre', (req, res) => {
+    WhoWeAre.model.find((err, data) => {
+      if (err) {
+        res.status(500).send('DB Error');
+      } else {
+        res.send(data);
+      }
+    });
+  });
+
   app.get('*', (req, res) => {
 		res.redirect('/');
-	});
+  });
+  
+  
 };
