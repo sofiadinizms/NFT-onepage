@@ -31,6 +31,8 @@ body,html{
 .container{
 	display: flex;
 	justify-content: space-around;
+	
+
 }
 
 .photo{
@@ -53,9 +55,13 @@ body,html{
 	background-image: url("./Assets/quemSomos.jpg");
 	background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+	background-size: cover;
+	/*
 	width: 500px;
 	height: 530px;
+	*/
+	width: 500px;
+  height: 530px;
 	flex: 0;
 	/*padding: 10px;*/
 }
@@ -176,7 +182,14 @@ body,html{
 	}
 }
 
-@media screen and (max-width: 768px){
+/*
+@media screen and (min-height: 1024px){
+	.text{
+		font-size: 1.7vh;
+	}
+}
+*/
+@media screen and (max-width: 1024px){
 	.wwa{
 		flex-direction: column;
 		width: 100%;
@@ -199,21 +212,37 @@ body,html{
 	.espace{
 		display: none;
 	}
+	.quemSomos{
+		max-width: 800px;
+	}
+	.icons{
+		grid-gap: 10px;
+	}
 	.text{
 		width: 80%;
-		font-size: 10px;
+		font-size: 2.5vw;
 	}
 	.subTitle{
-		font-size: 9px;
+		font-size: 2.5vw;
+	}
+	.quemSomos h1{
+		font-size: 7vw;
 	}
 	.icon{
-		width: 70px;
-		height: 70px;
+		width: 20vw;
+    height: 20vw;
 	}
+	/*
+	.subTitle{
+		font-size: 1vw;
+	}
+	*/
 }
 
+/*
 @media screen and (max-width: 967px){
 	.espace{
 		width: 50px;
 	}
 }
+*/
