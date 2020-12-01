@@ -59,6 +59,15 @@ module.exports = (app) => {
 
   app.get('/api/banners', (req, res) => {
     Banner.model.find((err, data) => {
+
+      if (err) {
+        res.status(500).send('DB Error');
+      } else {
+        res.send(data);
+      }
+    });
+  })
+  
   app.get('/api/whoWeAre', (req, res) => {
     WhoWeAre.model.find((err, data) => {
 

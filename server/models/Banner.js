@@ -21,9 +21,10 @@ Banner.add({
 
   image: {
     type: Types.CloudinaryImages,
-    require: true,
+    required: true,
     initial: true,
     index: true,
+    singleImage: true,
   },
 });
 
