@@ -48,6 +48,7 @@ body,html{
 	width: 100px;
 }
 
+
 .photo .img{
 	background-image: url("./Assets/quemSomos.jpg");
 	background-position: center;
@@ -58,6 +59,7 @@ body,html{
 	flex: 0;
 	/*padding: 10px;*/
 }
+
 
 .quemSomos{
 	flex-flow: column nowrap;
@@ -166,6 +168,12 @@ body,html{
 	/*background-color: brown;*/
 	width: 80px;
 	height: 80px;
+}
+
+@media screen and (min-width: 1730px){
+	.text{
+		font-size: 18px;
+	}
 }
 
 @media screen and (max-width: 768px){

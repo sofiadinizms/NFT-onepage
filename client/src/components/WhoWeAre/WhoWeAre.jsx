@@ -1,8 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './WhoWeAre.css'
+import Image from './Assets/quemSomos.jpg'
+import axios from 'axios';
 
-export default props =>
 
+
+function WhoWeAre (props) {
+
+	const [imgs, setImgs] = useState([]);
+
+	const loadImgs = async () => {
+		const res = await axios.get('http://localhost:3001/admin/who-we-ares/5fc64fc3ff03dc20c0076992');
+		setImgs(res.data);
+};
+
+useEffect(()=>{
+	loadImgs();
+}, []);
+
+return (
 	<div className="wwa">
 		
 		<div className="container">
@@ -54,3 +70,7 @@ export default props =>
 			</div>
 		</div>
 	</div>
+);
+}
+
+export default WhoWeAre
