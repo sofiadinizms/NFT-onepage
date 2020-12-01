@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins&display=swap');
+
+body,html{
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+
+.wwa{
+	/*
+	background: url("./components/icons/Diamond01.svg");
+	background-repeat: no-repeat;
+	background-position-y: -205px;
+	background-position-x: right;
+	background-size: 200px;
+	*/
+	background: url("./Assets/Diamond01.svg") top -205px right, url("./Assets/Diamond02.svg") bottom -86px left;
+	background-repeat: no-repeat;
+	background-size: 200px;
+	background-color: #E5E5E5;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	/*position: absolute;*/
+	position: fixed;
+}
+
+.container{
+	display: flex;
+	justify-content: space-around;
+}
+
+.photo{
+	margin: auto;
+	/*
+	margin: auto;
+	padding: 0 10px;
+	text-align: center;
+	font-size: 1.5em;
+	margin-right: -30px;
+	*/
+}
+
+.espace{
+	width: 100px;
+}
+
+.photo .img{
+	background-image: url("./Assets/quemSomos.jpg");
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	width: 500px;
+	height: 530px;
+	flex: 0;
+	/*padding: 10px;*/
+}
+
+.quemSomos{
+	flex-flow: column nowrap;
+	max-width: 360px;
+	margin: 0 auto;
+	display: flex;
+	/*border: 1px solid #ccc;*/
+	align-items: center;
+	color: #032C66;
+}
+
+.quemSomos h1{
+	margin-top: auto;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+.text{
+	text-align: justify;
+	color: #1A1A1A;
+	font-family: 'Poppins', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.icons{
+	display: grid;
+	max-width: 800px;
+	margin: 0 auto;
+
+	grid-template-columns: repeat(3, 1fr);
+  max-width: 800px;
+  padding-top: 10px;
+  margin: 0 auto;
+  /*grid-gap: 10px;*/
+}
+
+.icons > .icon{
+	max-width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.square{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 5px;
+	padding-top: 30px;
+}
+
+.icon .subTitle{
+	text-align: center;
+}
+
+.subTitle{
+	padding-top: 10px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 12px;
+}
+
+#Desenvolvimento{
+	background-image: url("./Assets/Desenvolvimento.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#Empatia{
+	background-image: url("./Assets/Empatia.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#Inconformismo{
+	background-image: url("./Assets/Inconformismo.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#Perseveranca{
+	background-image: url("./Assets/Perseveranca.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#Representatividade{
+	background-image: url("./Assets/Representatividade.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#Crescimento{
+	background-image: url("./Assets/Crescimento.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.icon{
+	/*background-color: brown;*/
+	width: 80px;
+	height: 80px;
+}
+
+@media screen and (max-width: 768px){
+	.wwa{
+		flex-direction: column;
+		width: 100%;
+		font-size: small;
+		background: none;
+		background-color: #E5E5E5;
+	}
+	.img{
+		display: none;
+	}
+	.container{
+		width:100%;
+	}
+	.icons{
+		padding-top: 30px;
+	}
+	.photo{
+		margin: 0;
+	}
+	.espace{
+		display: none;
+	}
+	.text{
+		width: 80%;
+		font-size: 10px;
+	}
+	.subTitle{
+		font-size: 9px;
+	}
+	.icon{
+		width: 70px;
+		height: 70px;
+	}
+}
+
+@media screen and (max-width: 967px){
+	.espace{
+		width: 50px;
+	}
+}
