@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.contact {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color:#032C66;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  background-color: #ebecee;
+  height: 80vh;
+  width: 40vw;  
+}
+
+.info h1 {
+  font-family: Poppins;
+  font-style: bold;
+  font-size: 5vh;
+  letter-spacing: -0,015em;
+  color: #2b2b2b;
+  margin-top: 3vh;
+  margin-left: 7vw;
+}
+
+.info p {
+  margin-left: 7vw;
+}
+
+.info input {
+  margin-top: 3vw;
+  margin-left: 7vw;
+  margin-right: 7vw;
+}
+
+.info_client {
+  display: flex;
+  flex-direction: row;
+  margin-left: 7vw;
+  margin-right: 7vw;
+}
+
+.info_client input {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.info_client input+input {
+
+  margin-left: 0;
+  margin-right: 7vw;
+  size: 20vw;
+  /* background-color: red; */
+}
+
+.image_delta {
+  display: flex;
+  flex-direction: column;
+}
+
+.image_delta img {
+  height: 80vh;
+}
+
+button {
+  align-self: flex-end;
+  position: absolute;
+  bottom: 20vh;
+  height: 5vh;
+  width: 10vw;
+  margin-right: 7vw;
+  background-color: #032C66;
+  color: #ebecee;
+  font-family: Poppins;
+  font-style: bold;
+  font-size: 2vh;
+}
+
