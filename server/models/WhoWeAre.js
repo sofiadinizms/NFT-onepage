@@ -14,6 +14,7 @@ WhoWeAre.add({
     type: Types.CloudinaryImages,
     required: true,
     initial: true,
+    singleImage: true,
   },
 });
 
