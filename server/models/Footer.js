@@ -5,6 +5,12 @@ const Types = Keystone.Field.Types;
 const Footer = new Keystone.List('Footers');
 
 Footer.add({
+	name: {
+    type: Types.Text,
+    required: true,
+    initial: true,
+    index: true,
+  },
 	link: {
 		type: Types.Url,
 		required: true,
