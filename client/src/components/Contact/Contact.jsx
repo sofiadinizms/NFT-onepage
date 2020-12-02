@@ -7,7 +7,7 @@ function Contact () {
     <div className="contact">
       <div className="info">
         <h1>Contato</h1>
-        <p>subtext contact</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <input placeholder="Nome"/>
         <div className="info_client">
           <input placeholder="E-mail"/>

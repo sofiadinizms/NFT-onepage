@@ -15,6 +15,7 @@
 }
 
 .info {
+  margin-top: 8vh;
   display: flex;
   flex-direction: column;
   background-color: #ebecee;
@@ -25,7 +26,7 @@
 .info h1 {
   font-family: Poppins;
   font-style: bold;
-  font-size: 5vh;
+  font-size: 230%;
   letter-spacing: -0,015em;
   color: #2b2b2b;
   margin-top: 3vh;
@@ -33,13 +34,34 @@
 }
 
 .info p {
+  font-family: Poppins;  
+  font-size: 1.7vh;
+  color: #2b2b2b;
   margin-left: 7vw;
+  margin-right: 7vw;
+  margin-top: 2vh;
 }
 
 .info input {
-  margin-top: 3vw;
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 95%;
+  margin-top: 5vh;
   margin-left: 7vw;
   margin-right: 7vw;
+  background: transparent;
+  border: none;
+  border-bottom: 0.22vh solid #032C66; 
+  color: #2b2b2b;
+}
+
+
+::-webkit-input-placeholder {
+  color: #2b2b2b;
+}
+
+.info div+input+input{
+  height: 13vh;  
 }
 
 .info_client {
@@ -52,17 +74,16 @@
 .info_client input {
   margin-left: 0;
   margin-right: 0;
+  width: 65%;
 }
 
 .info_client input+input {
-
-  margin-left: 0;
-  margin-right: 7vw;
-  size: 20vw;
-  /* background-color: red; */
+  margin-left: 5%;  
+  width: 30%;
 }
 
 .image_delta {
+  margin-top: 8vh;
   display: flex;
   flex-direction: column;
 }
@@ -74,14 +95,85 @@
 button {
   align-self: flex-end;
   position: absolute;
-  bottom: 20vh;
+  bottom: 15vh;
   height: 5vh;
   width: 10vw;
   margin-right: 7vw;
   background-color: #032C66;
   color: #ebecee;
   font-family: Poppins;
-  font-style: bold;
-  font-size: 2vh;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 95%;
+  border: none;
+}
+
+@media (max-width: 1480px){
+  .info {
+    margin-top: 1.5vh;
+    flex-direction: column;
+    background-color: #032C66;
+    height: 90vh;
+    width: 90vw;
+    align-items: center;  
+    /* background-color: rebeccapurple;  */
+  }
+
+  .info h1 {
+    margin: 0;
+    color: #ebecee;
+  }
+
+  .info p {
+    color: #ebecee;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 4vh;
+  }
+
+  .info input {
+    margin: 2vh 0 0 0;
+    color: #ebecee;
+    width: 100%;
+    border-bottom: 0.22vh solid #ebecee;
+    margin-top: 6vh;
+    font-size: 2vh;
+  }
+
+  .info div+input+input{
+    margin-top: 6vh;
+    height: 12vh; 
+  }
+
+  .info_client {
+    flex-direction: column;      
+    /* background-color: blue; */
+    width: 100%;    
+  }
+
+  .info_client input+input {
+    margin-left: 0;
+    width: 100%;    
+  }
+
+  ::-webkit-input-placeholder {
+    color: #ebecee;
+  }
+
+  button {
+    background-color: #ebecee;
+    align-self: center;
+    color: #032C66;
+    margin: 0;
+    bottom: 6vh;
+    height: 6vh;
+    width: 20vw;
+    font-size: 2.5vh;
+  }
+
+  img {
+    display:none;
+  }
+
 }
 
