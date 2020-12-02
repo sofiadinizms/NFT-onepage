@@ -60,8 +60,8 @@ body,html{
 	width: 500px;
 	height: 530px;
 	*/
-	width: 500px;
-  height: 530px;
+	width: 38vw;
+  height: 40vw;
 	flex: 0;
 	/*padding: 10px;*/
 }
@@ -69,7 +69,7 @@ body,html{
 
 .quemSomos{
 	flex-flow: column nowrap;
-	max-width: 360px;
+	max-width: 30vw;
 	margin: 0 auto;
 	display: flex;
 	/*border: 1px solid #ccc;*/
@@ -81,13 +81,14 @@ body,html{
 	margin-top: auto;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
+	font-size: 3vw;
 }
 
 .text{
 	text-align: justify;
 	color: #1A1A1A;
 	font-family: 'Poppins', sans-serif;
-	font-size: 12px;
+	font-size: 1vw;
 	font-weight: 400;
 }
 
@@ -99,7 +100,9 @@ body,html{
 	grid-template-columns: repeat(3, 1fr);
   max-width: 800px;
   padding-top: 10px;
-  margin: 0 auto;
+	margin: 0 auto;
+	grid-gap: 0 1vw;
+  justify-content: center;
   /*grid-gap: 10px;*/
 }
 
@@ -125,7 +128,7 @@ body,html{
 	padding-top: 10px;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 600;
-	font-size: 12px;
+	font-size: 1vw;
 }
 
 #Desenvolvimento{
@@ -172,16 +175,16 @@ body,html{
 
 .icon{
 	/*background-color: brown;*/
-	width: 80px;
-	height: 80px;
+	width: 6vw;
+  height: 6vw;
 }
-
+/*
 @media screen and (min-width: 1730px){
 	.text{
 		font-size: 18px;
 	}
 }
-
+*/
 /*
 @media screen and (min-height: 1024px){
 	.text{
@@ -220,17 +223,17 @@ body,html{
 	}
 	.text{
 		width: 80%;
-		font-size: 2.5vw;
+    font-size: 1.7vh;
 	}
 	.subTitle{
-		font-size: 2.5vw;
+		font-size: 2vw;
 	}
 	.quemSomos h1{
-		font-size: 7vw;
+		font-size: 5vh;
 	}
 	.icon{
 		width: 20vw;
-    height: 20vw;
+    height: 10vh;
 	}
 	/*
 	.subTitle{
