@@ -1,0 +1,100 @@
+.banner{
+    width: 100vw;
+    height: 85vh;
+    float: left;
+    text-align: left;
+    padding: 3%;
+    background-image: url(../Assets/banner_image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#title{
+    margin-top: 35vh;
+    margin-right: 50vw;
+    margin-left: 15vw;
+    margin-bottom: 1%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 350%;
+    letter-spacing: -0.015em;
+    color: #EBECEE;
+}
+
+#description{
+    margin-top: 1%;
+    margin-right: 40vw;
+    margin-left: 15vw;
+    margin-bottom: 1%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 200%;
+    letter-spacing: -0.015em;
+    color: #EBECEE;
+}
+
+#our_services{
+    margin-top: 1%;
+    margin-left: 15vw;
+    margin-right: 70vw;
+    padding-right: 2em;
+    text-decoration: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 200%;
+    letter-spacing: -0.015em;
+    color: #EBECEE;
+    border-bottom: 3px solid;
+    display: inline-block;
+}
+@media (max-width: 415px){
+    .banner{
+        height: 100vh;
+    }
+    #title, #description{
+        margin-left: 5%;
+        margin-right: 15%;
+    }
+    #title{
+        font-size: 130%;
+        margin-top: 37vh;
+    }
+    #description{
+        font-size: 115%;
+    }
+    #our_services{
+        margin-left: 4.5%;
+        margin-right: 30%;
+        font-size: 125%;
+        padding-right: 5%;
+        border-bottom: 2px solid #EBECEE;
+    }
+    
+}
+@media (max-width: 1025){
+    .banner{
+        height: 100vh;
+    }
+    #title, #description{
+        margin-left: 5%;
+        margin-right: 15%;
+    }
+    #title{
+        font-size: 130%;
+        margin-top: 37vh;
+    }
+    #description{
+        font-size: 115%;
+    }
+    #our_services{
+        margin-left: 4.5%;
+        margin-right: 30%;
+        font-size: 125%;
+        padding-right: 5%;
+        border-bottom: 2px solid #EBECEE;
+    }
+}
