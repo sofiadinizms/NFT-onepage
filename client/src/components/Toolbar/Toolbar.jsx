@@ -1,14 +1,28 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 import '../SideDrawer/DrawerToggleButton'
 import DrawerToogleButton from '../SideDrawer/DrawerToggleButton'
 import './Toolbar.css'
 
-export default props =>
-	<header className="toolbar">
+function Toolbar(props) {
+
+const [navbar, setNavbar] = useState(false);
+
+const changeBackground = () => {
+	if(window.scrollY >= 80){
+		setNavbar(true)
+	}else{
+		setNavbar(false)
+	}
+}
+
+window.addEventListener('scroll', changeBackground);
+
+return (
+	<header className={navbar ? 'toolbar active' : 'toolbar'}>
 		<nav className="toolbar__navigation">
 
-			<div className="toolbar__logo"><a href="/">THE LOGO</a></div>
+			<div className={navbar ? 'toolbar__logo active' : 'toolbar__logo'}><a href="/"></a></div>
 			<div className="spacer" />
 			<div className="toolbar_navigation-items">
 				<ul>
@@ -20,7 +34,12 @@ export default props =>
 				</ul>
 			</div>
 			<div>
-				<DrawerToogleButton/>
+				<div className="toolbar__toggle-button">
+					<DrawerToogleButton click={props.drawerClickHandler}/>
+				</div>
 			</div>
 		</nav>
 	</header>
+);
+}
+export default Toolbar

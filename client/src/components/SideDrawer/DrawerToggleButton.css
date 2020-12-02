@@ -9,6 +9,8 @@
 	cursor: pointer;
 	padding: 0;
 	box-sizing: border-box;
+	transform: rotate(180deg);
+
 }
 
 .toggle-button:focus{
@@ -16,7 +18,16 @@
 }
 
 .toggle-button__line{
-	width: 30px;
-	height: 2px;
-	background: white;
+	width: 25px;
+	height: 2.8px;
+	background: #032C66;
+	border-radius: 100px;
+}
+
+#tg3{
+	width: 17px;
+}
+
+#tg1{
+	width: 17px;
 }

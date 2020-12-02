@@ -1,10 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 .toolbar{
 	width: 100%;
 	top: 0;
 	left: 0;
 	position: fixed;
-	background-color: #da45c6;
+	background-color: #FFFFFF;
 	height: 56px;
+	z-index: 300;
+	font-family: 'Poppins', sans-serif;
+	color: #1A1A1A;
+}
+
+.toolbar.active{
+	background-color: #C4C4C4;
+	color: #EBECEE;
 }
 
 .toolbar__navigation{
@@ -16,12 +25,25 @@
 
 .toolbar__logo{
 	margin-left: 1rem;
+	background-image: url('../Assets/LogoAzul.svg');
+	width: 63px;
+	height: 63px;
+	background-position: center;
+  background-repeat: no-repeat; 
+  background-size: contain;
+}
+
+.toolbar__logo.active{
+
+	background-image: url('../Assets/Logo.svg');
+
 }
 
 .toolbar__logo a{
-	color: white;
+	color: #1A1A1A;
 	text-decoration: none;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
+	font-weight: 400;
 }
 
 .spacer{
@@ -36,15 +58,30 @@
 }
 
 .toolbar_navigation-items li{
-	padding: 0 0.5rem;
+	padding: 0 0.8rem;
 }
 
 .toolbar_navigation-items a{
-	color: white;
+	color: #1A1A1A;
 	text-decoration: none;
 }
 
 .toolbar_navigation-items a:hover,
 .toolbar_navigation-items a:active{
 	color: orangered;
+}
+
+@media (max-width: 768px){
+	.toolbar_navigation-items{
+		display: none;
+	}
+}
+
+@media (min-width: 769px){
+	.toolbar__toggle-button{
+		display: none;
+	}
+	.toolbar__logo{
+		margin-left: 0;
+	}
 }
