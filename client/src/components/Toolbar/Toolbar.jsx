@@ -24,7 +24,7 @@ return (
 
 			<div className={navbar ? 'toolbar__logo active' : 'toolbar__logo'}><a href="/"></a></div>
 			<div className="spacer" />
-			<div className="toolbar_navigation-items">
+			<div className={navbar ? 'toolbar_navigation-items active' : 'toolbar_navigation-items'}>
 				<ul>
 					<li><a href="/">Quem somos</a></li>
 					<li><a href="/">Nossos serviços</a></li>
