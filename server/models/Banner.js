@@ -2,13 +2,16 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const Banner = new keystone.List('Banners');
+const Banner = new keystone.List('Banners', {
+  map: {name: 'valueProposition'},
+  nocreate: true,
+  nodelete: true,});
 
 Banner.add({
   valueProposition: {
     type: Types.Text,
-    required: true,
     initial: true,
+    required: true,
     index: true,
   },
 
@@ -16,16 +19,15 @@ Banner.add({
     type: Types.Text,
     required: true,
     initial: true,
-    index: true,
   },
 
   image: {
-    type: Types.CloudinaryImages,
+    type: Types.CloudinaryImage,
     required: true,
     initial: true,
-    index: true,
     singleImage: true,
   },
+
 });
 
 Banner.register();
