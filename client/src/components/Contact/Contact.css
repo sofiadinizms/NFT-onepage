@@ -53,6 +53,7 @@
   border: none;
   border-bottom: 0.22vh solid #032C66; 
   color: #2b2b2b;
+  outline: none;
 }
 
 
@@ -61,7 +62,8 @@
 }
 
 .info div+input+input{
-  height: 13vh;  
+  margin-top: 0;
+  height: 15vh;  
 }
 
 .info_client {
