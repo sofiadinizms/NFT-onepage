@@ -3,7 +3,7 @@ const Keystone = require('keystone');
 const Types = Keystone.Field.Types;
 
 const Footer = new Keystone.List('Footers', {
-	map: {name: "link"},
+	map: {name: "address"},
 	nocreate: true,
 	nodelete: true,
 });
