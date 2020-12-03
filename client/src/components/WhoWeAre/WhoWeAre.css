@@ -14,7 +14,7 @@ body,html{
 	background-position-x: right;
 	background-size: 200px;
 	*/
-	background: url("./Assets/Diamond01.svg") top -205px right, url("./Assets/Diamond02.svg") bottom -86px left;
+	background: url("../Assets/Diamond01.svg") top -205px right, url("../Assets/Diamond02.svg") bottom -86px left;
 	background-repeat: no-repeat;
 	background-size: 200px;
 	background-color: #E5E5E5;
@@ -52,7 +52,7 @@ body,html{
 
 
 .photo .img{
-	background-image: url("./Assets/quemSomos.jpg");
+	background-image: url("../Assets/quemSomos.jpg");
 	background-position: center;
   background-repeat: no-repeat;
 	background-size: cover;
@@ -132,42 +132,42 @@ body,html{
 }
 
 #Desenvolvimento{
-	background-image: url("./Assets/Desenvolvimento.svg");
+	background-image: url("../Assets/Desenvolvimento.svg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 
 #Empatia{
-	background-image: url("./Assets/Empatia.svg");
+	background-image: url("../Assets/Empatia.svg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 
 #Inconformismo{
-	background-image: url("./Assets/Inconformismo.svg");
+	background-image: url("../Assets/Inconformismo.svg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 
 #Perseveranca{
-	background-image: url("./Assets/Perseveranca.svg");
+	background-image: url("../Assets/Perseveranca.svg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 
 #Representatividade{
-	background-image: url("./Assets/Representatividade.svg");
+	background-image: url("../Assets/Representatividade.svg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 
 #Crescimento{
-	background-image: url("./Assets/Crescimento.svg");
+	background-image: url("../Assets/Crescimento.svg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;

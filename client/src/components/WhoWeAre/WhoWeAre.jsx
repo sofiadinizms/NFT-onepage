@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './WhoWeAre.css'
-import Image from './Assets/quemSomos.jpg'
+import Image from '../Assets/quemSomos.jpg'
 import axios from 'axios';
 
 
