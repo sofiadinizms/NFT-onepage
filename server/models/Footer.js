@@ -2,15 +2,13 @@ const Keystone = require('keystone');
 //const { Types } = require('keystone/lib/content');
 const Types = Keystone.Field.Types;
 
-const Footer = new Keystone.List('Footers');
+const Footer = new Keystone.List('Footers', {
+	map: {name: "link"},
+	nocreate: true,
+	nodelete: true,
+});
 
 Footer.add({
-	name: {
-    type: Types.Text,
-    required: true,
-    initial: true,
-    index: true,
-  },
 	link: {
 		type: Types.Url,
 		required: true,
