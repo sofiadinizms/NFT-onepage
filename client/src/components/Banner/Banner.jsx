@@ -1,11 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import Logo from '../Assets/logo_name.png'
-//import axios from 'axios';
 
 import './Banner.css';
 
 function Banner() {
-    //React
+  const [banners, setBanners] = useState([]);
+
+  const loadBanners = async() => {
+    const res = await axios.get('http://localhost:3001/api/banners');
+    setBanners(res.data);
+  }
+
+  useEffect(() => {
+    loadBanners();
+  }, [])
+
   return (//HTML
     <section class="banner">
       <img id="logo" src={Logo} alt="Logo Delta Dental"></img>
