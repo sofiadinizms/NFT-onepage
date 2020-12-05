@@ -10,7 +10,7 @@ function WhoWeAre (props) {
 	const [imgs, setImgs] = useState([]);
 
 	const loadImgs = async () => {
-		const res = await axios.get('http://localhost:3001/admin/who-we-ares/5fc64fc3ff03dc20c0076992');
+		const res = await axios.get('http://localhost:3001/api/WhoWeAre');
 		setImgs(res.data);
 };
 
@@ -22,11 +22,13 @@ return (
 	<div className="wwa">
 		
 		<div className="container">
-		
-			<div className="photo">
-				{/*<img src={quemSomos}/>*/}
-				<div className="img"></div>
+		{imgs?.map(({_id, description, image}) => (
+			<div key={_id} className="photo">
+				<img className="img" src={image[0]?.url} alt="Foto da equipe"/>
+				{/*<div className="img"></div>*/}
 			</div>
+		))}
+			
 			<div className="espace"></div>
 			<div className="quemSomos">
 					<h1>Quem somos</h1>
