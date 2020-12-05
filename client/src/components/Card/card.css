@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.card{
+	max-width: 40vw;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	font-family: 'Poppins', sans-serif;
+}
+
+.image{
+	width: 15vw;
+  height: 20vh;
+  object-fit: cover;
+  margin-top: 15%;
+  margin-right: 20px;
+}
+
+.titulos p{
+	margin: 0;
+}
+
+
+.infos{
+	margin-top: 7%;
+}
+
+.text{
+	max-width: 240px;
+	font-size: 0.8rem;
+	color: #1A1A1A;
+	
+}
+
+.tit{
+	font-weight: 700;
+	color: #1A1A1A;
+	font-size: 0.9rem;
+}
+
+.sub-tit{
+	font-weight: 400;
+	color: #7B7B7B;
+	font-size: 0.7rem;
+}
