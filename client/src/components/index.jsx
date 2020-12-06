@@ -1,1 +1,6 @@
-export { default as PostList } from './PostList';
+import OurClients from './OurClients';
+import PostList from './PostList';
+
+export{
+    OurClients, PostList
+};
