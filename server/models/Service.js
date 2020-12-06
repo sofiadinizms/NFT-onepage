@@ -23,5 +23,10 @@ Service.add({
 		initial: true,
 		singleImage: true,
 	},
+	description: {
+		type: Types.Text,
+		require: true,
+		initial: true,		
+	}
 });
 Service.register();
