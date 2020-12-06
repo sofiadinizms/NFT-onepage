@@ -22,6 +22,17 @@
 	flex-direction: row;
 	left: 28vw;
 	z-index: 10;
+	
+}
+
+.slick-prev:before{
+	content: url('../Assets/prev.svg');
+	
+}
+
+.slick-next:before{
+	content: url('../Assets/next.svg');
+	
 }
 
 .slick-next{
@@ -32,17 +43,25 @@
 	z-index: 10;
 }
 
+/*
 .slick-arrow{
-	height: 40px;
-	width: 40px;
+	width: 10px;
 	border-radius: 100px;
-	top: 37vh;
+	top: 30vh;
 }
+*/
+
+.slick-prev, .slick-next{
+	
+	height: 0px;
+	top: 101%
+}
+
 .slick-dots{
 	display: flex;
   align-items: center;
   justify-content: center;
-  top: 35vh;
+  top: auto;
   padding: 0;
 }
 
@@ -93,4 +112,66 @@
  
 .card-text {
   margin-top: 10px;
+}
+
+.slick-dots li button:before {
+	content: url('../Assets/RectangleSem.svg');
+}
+
+.slick-dots li.slick-active button:before{
+	content: url('../Assets/RectangleCom.svg');
+}
+
+@media screen and (max-width: 1085px){
+	.slick-next{
+		right: 25vw;
+	}
+
+	.slick-prev{
+		left: 25vw;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.slick-dots{
+		top: auto;
+	}
+
+	.slick-next{
+		right: 20vw;
+	}
+
+	.slick-prev{
+		left: 20vw;
+	}
+}
+
+@media screen and (max-width: 487px){
+	.slick-next{
+		right: 15vw;
+	}
+
+	.slick-prev{
+		left: 15vw;
+	}
+}
+
+@media screen and (max-width: 349px){
+	.slick-next{
+		right: 10vw;
+	}
+
+	.slick-prev{
+		left: 10vw;
+	}
+}
+
+@media screen and (max-width: 280px){
+	.slick-next{
+		right: 8vw;
+	}
+
+	.slick-prev{
+		left: 8vw;
+	}
 }
