@@ -17,10 +17,11 @@ function Services() {
 
   return (
     <div className="services-list">
-      {services?.map(({ _id, title, image }) => (
+      {services?.map(({ _id, title, image, description }) => (
         <div key={_id} className="service-card">
-          <img src={image[0]?.url} alt="Imagem do serviço"/>
-          <p>{title}</p>
+          <h1>{title}</h1>
+          <p>{description}</p>
+          <img src={image[0]?.url} alt="Imagem do serviço"/>          
         </div>
       ))}
     </div>
