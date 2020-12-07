@@ -3,10 +3,15 @@ const keystone = require('keystone');
 const cors = require('cors');
 
 const Post = keystone.list('Posts');
+const Banner = keystone.list('Banners');
+
+const Service = keystone.list('Services');
+const Footer = keystone.list('Footers');
+
 const OurClients = keystone.list('OurClients');
 const OurBlog = keystone.list('OurBlog');
 const ArticleCarousel = keystone.list('ArticleCarousel');
-const WhoWeAre = keystone.list('WhoWeAre');
+const WhoWeAre = keystone.list('WhoWeAre')
 
 
 module.exports = (app) => {
@@ -54,10 +59,43 @@ module.exports = (app) => {
         res.send(data);
       }
     });
-  });
+	});
+	
+	app.get('/api/services', (req, res) => {
+		Service.model.find((err, data) => {
+			if (err) {
+				res.status(500).send('DB Error');
+			} else {
+				res.send(data);
+			}
+		});
+	});
 
+	app.get('/api/footers', (req, res) => {
+		Footer.model.find((err, data) => {
+			if (err) {
+				res.status(500).send('DB Error');
+			} else {
+				res.send(data);
+			}
+		});
+	});
+
+
+  app.get('/api/banners', (req, res) => {
+    Banner.model.find((err, data) => {
+
+      if (err) {
+        res.status(500).send('DB Error');
+      } else {
+        res.send(data);
+      }
+    });
+  })
+  
   app.get('/api/whoWeAre', (req, res) => {
     WhoWeAre.model.find((err, data) => {
+
       if (err) {
         res.status(500).send('DB Error');
       } else {
