@@ -3,14 +3,16 @@ import Img01 from '../Assets/img01.jpg'
 import '../Card/card.css'
 
 export default function Card(props){
+	const { imagem } = props;
+	const { titulo } = props;
 	return (
 		<div className="card">
 			<div className="photo">
-				<img className="image" src={Img01}></img>
+				<img className="image" src={imagem}></img>
 			</div>	
 				<div className="infos">
 					<div className="titulos">
-						<p className="tit">Título do blogpost</p>
+						<p className="tit">{ titulo }</p>
 						
 						<p className="sub-tit">Data da publicação</p>
 					</div>

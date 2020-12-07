@@ -6,6 +6,7 @@ import '../OurBlog/OurBlog.css'
 import Img01 from '../Assets/img01.jpg'
 import Img02 from '../Assets/img02.jpg'
 import Card from '../Card/card'
+import data from './data'
 
 export default function OurBlog (props){
 	
@@ -26,45 +27,20 @@ export default function OurBlog (props){
 			}
 		]
 
-	};
-
-	const products = [
-		{
-			img: Img01,
-			title: 'Título do blogpost',
-			data: 'Data da publicação',
-			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...'
-		},
-		{
-			img: Img02,
-			title: 'Título do blogpost',
-			data: 'Data da publicação',
-			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...'
-		},
-		{
-			img: Img01,
-			title: 'Título do blogpost',
-			data: 'Data da publicação',
-			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...'
-		},
-		{
-			img: Img02,
-			title: 'Título do blogpost',
-			data: 'Data da publicação',
-			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...'
-		},
-	] 
+	}; 
 
 	return (
 		
 
 		<Slider {...settings}>
 
-			<Card></Card>
-			
-			<Card></Card>
-			<Card></Card>
-			<Card></Card>
+	
+			{data.map(({ img, title, data, text }) => (
+				<Card key={title}
+					img = {img}
+					title = {title}
+				/>
+			))}
 		
 		</Slider>
 
