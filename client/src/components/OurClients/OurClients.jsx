@@ -4,6 +4,10 @@ import './OurClients.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
+//importing images
+import Humberto from '../Assets/humberto-chavez.jpg'
+import Humphrey from '../Assets/humphrey-muleba.jpg'
+
 export default class OurClients extends Component{
   render() {
     const settings = {
@@ -14,32 +18,33 @@ export default class OurClients extends Component{
       slidesToScroll: 2
     };
 
-    return (//add the images to each client connected to the keystone 
-      <div>
-        <h2>Nossos clientes</h2>
+    return (
+      <div className='OurClients'>
+        <h2 id='title'>Nossos clientes</h2>
         <Slider {...settings}>
           <div className='client'>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing dit, sod do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <img className='client_photo' src='Humberto' alt='Humberto'></img>
+            <p className='testimony'>Lorem ipsum dolor sit amet, consectetur adipiscing dit, sod do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <h3>Nome da pessoa/empresa 1</h3>
           </div>
           <div className='client'>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing dit, sod do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p className='testimony'>Lorem ipsum dolor sit amet, consectetur adipiscing dit, sod do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <h3>Nome da pessoa/empresa 2</h3>
           </div>
           <div className='client'>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing dit, sod do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p className='testimony'>Lorem ipsum dolor sit amet, consectetur adipiscing dit, sod do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <h3>Nome da pessoa/empresa 3</h3>
           </div>
           <div className='client'>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing dit, sod do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p className='testimony'>Lorem ipsum dolor sit amet, consectetur adipiscing dit, sod do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <h3>Nome da pessoa/empresa 4</h3>
           </div>
           <div className='client'>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing dit, sod do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p className='testimony'>Lorem ipsum dolor sit amet, consectetur adipiscing dit, sod do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <h3>Nome da pessoa/empresa 5</h3>
           </div>
           <div className='client'>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing dit, sod do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p className='testimony'>Lorem ipsum dolor sit amet, consectetur adipiscing dit, sod do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <h3>Nome da pessoa/empresa 6</h3>
           </div>
         </Slider>
