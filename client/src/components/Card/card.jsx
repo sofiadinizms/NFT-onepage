@@ -1,26 +1,27 @@
-import React from 'react'
+import React from 'react';
 import Img01 from '../Assets/img01.jpg'
 import '../Card/card.css'
+import axios from 'axios';
 
-export default function Card(props){
-	const { imagem } = props;
-	const { titulo } = props;
+function Card(props){
+
 	return (
 		<div className="card">
-			<div className="photo">
-				<img className="image" src={imagem}></img>
-			</div>	
-				<div className="infos">
-					<div className="titulos">
-						<p className="tit">{ titulo }</p>
-						
-						<p className="sub-tit">Data da publicação</p>
+					<div className="photo">
+						<img className="image" src={props.image.url} />
+					</div>	
+					<div className="infos">
+						<div className="titulos">
+							<p className="tit">{props.title}</p>
+							<p className="sub-tit">{props.date}</p>
+						</div>
+						<div className="text">
+							<p>{props.description} <a className="hiperLink" href={props.blogLink}> Continue a ler...</a></p>
+							
+						</div>
 					</div>
-					<div className="text">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
-					</div>
-				</div>
-
 		</div>
-	)
+	);
 }
+
+export default Card;
