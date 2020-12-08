@@ -1,7 +1,7 @@
 import React from 'react';
-import Img01 from '../Assets/img01.jpg'
+
 import '../Card/card.css'
-import axios from 'axios';
+
 
 function Card(props){
 

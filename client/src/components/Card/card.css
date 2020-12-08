@@ -46,6 +46,7 @@
 
 .hiperLink{
 	text-decoration: none;
+	color: #235FB4;
 }
 
 @media screen and (max-width: 768px){
