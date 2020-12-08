@@ -9,16 +9,6 @@ ReactDOM.render(
     <App />
   </React.StrictMode>,
   document.getElementById('root'),
+
 );
 
-/*
-ReactDOM.render(
-  <div>
-		<Toolbar></Toolbar>
-		<SideDrawer></SideDrawer>
-		<Backdrop></Backdrop>
-	</div>,
-  document.getElementById('root'),
-);
-
-*/
