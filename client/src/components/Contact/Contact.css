@@ -49,6 +49,11 @@
   position: relative;
 }
 
+.label-float .Active {
+  transform: translate(0, 3vh) scale(1);
+  font-weight: 600;
+}
+
 .label-float input {
   font-family: Poppins;
   font-style: normal;
@@ -186,7 +191,7 @@ button {
     margin-top: 4vh;
   }
 
-  .info input {
+  .label-float input {
     margin: 2vh 0 0 0;
     color: #ebecee;
     width: 100%;
@@ -195,24 +200,23 @@ button {
     font-size: 2vh;
   }
 
-  .info div+input+input{
-    margin-top: 6vh;
-    height: 12vh; 
-  }
-
   .info_client {
     flex-direction: column;      
-    /* background-color: blue; */
     width: 100%;    
   }
 
-  .info_client input+input {
+  .info_client .label-float{
+    width: 100%;
+  }
+
+  .info_client .label-float+.label-float {
     margin-left: 0;
-    width: 100%;    
+    width: 100%; 
   }
 
-  ::-webkit-input-placeholder {
+  .label-float label{
     color: #ebecee;
+    margin-left: 0;
   }
 
   button {
