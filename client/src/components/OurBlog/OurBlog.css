@@ -9,6 +9,7 @@ body{
 	background-color: #EBECEE;
 	justify-content: center;
 	height: 100%;
+	padding-top: 50px;
 }
 
 .tudo h1{
@@ -18,4 +19,43 @@ body{
 	color: #032C66;
 	text-align: center;
 	margin-top: auto;
+}
+
+.content img{
+	width: 15vw;
+  height: 20vh;
+  object-fit: cover;
+  
+  margin-right: 20px;
+}
+
+.contents{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.free-content{
+	max-width: 70vw;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	padding-top: 60px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.free-content p {
+	display: flex;
+	font-weight: 500;
+	color: #1A1A1A;
+}
+
+.content{
+	margin: 0;
+}
+
+.content p {
+	font-weight: 700;
+	font-size: 0.7rem;
+	color: #1A1A1A;
 }
