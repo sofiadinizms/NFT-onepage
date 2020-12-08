@@ -41,8 +41,8 @@ function OurBlogSlide (){
 	}; 
 
 	return (
-		<>		
-				<Slider {...settings}>
+		<>	
+				<Slider className="carousel" {...settings}>
 					{blogs?.map(({_id, title, date, description, image, blogLink}) => (
 					<Card 
 						title = {title}
