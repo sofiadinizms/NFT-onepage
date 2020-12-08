@@ -1,0 +1,4 @@
+.ourServicesSection {
+  display: flex;
+  flex-direction: column;
+}

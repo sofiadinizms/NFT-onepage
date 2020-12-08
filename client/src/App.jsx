@@ -1,10 +1,10 @@
 import {
-  PostList, Services
+  PostList, Services, OurServices,
 } from './components';
 
 function App() {
   return (
-    <Services />
+    <OurServices />
   );
 }
 
