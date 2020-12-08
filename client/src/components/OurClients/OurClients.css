@@ -1,15 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-*{
-    background-color: #EBECEE;
+.OurClients{
+    background: url('../Assets/Vector_21.png') top -220px right, url('../Assets/Vector_10.png') bottom -90px left, url('../Assets/Vector_9.png') bottom -450px right,  #e5e5e5;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
 }
-
+/*
+.slick-prev:before{
+    content: url('../Assets/Path_prev.png');
+}
+.slick-dots li button:before{
+    content: url('../Assets/Rectangle.png');
+}*/
 #title{
     font-family: Poppins;
     color: #032c66;
     text-align: center;
     font-weight: 700;
-    z-index: 10;   
+    font-size: 3vw;
+    margin-bottom: 0px;
+    padding-top: 15vh;
+    z-index: 10;
 }
 .name{
     color: #032c66;
@@ -17,29 +30,30 @@
     font-size: normal;
     font-weight: bold;
     letter-spacing: -0.015em;
+    z-index: 10;
 }
 .client{
+    margin-top: 5vh;
+    margin-right: 16vw;
+    margin-left: 16vw;
     display: flex;
     flex-direction: row;
     z-index: 10;
 }
-.left{
-    text-align: left;
-}
-
-.right{
-    text-align: right;
-}
-
 .client_photo{
-    height: 270px;
-    width: 306px;
+    height: 25vh;
+    width: 15vw;
+    z-index: 10;
 }
-
 .testimony{
     color: #1A1A1A;
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     letter-spacing: -0.015em;
+    z-index: 10;
+}
+.text{
+    margin: 1vw;
+    z-index: 10;
 }

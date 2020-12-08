@@ -27,22 +27,25 @@ function OurClients(){
     slidesToShow: 2,
     slidesToScroll: 1,
     rows: 2,
+    arrows: true,
   };
 
   return (
     <div className='OurClients'>
-      <h2 id='title'>Nossos clientes</h2>
-      <Slider {...settings}>
-        {ourClients?.map(({_id, image, testimony, name}) =>{
-          return(
-           <OurClientsCard 
-           image={image}
-           testimony={testimony}
-           name={name}
-           key={_id}/>   
-          );
-        })}
-      </Slider>
+      <div className='section'>
+        <h2 id='title'>Nossos clientes</h2>
+        <Slider {...settings}>
+          {ourClients?.map(({_id, image, testimony, name}) =>{
+            return(
+            <OurClientsCard 
+            image={image}
+            testimony={testimony}
+            name={name}
+            key={_id}/>   
+            );
+          })}
+        </Slider>
+      </div>
     </div>
   );
 }
