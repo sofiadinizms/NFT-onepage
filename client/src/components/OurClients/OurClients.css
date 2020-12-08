@@ -11,19 +11,6 @@
     font-weight: 700;
     z-index: 10;   
 }
-.wallpaperImage{
-    z-index: 1;
-    position: relative;
-}
-#rightUp{
-    float: right;
-}
-#rightDown{
-    float: right;
-}
-#leftDown{
-    float: left;
-}
 .name{
     color: #032c66;
     font-family: Poppins;
