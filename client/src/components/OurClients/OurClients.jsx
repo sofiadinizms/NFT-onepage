@@ -1,54 +1,53 @@
-import React, {Component} from 'react';
+import React,{useState, useEffect} from 'react';
 import Slider from "react-slick";
 import './OurClients.css';
+import OurClientsCard from '../OurClientsCard';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import axios from 'axios';
 
-//importing images
-import Humberto from '../Assets/humberto-chavez.jpg'
-import Humphrey from '../Assets/humphrey-muleba.jpg'
+import Humberto from '../Assets/humberto-chavez.png';
+import Humphrey from '../Assets/humphrey-muleba.png';
+import ArrowPrev from '../Assets/Path_prev.png';
+import ArrowNext from '../Assets/Path_next.png';
+import Rectangle from '../Assets/Rectangle.png';
+import Vector_9 from '../Assets/Vector_9.png';
+import Vector_10 from '../Assets/Vector_10.png';
+import Vector_21 from '../Assets/Vector_21.png';
 
-export default class OurClients extends Component{
-  render() {
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 2,
-      slidesToScroll: 2
-    };
 
-    return (
-      <div className='OurClients'>
-        <h2 id='title'>Nossos clientes</h2>
-        <Slider {...settings}>
-          <div className='client'>
-            <img className='client_photo' src='Humberto' alt='Humberto'></img>
-            <p className='testimony'>Lorem ipsum dolor sit amet, consectetur adipiscing dit, sod do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <h3>Nome da pessoa/empresa 1</h3>
-          </div>
-          <div className='client'>
-          <p className='testimony'>Lorem ipsum dolor sit amet, consectetur adipiscing dit, sod do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <h3>Nome da pessoa/empresa 2</h3>
-          </div>
-          <div className='client'>
-          <p className='testimony'>Lorem ipsum dolor sit amet, consectetur adipiscing dit, sod do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <h3>Nome da pessoa/empresa 3</h3>
-          </div>
-          <div className='client'>
-          <p className='testimony'>Lorem ipsum dolor sit amet, consectetur adipiscing dit, sod do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <h3>Nome da pessoa/empresa 4</h3>
-          </div>
-          <div className='client'>
-          <p className='testimony'>Lorem ipsum dolor sit amet, consectetur adipiscing dit, sod do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <h3>Nome da pessoa/empresa 5</h3>
-          </div>
-          <div className='client'>
-          <p className='testimony'>Lorem ipsum dolor sit amet, consectetur adipiscing dit, sod do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Ut enim ad minim vedam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <h3>Nome da pessoa/empresa 6</h3>
-          </div>
-        </Slider>
-      </div>
-    );
-  }
+
+function OurClients(){
+  
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    rows: 2,
+  };
+
+  return (
+    <div className='OurClients'>
+      <h2 id='title'>Nossos clientes</h2>
+      <img className='wallpaperImage' id='rightUp' src={Vector_9} ></img>
+      <img className='wallpaperImage' id='leftDown' src={Vector_10} ></img>
+      <img className='wallpaperImage' id='rightDown' src={Vector_21} ></img>
+      <Slider {...settings}>
+        {clients?.map(({_id, image, testimony, name}) =>{
+          return(
+           <OurClientsCard 
+           image={image?.url}
+           testimony={testimony}
+           name={name}
+           key={_id}/>   
+          );
+        })}
+      </Slider>
+    </div>
+  );
 }
+
+export default OurClients;

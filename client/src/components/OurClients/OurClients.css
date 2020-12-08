@@ -1,13 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-OurClients{
+*{
     background-color: #EBECEE;
 }
 
 #title{
+    font-family: Poppins;
     color: #032c66;
     text-align: center;
-    font-family: Poppins;
     font-weight: 700;
-    
+    z-index: 10;   
+}
+.wallpaperImage{
+    z-index: 1;
+    position: relative;
+}
+#rightUp{
+    float: right;
+}
+#rightDown{
+    float: right;
+}
+#leftDown{
+    float: left;
+}
+.name{
+    color: #032c66;
+    font-family: Poppins;
+    font-size: normal;
+    font-weight: bold;
+    letter-spacing: -0.015em;
+}
+.client{
+    display: flex;
+    flex-direction: row;
+    z-index: 10;
+}
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: right;
+}
+
+.client_photo{
+    height: 270px;
+    width: 306px;
+}
+
+.testimony{
+    color: #1A1A1A;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: -0.015em;
 }

@@ -17,14 +17,14 @@ Banner.add({
 
   valuePropositionDescription: {
     type: Types.Text,
-    required: true,
     initial: true,
+    required: true,
   },
 
   image: {
     type: Types.CloudinaryImage,
-    required: true,
     initial: true,
+    required: true,
     singleImage: true,
   },
 
