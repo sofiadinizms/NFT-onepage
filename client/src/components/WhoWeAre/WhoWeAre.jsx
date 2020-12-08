@@ -24,7 +24,7 @@ return (
 		<div className="container">
 		{imgs?.map(({_id, description, image}) => (
 			<div key={_id} className="photo">
-				<img className="img" src={image[0]?.url} alt="Foto da equipe"/>
+				<img className="img" src={image?.url} alt="Foto da equipe"/>
 				{/*<div className="img"></div>*/}
 			</div>
 		))}
