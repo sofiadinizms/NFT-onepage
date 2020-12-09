@@ -4,6 +4,9 @@ import {
   Contact
 } from './components';
 
+import WhoWeAre from './components/WhoWeAre/WhoWeAre'
+
+
 function App() {
   return (
     <Contact/>  

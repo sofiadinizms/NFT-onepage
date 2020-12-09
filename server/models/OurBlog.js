@@ -13,14 +13,13 @@ OurBlog.add({
   },
   image: {
     type: Types.CloudinaryImages,
-    require: true,
+    required: true,
     initial: true,
   },
   blogLink: {
     type: Types.Text,
     required: true,
     initial: true,
-    index: true,
   }
 });
 
