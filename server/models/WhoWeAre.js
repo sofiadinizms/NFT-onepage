@@ -3,9 +3,11 @@ const keystone = require('keystone');
 const { Types } = keystone.Field;
 
 const WhoWeAre = new keystone.List('WhoWeAre', {
+
   map: {name: 'title'},
   nocreate: true,
   nodelete: true,
+
 });
 
 WhoWeAre.add({
@@ -16,15 +18,14 @@ WhoWeAre.add({
     index: true,
   },
   description: {
-    type: Types.Text,
+		type: Types.Text,
+		initial: true,
     required: true,
-    initial: true,
   },
   image: {
-    type: Types.CloudinaryImage,
+		type: Types.CloudinaryImage,
+		initial: true,
     required: true,
-    initial: true,
-    singleImage: true,
   },
 });
 
