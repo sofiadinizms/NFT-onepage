@@ -2,9 +2,14 @@ import {
   PostList,
 } from './components';
 
+import WhoWeAre from './components/WhoWeAre/WhoWeAre'
+
+
 function App() {
   return (
-    <PostList />
+		//<PostList />
+		<WhoWeAre></WhoWeAre>
+	
   );
 }
 
