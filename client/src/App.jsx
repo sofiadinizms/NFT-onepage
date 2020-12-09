@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import {
+	WhoWeAre,
+	Footer,
   PostList,
 } from './components';
 import drawerToogleButton from './components/SideDrawer/DrawerToggleButton';
@@ -47,11 +49,7 @@ class App extends Component {
 						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
 					</div>
 					<div>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
+						{/* <WhoWeAre/> */}
 					</div>
 					<div>
 						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
@@ -82,11 +80,7 @@ class App extends Component {
 						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
 					</div>
 					<div>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
+						<Footer/>
 					</div>
 				</main>
 			</div>
