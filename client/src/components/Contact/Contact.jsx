@@ -5,10 +5,58 @@ import contact from "./../assets/contact.jpg"
 
 
 function Contact () {
+  const [isUsernameActive, setIsUsernameActive] = useState(false);
+  const [isEmailActive, setIsEmailActive] = useState(false);
+  const [isPhoneActive, setIsPhoneActive] = useState(false);
+  const [isSubjectActive, setIsSubjectActive] = useState(false);
   const [isActive, setIsActive] = useState(false);
 
+  const [username, setUsername] = useState('') ;
+  const [email, setEmail] = useState('') ;
+  const [phone, setPhone] = useState('') ;
+  const [subject, setSubject] = useState('') ;
   const [value, setValue] = useState('');
 
+  function handleUsernameChange(text) {
+    setUsername(text);
+
+    if (text !== '') {
+      setIsUsernameActive(true);
+    } else {
+      setIsUsernameActive(false);
+    }
+  }
+
+  function handleEmailChange(text) {
+    setEmail(text);
+
+    if (text !== '') {
+      setIsEmailActive(true);
+    } else {
+      setIsEmailActive(false);
+    }
+  }
+
+  function handlePhoneChange(text) {
+    setPhone(text);
+
+    if (text !== '') {
+      setIsPhoneActive(true);
+    } else {
+      setIsPhoneActive(false);
+    }
+  }
+
+  function handleSubjectChange(text) {
+    setSubject(text);
+
+    if (text !== '') {
+      setIsSubjectActive(true);
+    } else {
+      setIsSubjectActive(false);
+    }
+  }
+  
   function handleTextChange(text) {
     setValue(text);
 
@@ -18,6 +66,7 @@ function Contact () {
       setIsActive(false);
     }
   }
+
   return (
     <div className="contact">
       <div className="info">
@@ -26,36 +75,36 @@ function Contact () {
         <div className="label-float">
           <input 
             type="text"
-            value={value}
-            onChange={(e) => handleTextChange(e.target.value)}
+            username={username}
+            onChange={(e) => handleUsernameChange(e.target.username)}
             placeholder=""/>
-          <label className={ isActive ? "Active" : ""}>Nome</label>
+            <label className={ isUsernameActive ? "usernameActive" : "usernameInactive"}>Nome</label>
         </div>
         <div className="info_client">
           <div className="label-float">
             <input
             type="text"
-            value={value}
-            onChange={(e) => handleTextChange(e.target.value)}
+            email={email}
+            onChange={(e) => handleEmailChange(e.target.value)}
             placeholder=""/>
-            <label className="email_phone">E-mail</label>
+            <label className={ isEmailActive ? "emailActive" : "email_phone"}>E-mail</label>
           </div>
           <div className="label-float">
             <input
             type="text"
-            value={value}
-            onChange={(e) => handleTextChange(e.target.value)}
+            phone={phone}
+            onChange={(e) => handlePhoneChange(e.target.value)}
             placeholder=""/>
-            <label className="email_phone">Telefone</label>
+            <label className={ isPhoneActive ? "phoneActive" : "email_phone"}>Telefone</label>
           </div>
         </div>
         <div className="label-float">
           <input
           type="text"
-          value={value}
-          onChange={(e) => handleTextChange(e.target.value)}
+          subject={subject}
+          onChange={(e) => handleSubjectChange(e.target.value)}
           placeholder=""/>
-          <label className={ isActive ? "Active" : ""}>Assunto</label>
+          <label className={ isSubjectActive ? "subjectActive" : ""}>Assunto</label>
         </div>
         <div className="label-float">
           <input
@@ -63,7 +112,7 @@ function Contact () {
           value={value}
           onChange={(e) => handleTextChange(e.target.value)}
           placeholder=""/>
-          <label className={ isActive ? "Active" : ""}>Mensagem</label>
+          <label className={ isActive ? "active" : ""}>Mensagem</label>
         </div>
         <button type="submit">Enviar</button>
       </div>

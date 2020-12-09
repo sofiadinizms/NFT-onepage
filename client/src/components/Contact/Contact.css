@@ -49,7 +49,22 @@
   position: relative;
 }
 
-.label-float .Active {
+.label-float .usernameActive {
+  transform: translate(0, 3vh) scale(1);
+  font-weight: 600;
+}
+
+.label-float .usernameInactive {
+  transform: translate(0, 7vh) scale(1);
+}
+
+
+.label-float .subjectActive {
+  transform: translate(0, 3vh) scale(1);
+  font-weight: 600;
+}
+
+.label-float .active {
   transform: translate(0, 3vh) scale(1);
   font-weight: 600;
 }
@@ -131,6 +146,18 @@
   /* background-color: blue; */
 }
 
+.label-float .emailActive {
+  margin: 0;
+  transform: translate(0, 3vh) scale(1);
+  font-weight: 600;
+}
+
+.label-float .phoneActive {
+  margin: 0;
+  transform: translate(0, 3vh) scale(1);
+  font-weight: 600;
+}
+
 .info_client .label-float { 
   display: flex;  
   width: 65%;
@@ -167,6 +194,11 @@ button {
   font-weight: 600;
   font-size: 95%;
   border: none;
+  transition: .5s;
+}
+
+button:hover{
+  background-color: #0850b4;
 }
 
 @media (max-width: 1280px){
