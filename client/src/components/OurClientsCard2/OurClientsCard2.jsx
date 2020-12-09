@@ -1,20 +1,20 @@
 import React from 'react';
 
-function OurClientsCard(props){
+function OurClientsCard2(props){
   
   return(
     <>
       <div className='client'>
-        <div className="image">
-          <img className='client_photo' src={props.image[0]?.url} alt='Cliente' />
-        </div>
         <div className='text'>
           <p className='testimony'>{props.testimony}</p>
           <h3 className='name'>{props.name}</h3>
+        </div>
+        <div className="image">
+          <img className='client_photo' src={props.image[0]?.url} alt='Cliente' />
         </div>
       </div>
     </>
   );
 }
 
-export default OurClientsCard;
+export default OurClientsCard2;

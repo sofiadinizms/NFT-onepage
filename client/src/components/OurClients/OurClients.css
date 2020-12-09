@@ -4,14 +4,13 @@ body{
     background-color: #e5e5e5;
 }
 .OurClients{
-    background: url('../Assets/Vector_21.png') top -220px right, url('../Assets/Vector_10.png') bottom -90px left, url('../Assets/Vector_9.png') bottom -450px right,  #e5e5e5;
+    background: url('../Assets/Vector_21.png') top -220px right, url('../Assets/Vector_10.png') bottom -90px left, url('../Assets/Vector_9.png') bottom -480px right,  #e5e5e5;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
     z-index: 2;
     margin: 0px;
 }
-/*
 .slick-slider{
 	max-width: 70vw;
   align-items: center;
@@ -32,9 +31,9 @@ body{
 .slick-prev{
 	position: absolute;
 	display: flex;
-	flex-direction: row;
-	left: 28vw;
-	z-index: 10;
+    flex-direction: row;
+    left: 30vw;
+	z-index: 5;
 	
 }
 
@@ -51,9 +50,9 @@ body{
 .slick-next{
 	position: absolute;
 	display: flex;
-	flex-direction: row;
-	right: 28vw;
-	z-index: 10;
+    flex-direction: row;
+	right: 30vw;
+    z-index: 5;
 }
 
 .slick-dots{
@@ -62,32 +61,26 @@ body{
     justify-content: center;
     top: auto;
     padding: 0;
+    padding-bottom: -8%;
+    z-index: 5;
 }
-.slick-dots li. button:before {
+.slick-dots li button:before {
 	content: url('../Assets/gray_square.svg');
 }
 
 .slick-dots li.slick-active button:before{
 	content: url('../Assets/blue_square.svg');
 }
-*/
 #title{
     font-family: Poppins;
     color: #032c66;
     text-align: center;
     font-weight: 700;
-<<<<<<< Updated upstream
     font-size: 3vw;
     margin-bottom: 0px;
     padding-top: 15vh;
     z-index: 10;
 }
-=======
-    font-size: 2vw;
-    z-index: 10;   
-}
-
->>>>>>> Stashed changes
 .name{
     color: #032c66;
     font-family: Poppins;
@@ -98,13 +91,8 @@ body{
 }
 .client{
     margin-top: 5vh;
-<<<<<<< Updated upstream
-    margin-right: 16vw;
-    margin-left: 16vw;
-=======
-    margin-left: 16vw;
-    margin-right: 16vw;
->>>>>>> Stashed changes
+    margin-right: 8%;
+    margin-left: 8%;
     display: flex;
     flex-direction: row;
     z-index: 10;
