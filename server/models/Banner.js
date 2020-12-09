@@ -2,30 +2,32 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const WhoWeAre = new keystone.List('WhoWeAre', {
-  map: {name: 'title'},
+const Banner = new keystone.List('Banners', {
+  map: {name: 'valueProposition'},
   nocreate: true,
-  nodelete: true,
-});
+  nodelete: true,});
 
-WhoWeAre.add({
-  title: {
-    type:Types.Text,
-    required: true,
+Banner.add({
+  valueProposition: {
+    type: Types.Text,
     initial: true,
+    required: true,
     index: true,
   },
-  description: {
+
+  valuePropositionDescription: {
     type: Types.Text,
     required: true,
     initial: true,
   },
+
   image: {
     type: Types.CloudinaryImage,
     required: true,
     initial: true,
     singleImage: true,
   },
+
 });
 
-WhoWeAre.register();
+Banner.register();
