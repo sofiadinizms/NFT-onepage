@@ -18,10 +18,12 @@ function Banner() {
 
   return (
     <div class="banner">
-      <div className="container">
+      <div>
 		    {banners?.map(({_id, valueProposition, valuePropositionDescription}) => (
-			    <div>
-            <img id="logo" src={Logo} alt="Logo Delta Dental"></img>
+          <div>
+            <div className="container">
+              <img id="logo" src={Logo} alt="Logo Delta Dental"></img>
+            </div>
             <div class="banner_text">
               <h1 id="title">{valueProposition}</h1>
               <h2 id="description">{valuePropositionDescription}</h2>

@@ -74,8 +74,7 @@
         display: inline-block;
         height: 7vh;
         width: auto;
-        margin-left: 42vw;
-        margin-right: 40vw;
+        margin-top: 1vw;
     }
 
     #title, #description{
@@ -108,6 +107,7 @@
         box-sizing: border-box;
         height: 10vw;
         width: 10vw;
+        margin-top: 22vw;
         border-style: solid;
         border-color: #EBECEE;
         border-width: 0px 1px 1px 0px;
@@ -121,7 +121,6 @@
         display: block;
         align-items: center;
         justify-content: center;
-        margin-top: 22vw;
         margin-left: 45vw;
         margin-right: 45vw;
         height: 15vh;
