@@ -1,4 +1,5 @@
 import React,{useState, useEffect} from 'react';
+import OurClientsCardMobile from '../OurClientsCardMobile';
 import OurClientsCard2 from '../OurClientsCard2';
 import OurClientsCard from '../OurClientsCard';
 import Slider from "react-slick";
@@ -49,6 +50,11 @@ function OurClients(){
               testimony={testimony}
               name={name}
               key={_id}/>)}
+              <OurClientsCardMobile
+              image={image}
+              testimony={testimony}
+              name={name}
+              key={_id}/>
             </>
             );
           })}
