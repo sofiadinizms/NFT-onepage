@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import {
   PostList,
-  Contact
+  Contact,
+  Banner
 } from './components';
 import drawerToogleButton from './components/SideDrawer/DrawerToggleButton';
 import Toolbar from './components/Toolbar/Toolbar'
@@ -41,11 +42,7 @@ class App extends Component {
 				<main style={{marginTop: '64px'}}>
 					<p>This is the page content!</p>
 					<div>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
+						<Banner/>
 					</div>
 					<div>
 						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>

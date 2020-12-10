@@ -1,4 +1,5 @@
 export { default as PostList } from './PostList';
+export { default as Banner} from './Banner';
 export { default as Contact } from './Contact';
 export { default as SideDrawer } from './SideDrawer';
 export { default as Toolbar } from './Toolbar';
