@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {
-  PostList, Services, OurServices,
+  PostList, Services, OurServices, Contact,
 } from './components';
 import drawerToogleButton from './components/SideDrawer/DrawerToggleButton';
 import Toolbar from './components/Toolbar/Toolbar'
@@ -71,11 +71,7 @@ class App extends Component {
 						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
 					</div>
 					<div>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
+						<Contact/>
 					</div>
 					<div>
 						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
