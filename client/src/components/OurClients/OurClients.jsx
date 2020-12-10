@@ -36,6 +36,7 @@ function OurClients(){
         breakpoint: 700,
         settings: {
           slidesToShow: 1,
+          rows: 1,
         }
       }
     ],
