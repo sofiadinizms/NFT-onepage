@@ -10,13 +10,13 @@ body{
     background: url('../Assets/Vector_21.png') top -220px right, url('../Assets/Vector_10.png') bottom -90px left, url('../Assets/Vector_9.png') bottom -480px right,  #e5e5e5;
     background-repeat: no-repeat;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     z-index: 2;
     margin: 0px;
 }
 .slick-slider{
 	max-width: 70vw;
-  align-items: center;
+    align-items: center;
 	left: 15%;
 	display: block;
 	position: relative;
@@ -29,8 +29,6 @@ body{
 .slick-next:before {
   color: #777777;
 }
-
-
 .slick-prev{
 	position: absolute;
 	display: flex;
@@ -39,17 +37,14 @@ body{
 	z-index: 5;
 	
 }
-
 .slick-prev:before{
 	content: url('../Assets/prev.svg');
 	
 }
-
 .slick-next:before{
 	content: url('../Assets/next.svg');
 	
 }
-
 .slick-next{
 	position: absolute;
     display: flex;
@@ -57,7 +52,6 @@ body{
 	right: 30vw;
     z-index: 5;
 }
-
 .slick-dots{
 	display: flex;
     align-items: center;
@@ -69,7 +63,6 @@ body{
 .slick-dots li button:before {
 	content: url('../Assets/gray_square.svg');
 }
-
 .slick-dots li.slick-active button:before{
 	content: url('../Assets/blue_square.svg');
 }
@@ -155,6 +148,11 @@ body{
     }
 }
 @media(max-width: 1200px){
+    .OurClients{
+        background: #e5e5e5;
+        align-items: center;
+        align-content: center;
+    }
     #title{
         font-size: 5vw;
         padding: 0;
@@ -166,8 +164,8 @@ body{
         font-size: 60%;
     }
     .image .client_photo{
-        height: 40vw;
-        width: 80vw;
+        height: 210px;
+        width: 238px;
     }
     .right{
         margin-right: 238px;
@@ -179,9 +177,40 @@ body{
         margin-left: 238px;
     }
 }
-@media(max-width: 540px){
+@media(max-width: 960px){
+    .OurClients{
+        background: #e5e5e5;
+        align-items: center;
+        align-content: center;
+    }
+    #title{
+        font-size: 4vw;
+        padding: 0;
+    }
+    .testimony{
+        font-size: 45%;
+    }
+    .name{
+        font-size: 45%;
+    }
+    .image .client_photo{
+        height: 150px;
+        width: 170px;
+    }
+    .right{
+        margin-right: 170px;
+    }
+    .left{
+        margin-left: 170px;
+    }
+    .nameLeft{
+        margin-left: 170px;
+    }
+}
+@media(max-width: 700px){
     #title{
         padding: 3%;
+        text-align: center;
     }
     .OurClients{
         background: #e5e5e5;

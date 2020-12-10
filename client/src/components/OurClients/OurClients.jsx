@@ -22,7 +22,7 @@ function OurClients(){
   }, []);
 
   
-  const settings = {
+  var settings = {
     dots: true,
     infinite: true,
     speed: 500,
@@ -31,6 +31,14 @@ function OurClients(){
     slidesToScroll: 1,
     rows: 2,
     arrows: true,
+    responsive: [
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ],
   };
 
   return (
