@@ -58,9 +58,18 @@
 	position: absolute;
 	display: flex;
 	flex-direction: row;
-	left: 41.5vw;
+	left: 38.5vw;
   z-index: 10;
-  top: 70vh;	
+  top: 69.5vh;	
+}
+
+.slick-next{
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	right: 38.5vw;
+  z-index: 10;
+  top: 69.5vh;
 }
 
 .slick-prev:before{
@@ -70,6 +79,13 @@
 .slick-next:before{
 	content: url('../Assets/Path_next_services.png');
 	
+}
+
+.slick-dots li button:before {
+	content: url('../Assets/RectangleLighter_services.png');
+}
+.slick-dots li.slick-active button:before{
+	content: url('../Assets/Rectangle_services.png');
 }
 
 .slick-slide:hover {
@@ -83,10 +99,11 @@
 
 .slick-slide img {
   transition: .5s;
+  z-index: -1;
 }
 
 .slick-slide img:hover { 
-  background-color: black;
+  /* background-color: black; */
   width: 80vw;
   height: auto; 
   overflow-x: visible; 
