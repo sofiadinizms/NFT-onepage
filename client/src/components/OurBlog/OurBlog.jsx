@@ -9,15 +9,7 @@ import Sliderr from 'react-slick'
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
-
-function NextArrow(props) {
-	return <div className={ props.className } onClick={ props.onClick } />;
-}
-
-function PrevArrow(props) {
-	return <div className= { props.className } onClick={ props.onClick } />;
-}
-
+import Modal from '../Modal/Modal'
 
 function OurBlog(){
 
@@ -27,7 +19,6 @@ function OurBlog(){
     speed: 500,
     slidesToShow: 4,
 		slidesToScroll: 0,
-		cssEase: "linear",
 		arrows: false,
 		responsive: [
 			{
@@ -36,17 +27,7 @@ function OurBlog(){
 					slidesToShow: 2,
 					arrows: true,
 					slidesToScroll: 1,
-					appendDots: dots => (
-						<div>
-							<NextArrow 
-								className="slick-next prox-seta"
-								onClick={() => {
-									document.querySelector(".slick-next.slick-arrow").click();
-								}}
-							/>
-						</div>
-					),
-					nextArrow : <NextArrow></NextArrow>,
+					cssEase: "linear",
 				}
 			}
 		]
@@ -57,27 +38,29 @@ function OurBlog(){
 			<div className="tudo">
 				<div className="partes">
 				<h1>Nosso blog</h1>
+				
 				<OurBlogSlide />
+				
 				<div className="free-content">
 					<p>Acesse conteúdos gratuitos:</p>
 					<div className="contents">
 						<Sliderr className="slide-content" {...settings}>
-						<div className="content">
-							<img src={Cd01} />
-							<p>Nome do conteúdo</p>
-						</div>
-						<div className="content">
-							<img src={Cd02} />
-							<p>Nome do conteúdo</p>
-						</div>
-						<div className="content">
-							<img src={Cd03} />
-							<p>Nome do conteúdo</p>
-						</div>
-						<div className="content">
-							<img src={Cd04} />
-							<p>Nome do conteúdo</p>
-						</div>
+						<Modal
+							image = {Cd01}
+							name = "Nome do conteúdo"
+						/>
+						<Modal 
+							image = {Cd02}
+							name = "Nome do conteúdo"
+						/>
+						<Modal 
+							image = {Cd03}
+							name = "Nome do conteúdo"
+						/>
+						<Modal 
+							image = {Cd04}
+							name = "Nome do conteúdo"
+						/>
 						</Sliderr>
 					</div>
 				</div>
