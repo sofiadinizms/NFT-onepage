@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-body{
-	background-color: #EBECEE;
-}
 .tudo{
+	background: url('../Assets/Diamond02.svg') top -150px right, url('../Assets/Diamond01.svg') top -280px left;
+	background-repeat: no-repeat;
+	background-size: 200px;
 	display: flex;
 	flex-direction: column;
 	background-color: #EBECEE;
 	justify-content: center;
-	height: 100%;
-	padding-top: 50px;
+	height: 100vh;
 }
 
 .tudo h1{
@@ -19,6 +18,12 @@ body{
 	color: #032C66;
 	text-align: center;
 	margin-top: auto;
+	font-size: 5vh;
+}
+
+.content{
+	display: flex;
+	justify-content: space-between;
 }
 
 .content img{
@@ -48,14 +53,68 @@ body{
 	display: flex;
 	font-weight: 500;
 	color: #1A1A1A;
+	font-size: 1rem;
 }
 
-.content{
-	margin: 0;
-}
+
 
 .content p {
 	font-weight: 700;
 	font-size: 0.7rem;
 	color: #1A1A1A;
+}
+
+.slide-content{
+	display: flex;
+	justify-content: center;
+	position: initial;
+}
+
+@media screen and (max-width: 768px){
+	.content p{
+		display: none;
+	}
+	.free-content p{
+		font-size: 0.8rem;
+	}
+	.content img{
+		width: 28vw;
+		height: 15vh;
+		padding-left: 3vw;
+	}
+
+	.slide-content .slick-slider{
+		display: contents;
+		position: absolute;
+	}
+	
+	.slide-content .slick-prev{
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		top: -2vh;
+    left: -2vw;
+		z-index: 10;
+	}
+
+	.slide-content .slick-next{
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		top: -2vh;
+    right: -2vw;
+		z-index: 10;
+	}
+	
+	.slide-content .slick-prev:before{
+		content: url('../Assets/PrevMob.svg');	
+	}
+	.slide-content .slick-next:before{
+		content: url('../Assets/NextMob.svg');	
+	}
+	.tudo{
+		height: 106.2vh;
+		background-image: none;
+	}
+
 }
