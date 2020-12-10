@@ -3,12 +3,20 @@ const keystone = require('keystone');
 const { Types } = keystone.Field;
 
 const WhoWeAre = new keystone.List('WhoWeAre', {
-	map: {name: 'description'},
-	nocreate: true,
-	nodelete: true,
+
+  map: {name: 'title'},
+  nocreate: true,
+  nodelete: true,
+
 });
 
 WhoWeAre.add({
+  title: {
+    type:Types.Text,
+    required: true,
+    initial: true,
+    index: true,
+  },
   description: {
 		type: Types.Text,
 		initial: true,
