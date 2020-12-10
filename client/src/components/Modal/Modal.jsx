@@ -84,7 +84,7 @@ return(
 							</div>
 
 							<div className="form-label">
-								<input className="form-input" 
+								<input id="telefone" className="form-input" 
 									type="text"
 									username={phone}
 									onChange={(e) => handlePhoneChange(e.target.value)}
