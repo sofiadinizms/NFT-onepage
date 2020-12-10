@@ -1,5 +1,88 @@
-.ourServicesSection {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
+
+.ourServicesSection {  
   display: flex;
   flex-direction: column;
-  background-color:gray;
+  background-color:#032C66;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.ourServicesSection h1 {
+  margin-top: 15vh;
+  align-self: center;
+  color: #EBECEE;
+}
+
+.slick-list {
+  height: 65vh;
+  margin-left: 12vw;
+  margin-right: 12vw;
+  margin-top: 2.5vh;
+  position: relative;
+}
+
+.slick-slider {
+  position: relative;
+  align-self: center;
+  width: 90vw;  
+}
+
+.slick-slider .slick-initialized button {
+  display:flex;
+  width: 10vw;
+}
+
+.slick-list .slick-track {
+  width: 90vw;
+  height: 65vh;
+}
+
+.slick-next {
+  display: flex;
+  background-color: red;
+  position: absolute;
+  align-self: flex-end;
+}
+
+.slick-slide {
+  background-color: blue;
+  margin-left: 1vw;
+  transition: .5s;
+}
+
+.slick-active{
+  background-color: purple;
+  align-self: center;
+  width: 50vw;
+}
+
+.slick-slide:hover {
+  /* background-color: black; */
+  min-width: 80vw;
+  /* align-self: center; */
+  /* position: absolute; */
+  /* left: 10vw; */
+}
+
+.slick-slide img {
+  transition: .5s;
+}
+
+.slick-slide img:hover {
+  /* background-color: black; */
+  width: 100%;
+  height: auto;
+  /* align-self: center; */
+  /* position: absolute; */
+  /* left: 10vw; */
 }

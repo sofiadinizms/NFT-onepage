@@ -21,13 +21,15 @@ function OurServices (){
   }, []);
 
   const settings = {
-    className: "center",
+    // className: "center",
     centerMode: true,
     infinite: true,
-    centerPadding: "50vw",
+    // centerPadding: "10vw",
     slidesToShow: 2,
-    speed: 500,    
+    speed: 900,    
     arrows: true,
+    dots: true,
+    slidesToScroll: 1,
   };
   return (
     <div className="ourServicesSection">
@@ -40,8 +42,7 @@ function OurServices (){
           image = {OurServices.image}
           description = {OurServices.description}
           />))}
-        </Slider>          
-      <div className="">botões</div>
+        </Slider>                
     </div> 
     );
 };
