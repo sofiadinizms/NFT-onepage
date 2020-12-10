@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 .toolbar{
-	width: 100%;
+	width: 100vw;
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: transparent;
+	background: #FFFFFF;
 	height: 56px;
 	z-index: 300;
 	font-family: 'Poppins', sans-serif;

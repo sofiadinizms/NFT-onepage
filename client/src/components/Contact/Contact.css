@@ -261,7 +261,7 @@ button:hover{
     height: 6vh;
     width: 20vw;
     font-size: 2.5vh;
-    position: absolute;
+    position: sticky;
   }
 
   img {
