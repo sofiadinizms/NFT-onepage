@@ -10,11 +10,8 @@
   display: flex;
   flex-direction: column;
   background-color:#032C66;
-  position: relative;
   height: 100vh;
   width: 100vw;
-  justify-content: center;
-  /* align-items: center; */
 }
 
 .ourServicesSection h1 {
@@ -28,61 +25,72 @@
   margin-left: 12vw;
   margin-right: 12vw;
   margin-top: 2.5vh;
-  position: relative;
 }
 
 .slick-slider {
-  position: relative;
   align-self: center;
   width: 90vw;  
 }
 
-.slick-slider .slick-initialized button {
-  display:flex;
-  width: 10vw;
-}
-
-.slick-list .slick-track {
+/* .slick-list .slick-track {
   width: 90vw;
   height: 65vh;
-}
-
-.slick-next {
-  display: flex;
-  background-color: red;
-  position: absolute;
-  align-self: flex-end;
-}
+} */
 
 .slick-slide {
-  background-color: blue;
+  /* background-color: blue; */
   margin-left: 1vw;
   transition: .5s;
 }
 
 .slick-active{
-  background-color: purple;
+  /* background-color: purple; */
   align-self: center;
   width: 50vw;
 }
 
+.slick-prev:before,
+.slick-next:before {
+  color: #777777;
+}
+
+.slick-prev{
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	left: 41.5vw;
+  z-index: 10;
+  top: 70vh;	
+}
+
+.slick-prev:before{
+	content: url('../Assets/Path_prev_services.png');
+	
+}
+.slick-next:before{
+	content: url('../Assets/Path_next_services.png');
+	
+}
+
 .slick-slide:hover {
-  /* background-color: black; */
+  background-color: black;
   min-width: 80vw;
-  /* align-self: center; */
+  align-self: center;
+  overflow-x: visible;
   /* position: absolute; */
-  /* left: 10vw; */
+  left: 10vw;  
 }
 
 .slick-slide img {
   transition: .5s;
 }
 
-.slick-slide img:hover {
-  /* background-color: black; */
-  width: 100%;
-  height: auto;
-  /* align-self: center; */
-  /* position: absolute; */
-  /* left: 10vw; */
+.slick-slide img:hover { 
+  background-color: black;
+  width: 80vw;
+  height: auto; 
+  overflow-x: visible; 
+  align-self: center;
+  position: absolute;
+  left: 10vw;
 }
