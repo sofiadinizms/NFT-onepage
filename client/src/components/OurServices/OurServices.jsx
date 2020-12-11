@@ -20,16 +20,24 @@ function OurServices (){
     loadServices();
   }, []);
 
+  // const settings = {
+  //   className: "center",
+  //   centerMode: true,
+  //   infinite: true,
+  //   centerPadding: "10vw",
+  //   slidesToShow: 1,
+  //   speed: 900,    
+  //   arrows: true,
+  //   dots: true,
+  //   slidesToScroll: 1,
+  // };
+
   const settings = {
-    // className: "center",
-    centerMode: true,
-    infinite: true,
-    // centerPadding: "10vw",
-    slidesToShow: 2,
-    speed: 900,    
-    arrows: true,
     dots: true,
-    slidesToScroll: 1,
+    infinite: true,
+    speed: 900,
+    slidesToShow: 1,
+    slidesToScroll: 1
   };
   return (
     <div className="ourServicesSection">
