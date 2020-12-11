@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {
-  PostList,
+  OurServices,
   Contact,
   Banner,
 	WhoWeAre
@@ -48,35 +48,19 @@ class App extends Component {
 						<WhoWeAre/>
 					</div>
 					<div>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
+						<OurServices/>
 					</div>
 					<div>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
+						<p>OurClients</p>
 					</div>
 					<div>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
+						<p>OurBlog</p>						
 					</div>
 					<div>
 						<Contact/>
 					</div>
 					<div>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
+						<p>Footer</p>						
 					</div>
 				</main>
 			</div>
