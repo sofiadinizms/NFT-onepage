@@ -18,6 +18,31 @@ function Contact () {
   const [subject, setSubject] = useState('') ;
   const [value, setValue] = useState('');
 
+
+  async function handleSubmit(event){
+    try {
+      event.preventDefault();
+
+      await axios.post('http://localhost:3001/api/contact', {
+        username,
+        email,
+        phone,
+        subject,
+        value,
+      });
+
+      setUsername('');
+      setEmail('');
+      setPhone('');
+      setSubject('');
+      setValue('');
+
+      console.log('Email enviado com sucesso!');
+    } catch (err) {
+      console.log(err?.response || err);
+    }
+  }
+
   function handleUsernameChange(text) {
     setUsername(text);
 
@@ -69,7 +94,7 @@ function Contact () {
   }
 
   return (
-    <div className="contact">
+    <form method='POST' action='/' className="contact" onSubmit={(e) => handleSubmit(e)}>
       <div className="info">
         <h1>Contato</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -120,7 +145,7 @@ function Contact () {
       <div className="image_delta">
         <img src ={contact} alt=""/>        
       </div>
-    </div>
+    </form>
   )
 }
 

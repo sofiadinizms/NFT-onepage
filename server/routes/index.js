@@ -109,13 +109,15 @@ module.exports = (app) => {
 		res.redirect('/');
   });
   
-  app.post('/contato', async (req, res, next) => {
+  app.post('/api/contact', async (req, res, next) => {
     try {
-      const { name, email, subject, message } = req.body;
+      const { name, email, phone, subject, message } = req.body;
   
       const body = `
         Nome: ${name}
         Email: ${email}
+        Telefone: ${phone}
+        Assunto: ${subject}
         Mensagem: ${message}`;
   
       await mailServer({
