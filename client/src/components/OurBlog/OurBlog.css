@@ -69,6 +69,17 @@
 	display: flex;
 	justify-content: center;
 	position: initial;
+	cursor: pointer;
+}
+
+.acesseCnt{
+	margin: 2vw;
+}
+
+.parteBaixo{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 @media screen and (max-width: 768px){

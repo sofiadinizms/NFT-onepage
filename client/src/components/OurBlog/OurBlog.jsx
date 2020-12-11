@@ -18,20 +18,35 @@ function OurBlog(){
     infinite: false,
     speed: 500,
     slidesToShow: 4,
-		slidesToScroll: 0,
+		slidesToScroll: 1,
 		arrows: false,
 		responsive: [
 			{
 				breakpoint: 768,
 				settings: {
 					slidesToShow: 2,
+					infinite: true,
 					arrows: true,
 					slidesToScroll: 1,
 					cssEase: "linear",
+					componentDidMount: function () {
+						window.addEventListener('resize', this.onWindowResized);
+					},
+				
+					componentWillUnmount:function () {
+						window.removeEventListener('resize', this.onWindowResized);
+					},
+				
+					onWindowResized: function () {
+						// Debouncing using underscore _.debounce is optionnal
+							this.forceUpdate()
+					},
 				}
 			}
 		]
 	}
+
+	
 
 	return(
 		<div>
@@ -42,26 +57,36 @@ function OurBlog(){
 				<OurBlogSlide />
 				
 				<div className="free-content">
-					<p>Acesse conteúdos gratuitos:</p>
+					<div className="parteBaixo">
+					<p className="acesseCnt">Acesse conteúdos gratuitos:</p>
 					<div className="contents">
 						<Sliderr className="slide-content" {...settings}>
+							<div>
 						<Modal
 							image = {Cd01}
 							name = "Nome do conteúdo"
 						/>
+						</div>
+						<div>
 						<Modal 
 							image = {Cd02}
 							name = "Nome do conteúdo"
 						/>
+						</div>
+						<div>
 						<Modal 
 							image = {Cd03}
 							name = "Nome do conteúdo"
 						/>
+						</div>
+						<div>
 						<Modal 
 							image = {Cd04}
 							name = "Nome do conteúdo"
 						/>
+						</div>
 						</Sliderr>
+					</div>
 					</div>
 				</div>
 				</div>

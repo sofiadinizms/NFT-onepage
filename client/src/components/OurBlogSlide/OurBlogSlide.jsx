@@ -44,6 +44,7 @@ function OurBlogSlide (){
 		<>	
 				<Slider className="carousel" {...settings}>
 					{blogs?.map(({_id, title, date, description, image, blogLink}) => (
+					<div>
 					<Card 
 						title = {title}
 						date = {date}
@@ -52,6 +53,7 @@ function OurBlogSlide (){
 						blogLink = {blogLink}
 						key = {_id}
 					/>
+					</div>
 					))}
 				</Slider>
 		</>

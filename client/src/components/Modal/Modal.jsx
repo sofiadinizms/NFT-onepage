@@ -48,10 +48,12 @@ function handlePhoneChange(text) {
 
 return(
   <Popup
-    trigger={<div className="content">
-		<img src={props.image} />
-		<p>{props.name}</p>
-	</div>}
+    trigger={
+		<div className="content">
+			<img src={props.image} />
+			<p>{props.name}</p>
+		</div>
+		}
     modal
     nested
   >
@@ -80,7 +82,7 @@ return(
 									onChange={ (e) => handleEmailChange(e.target.value) }
 									placeholder=""
 								/>
-								<label className={ isEmailActive ? "emailActive" : "email_phone"}>E-mail</label>
+								<label className={ isEmailActive ? "usernameActive" : "usernameInactive"}>E-mail</label>
 							</div>
 
 							<div className="form-label">
@@ -90,7 +92,7 @@ return(
 									onChange={(e) => handlePhoneChange(e.target.value)}
 									placeholder=""
 								/>
-								<label className={ isPhoneActive ? "phoneActive" : "email_phone"}>Telefone</label>
+								<label className={ isPhoneActive ? "usernameActive" : "usernameInactive"}>Telefone</label>
 							</div>
 							<button className="BotaoBaixar" type="submit">Baixar pdf</button>
 						</form>
