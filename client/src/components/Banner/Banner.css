@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+
+.banner{
+    width: 100vw;
+    height: 100vh;
+    float: left;
+    text-align: left;
+    padding: 3%;
+    background-image:linear-gradient(180deg, rgba(3, 44, 102, 0) 0%, rgba(3, 44, 102, 0.00625) 1.51%, rgba(3, 44, 102, 0.3) 72.32%), url(../Assets/banner_image.jpg);
+    mix-blend-mode: normal;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#logo{
+    display: none;
+}
+
+#title{
+    margin-top: 40vh;
+    margin-right: 40vw;
+    margin-left: 15vw;
+    margin-bottom: 1%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 350%;
+    line-height: 8vh;
+    letter-spacing: -0.01vh;
+    color: #EBECEE;
+}
+
+#description{
+    margin-top: 1%;
+    margin-right: 30vw;
+    margin-left: 15vw;
+    margin-bottom: 1%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 200%;
+    letter-spacing: -0.1vh;
+    color: #EBECEE;
+}
+
+#our_services{
+    margin-top: 1%;
+    margin-left: 15vw;
+    margin-right: 60vw;
+    padding-right: 2em;
+    text-decoration: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 200%;
+    letter-spacing: -0.015vw;
+    color: #EBECEE;
+    border-bottom: 3px solid;
+    display: inline-block;
+}
+
+
+.container{
+    display: none;
+}
+
+@media screen and (max-width: 1025px){
+    .banner{
+        height: 100vh;
+    }
+    #logo{
+        display: inline-block;
+        height: 7vh;
+        width: auto;
+        margin-top: 1vw;
+    }
+
+    #title, #description{
+        margin-left: 3vw;
+        margin-right: 20vw;
+    }
+
+    #title{
+        font-weight: 700;
+        font-style: normal;
+        font-size: 5.5vw;
+        margin-top: 30vh;
+        line-height: 5vh;
+    }
+
+    #description{
+        font-size: 4.5vw;
+    }
+
+    #our_services{
+        margin-left: 2vw;
+        margin-right: 20vw;
+        margin-bottom: 0%;
+        font-size: 5vw;
+        padding-right: 5%;
+        border-bottom: 3px solid #EBECEE;
+    }
+
+    .arrow {
+        box-sizing: border-box;
+        height: 10vw;
+        width: 10vw;
+        margin-top: 22vw;
+        border-style: solid;
+        border-color: #EBECEE;
+        border-width: 0px 1px 1px 0px;
+        border-bottom-width: 2vw;
+        border-right-width: 2vw;
+        transform: rotate(45deg);
+        transition: border-width 150ms ease-in-out;
+    }
+      
+    .container {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin-left: 45vw;
+        margin-right: 45vw;
+        height: 15vh;
+    }
+    
+}
