@@ -66,7 +66,7 @@
     display: none;
 }
 
-@media screen and (max-width: 1025px){
+@media screen and (max-width: 1024px){
     .banner{
         height: 100vh;
     }
@@ -76,12 +76,10 @@
         width: auto;
         margin-top: 1vw;
     }
-
     #title, #description{
         margin-left: 3vw;
         margin-right: 20vw;
     }
-
     #title{
         font-weight: 700;
         font-style: normal;
@@ -89,11 +87,9 @@
         margin-top: 30vh;
         line-height: 5vh;
     }
-
     #description{
         font-size: 4.5vw;
     }
-
     #our_services{
         margin-left: 2vw;
         margin-right: 20vw;
@@ -102,7 +98,6 @@
         padding-right: 5%;
         border-bottom: 3px solid #EBECEE;
     }
-
     .arrow {
         box-sizing: border-box;
         height: 10vw;
@@ -115,14 +110,11 @@
         border-right-width: 2vw;
         transform: rotate(45deg);
         transition: border-width 150ms ease-in-out;
-    }
-      
+    } 
     .container {
         display: block;
         align-items: center;
         justify-content: center;
-        margin-left: 45vw;
-        margin-right: 45vw;
         height: 15vh;
     }
     
