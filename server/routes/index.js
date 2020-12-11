@@ -18,11 +18,11 @@ const dotenv = require('dotenv');
 const createRouter = require('keystone/lib/core/createRouter');
 
 const router = require('express').Router();
-const mailController = require('./mailController');
+const mailController = require('../MailServer/mailController');
 
-router.route('/form').post(mailController);
+//router.route('/form').post(mailController);
 
-module.exports = router;
+//module.exports = router;
 
 module.exports = (app) => {
   app.use(cors());
@@ -118,5 +118,6 @@ module.exports = (app) => {
 		res.redirect('/');
   });
   
+  app.post('/api/contact', mailController);
 };
 

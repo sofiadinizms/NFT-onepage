@@ -23,11 +23,11 @@ function Contact () {
       event.preventDefault();
 
       await axios.post('http://localhost:3001/api/contact', {
-        username,
+        name:username,
         email,
         phone,
         subject,
-        value,
+        message:value,
       });
 
       setUsername('');
@@ -100,8 +100,8 @@ function Contact () {
         <div className="label-float">
           <input 
             type="text"
-            username={username}
-            onChange={(e) => handleUsernameChange(e.target.username)}
+            value={username}
+            onChange={(e) => handleUsernameChange(e.target.value)}
             placeholder=""/>
             <label className={ isUsernameActive ? "usernameActive" : "usernameInactive"}>Nome</label>
         </div>
@@ -109,7 +109,7 @@ function Contact () {
           <div className="label-float">
             <input
             type="text"
-            email={email}
+            value={email}
             onChange={(e) => handleEmailChange(e.target.value)}
             placeholder=""/>
             <label className={ isEmailActive ? "emailActive" : "email_phone"}>E-mail</label>
@@ -117,7 +117,7 @@ function Contact () {
           <div className="label-float">
             <input
             type="text"
-            phone={phone}
+            value={phone}
             onChange={(e) => handlePhoneChange(e.target.value)}
             placeholder=""/>
             <label className={ isPhoneActive ? "phoneActive" : "email_phone"}>Telefone</label>
@@ -126,7 +126,7 @@ function Contact () {
         <div className="label-float">
           <input
           type="text"
-          subject={subject}
+          value={subject}
           onChange={(e) => handleSubjectChange(e.target.value)}
           placeholder=""/>
           <label className={ isSubjectActive ? "subjectActive" : ""}>Assunto</label>
