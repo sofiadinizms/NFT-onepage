@@ -17,11 +17,16 @@ Service.add({
 		index: true,
 	},
 	image: {
-    type: Types.CloudinaryImage,
+    type: Types.CloudinaryImages,
 		require: true,
-		index: true,
+		//index: true,
 		initial: true,
 		singleImage: true,
 	},
+	description: {
+		type: Types.Text,
+		require: true,
+		initial: true,		
+	}
 });
 Service.register();
