@@ -71,7 +71,6 @@
 
 .slick-dots li button{
   margin-bottom: -8vh;
-  /* background-color: red; */
 }
 
 .slick-dots li button:before {
@@ -81,26 +80,78 @@
 	content: url('../Assets/Rectangle_services.png');
 }
 
-/* .slick-slide:hover {
-  background-color: black;
-  min-width: 80vw;
-  align-self: center;
-  overflow-x: visible;
-  position: absolute;
-  left: 10vw;  
-} */
 
 .slick-slide img {
-  /* transition: .5s; */
   z-index: -1;
 }
 
-/* .slick-slide img:hover { 
-  background-color: black;
-  width: 80vw;
-  height: auto; 
-  overflow-x: visible; 
-  align-self: center;
-  position: absolute;
-  left: 10vw;
-} */
+@media (max-width: 1280px){
+  .ourServicesSection h1 {
+    margin-top: 10vh;
+    font-size: 120%;
+  }
+  
+  .slick-list {
+    height: 90vh;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 5vh;
+    /* background-color: red; */
+  }
+  
+  .slick-slider {
+    align-self: center;
+    width: 90vw;  
+  }
+  
+  .slick-slide {
+    min-width: 65vw;
+    transition: .5s;
+  }
+
+  .service-card {
+    margin-top: 0;
+    width: 90vw;
+    height: 70vh;
+  }
+
+  .service-card img {
+    height: 100%;
+    width: auto;    
+  }
+
+  .service-card h1 {
+    z-index: 0;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 95%;
+    position: absolute;
+    top: 25vh;
+    margin-left: 4vw;
+  }
+
+  .service-card p {
+    top: 40vh;
+    margin-left: 4vw; 
+    margin-right: 4vw;
+    font-size: 75%;
+    font-weight: 400;
+  }
+
+  .slick-prev{
+    left: 25vw;
+    top: 76vh;  	
+  }
+  
+  .slick-next{
+    right: 25vw;
+    top: 76vh;
+  }
+
+  .slick-list {
+    height: 70.5vh;
+    margin-top: 2.5vh;
+    z-index: 10;
+  }
+}

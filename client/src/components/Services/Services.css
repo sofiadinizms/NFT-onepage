@@ -9,7 +9,6 @@
   margin-top: 1vh;
   display: flex;
   text-align: left;  
-  /* flex-direction: column; */
   width: 65vw;
   height: 63vh;
   position: relative;
@@ -31,7 +30,6 @@
 }
 
 .service-card p {
-  /* display: none; */
   z-index: 1;
   font-family: Poppins;
   font-style: normal;
