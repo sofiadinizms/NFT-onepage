@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import {
   OurServices,
   Contact,
-  Banner
+  Banner,
+	WhoWeAre
 } from './components';
 import drawerToogleButton from './components/SideDrawer/DrawerToggleButton';
 import Toolbar from './components/Toolbar/Toolbar'
@@ -39,44 +40,27 @@ class App extends Component {
 				<SideDrawer show={this.state.sideDrawerOpen}></SideDrawer>
 			
 				{backdrop}
-				<main style={{marginTop: '64px'}}>
-					<p>This is the page content!</p>
+				<main style={{marginTop: '64px'}}>					
 					<div>
 						<Banner/>
+					</div>
+					<div>
+						<p>WhoWeAre</p>
 					</div>
 					<div>
 						<OurServices/>
 					</div>
 					<div>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
+						<p>OurClients</p>
 					</div>
 					<div>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-					</div>
-					<div>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
+						<p>OurBlog</p>						
 					</div>
 					<div>
 						<Contact/>
 					</div>
 					<div>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
+						<p>Footer</p>						
 					</div>
 				</main>
 			</div>
