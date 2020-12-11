@@ -18,8 +18,7 @@ function Contact () {
   const [subject, setSubject] = useState('') ;
   const [value, setValue] = useState('');
 
-
-  async function handleSubmit(event){
+  const handleSubmit = async (event) => {
     try {
       event.preventDefault();
 
