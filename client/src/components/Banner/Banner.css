@@ -40,7 +40,7 @@
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
-    font-size: 200%;
+    font-size: 150%;
     letter-spacing: -0.1vh;
     color: #EBECEE;
 }
@@ -54,7 +54,7 @@
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
-    font-size: 200%;
+    font-size: 150%;
     letter-spacing: -0.015vw;
     color: #EBECEE;
     border-bottom: 3px solid;
@@ -83,18 +83,18 @@
     #title{
         font-weight: 700;
         font-style: normal;
-        font-size: 5.5vw;
+        font-size: 6vw;
         margin-top: 30vh;
         line-height: 5vh;
     }
     #description{
-        font-size: 4.5vw;
+        font-size: 4vw;
     }
     #our_services{
-        margin-left: 2vw;
+        margin-left: 3vw;
         margin-right: 20vw;
         margin-bottom: 0%;
-        font-size: 5vw;
+        font-size: 4.5vw;
         padding-right: 5%;
         border-bottom: 3px solid #EBECEE;
     }
