@@ -9,7 +9,7 @@ body{
 .OurClients{
     background: url('../Assets/Vector_21.png') top -220px right, url('../Assets/Vector_10.png') bottom -90px left, url('../Assets/Vector_9.png') bottom -480px right,  #e5e5e5;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     z-index: 2;
     margin: 0px;
