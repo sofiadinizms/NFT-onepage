@@ -14,6 +14,15 @@ const ArticleCarousel = keystone.list('ArticleCarousel');
 const WhoWeAre = keystone.list('WhoWeAre')
 
 const mailServer = require('../MailServer/mailServer');
+const dotenv = require('dotenv');
+const createRouter = require('keystone/lib/core/createRouter');
+
+const router = require('express').Router();
+const mailController = require('./mailController');
+
+router.route('/form').post(mailController);
+
+module.exports = router;
 
 module.exports = (app) => {
   app.use(cors());
@@ -109,28 +118,5 @@ module.exports = (app) => {
 		res.redirect('/');
   });
   
-  app.post('/api/contact', async (req, res, next) => {
-    try {
-      const { name, email, phone, subject, message } = req.body;
-  
-      const body = `
-        Nome: ${name}
-        Email: ${email}
-        Telefone: ${phone}
-        Assunto: ${subject}
-        Mensagem: ${message}`;
-  
-      await mailServer({
-        destinationUser: process.env.CLIENT_EMAIL,
-        subjectText: subject,
-        textOption: body,
-      });
-  
-      res.status(200).send('Everything is alright');
-    } catch (error) {
-      res.status(500).send('Ops, something is wrong...');
-      console.log(error);
-    }
-  })
 };
 
