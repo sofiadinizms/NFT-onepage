@@ -264,7 +264,7 @@ button:hover{
     position: absolute;
   }
 
-  img {
+  .image_delta img {
     display:none;
   }
 
