@@ -7,15 +7,15 @@ function Card(props){
 
 	return (
 		<div className="card">
-					<div className="photo">
-						<img className="image" src={props.image[0]?.url} />
+					<div className="photoCard">
+						<img className="imageCard" src={props.image[0]?.url} />
 					</div>	
-					<div className="infos">
-						<div className="titulos">
+					<div className="infosCard">
+						<div className="titulosCard">
 							<p className="tit">{props.title}</p>
 							<p className="sub-tit">{props.date}</p>
 						</div>
-						<div className="text">
+						<div className="textCard">
 							<p>{props.description} <a className="hiperLink" href={props.blogLink}> Continue a ler...</a></p>
 							
 						</div>

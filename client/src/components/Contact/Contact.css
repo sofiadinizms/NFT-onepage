@@ -181,7 +181,7 @@
   height: 80vh;
 }
 
-button {
+.button_ontact {
   align-self: flex-end;
   position: absolute;
   bottom: 5vh;
@@ -252,7 +252,7 @@ button:hover{
     margin-left: 0;
   }
 
-  button {
+  .button_ontact {
     background-color: #ebecee;
     align-self: center;
     color: #032C66;

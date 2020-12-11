@@ -54,14 +54,16 @@ function OurBlog(){
 				<div className="partes">
 				<h1>Nosso blog</h1>
 				
+				<div className="BlogSlide">
 				<OurBlogSlide />
-				
+				</div>
+
 				<div className="free-content">
 					<div className="parteBaixo">
 					<p className="acesseCnt">Acesse conteúdos gratuitos:</p>
 					<div className="contents">
 						<Sliderr className="slide-content" {...settings}>
-							<div>
+						<div>
 						<Modal
 							image = {Cd01}
 							name = "Nome do conteúdo"

@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .card{
-	max-width: 40vw;
+	max-width: 30vw;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: row;
 	font-family: 'Poppins', sans-serif;
 }
 
-.image{
+.imageCard{
 	width: 15vw;
   height: 20vh;
   object-fit: cover;
@@ -16,16 +16,17 @@
   margin-right: 20px;
 }
 
-.titulos p{
+.titulosCard p{
 	margin: 0;
 }
 
 
-.infos{
+.infosCard{
 	margin-top: 7%;
+	text-align: initial;
 }
 
-.text{
+.textCard{
 	max-width: 240px;
 	font-size: 0.8rem;
 	color: #1A1A1A;
@@ -49,18 +50,22 @@
 	color: #235FB4;
 }
 
+.photoCard{
+	margin: 0;
+}
+
 @media screen and (max-width: 768px){
 	.card{
 		flex-direction: column;
 		max-width: 90vw;
 	}
 
-	.image{
-		width: 100%;
+	.imageCard{
+		width: 90%;
   	height: 20vh;
 	}
 
-	.text{
+	.textCard{
 		max-width: 100%;
 	}
 }

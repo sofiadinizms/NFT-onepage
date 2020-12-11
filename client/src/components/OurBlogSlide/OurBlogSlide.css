@@ -1,46 +1,46 @@
 
-.slick-slider{
+.carousel .slick-slider{
 	max-width: 70vw;
   align-items: center;
 	left: 17%;
 	display: block;
 	position: relative;
 }
-.slick-slide {
+.carousel .slick-slide {
   /*text-align: center;*/
-  position: relative;
+	position: relative;
 }
 
-.slick-prev:before,
+.carousel .slick-prev:before,
 .slick-next:before {
   color: #777777;
 }
 
 
-.slick-prev{
+.carousel .slick-prev{
 	position: absolute;
 	display: flex;
 	flex-direction: row;
-	left: 28vw;
+	left: 33vw;
 	z-index: 10;
 	
 }
 
-.slick-prev:before{
+.carousel .slick-prev:before{
 	content: url('../Assets/prev.svg');
 	
 }
 
-.slick-next:before{
+.carousel .slick-next:before{
 	content: url('../Assets/next.svg');
 	
 }
 
-.slick-next{
+.carousel .slick-next{
 	position: absolute;
 	display: flex;
 	flex-direction: row;
-	right: 28vw;
+	right: 43vw;
 	z-index: 10;
 }
 
@@ -52,79 +52,80 @@
 }
 */
 
-.slick-prev, .slick-next{
+.carousel .slick-prev, .slick-next{
 	
 	height: 0px;
-	top: 101%
+	top: 100%
 }
 
-.slick-dots{
+.carousel .slick-dots{
 	display: flex;
   align-items: center;
   justify-content: center;
   top: auto;
-  padding: 0;
+	padding: 0;
+	right: 5vw;
 }
 
 
-.slick-dots li button:before {
+.carousel .slick-dots li button:before {
 	content: url('../Assets/RectangleSem.svg');
 }
 
-.slick-dots li.slick-active button:before{
+.carousel .slick-dots li.slick-active button:before{
 	content: url('../Assets/RectangleCom.svg');
 }
 
 @media screen and (max-width: 1085px){
-	.slick-next{
-		right: 25vw;
+	.carousel .slick-next{
+		right: 40vw;
 	}
 
-	.slick-prev{
-		left: 25vw;
+	.carousel .slick-prev{
+		left: 30vw;
 	}
 }
 
 @media screen and (max-width: 768px){
-	.slick-dots{
+	.carousel .slick-dots{
 		top: auto;
 	}
 
-	.slick-next{
-		right: 20vw;
+	.carousel .slick-next{
+		right: 35vw;
 	}
 
-	.slick-prev{
-		left: 20vw;
+	.carousel .slick-prev{
+		left: 27vw;
 	}
 }
 
 @media screen and (max-width: 487px){
-	.slick-next{
+	.carousel .slick-next{
 		right: 15vw;
 	}
 
-	.slick-prev{
+	.carousel .slick-prev{
 		left: 15vw;
 	}
 }
 
 @media screen and (max-width: 349px){
-	.slick-next{
+	.carousel .slick-next{
 		right: 10vw;
 	}
 
-	.slick-prev{
+	.carousel .slick-prev{
 		left: 10vw;
 	}
 }
 
 @media screen and (max-width: 280px){
-	.slick-next{
+	.carousel .slick-next{
 		right: 8vw;
 	}
 
-	.slick-prev{
+	.carousel .slick-prev{
 		left: 8vw;
 	}
 }
