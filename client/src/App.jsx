@@ -3,6 +3,8 @@ import {
 	WhoWeAre,
 	Footer,
   PostList,
+  Contact,
+  Banner
 } from './components';
 import drawerToogleButton from './components/SideDrawer/DrawerToggleButton';
 import Toolbar from './components/Toolbar/Toolbar'
@@ -42,11 +44,7 @@ class App extends Component {
 				<main style={{marginTop: '64px'}}>
 					<p>This is the page content!</p>
 					<div>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
+						<Banner/>
 					</div>
 					<div>
 						{/* <WhoWeAre/> */}
@@ -73,11 +71,7 @@ class App extends Component {
 						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
 					</div>
 					<div>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
+						<Contact/>
 					</div>
 					<div>
 						<Footer/>
