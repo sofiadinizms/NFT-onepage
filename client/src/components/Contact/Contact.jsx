@@ -1,6 +1,7 @@
-import React, {useState} from 'react';
-import './Contact.css'
 import contact from "./../Assets/contact.jpg"
+import React, {useState} from 'react';
+import axios from 'axios';
+import './Contact.css'
 
 
 
