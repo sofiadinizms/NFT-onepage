@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react'
 import {
 	WhoWeAre,
 	Footer,
-  OurServices,
+	OurServices,
+	OurClients,
   Contact,
 	Banner,
 	OurBlog,	
@@ -48,7 +49,7 @@ function App () {
 				
 						<OurServices/>
 				
-						<p>OurClients</p>
+						<OurClients/>
 					
 						<OurBlog/>						
 				
