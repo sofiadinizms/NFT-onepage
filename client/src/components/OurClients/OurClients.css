@@ -7,7 +7,7 @@ body{
     display: none;
 }
 .OurClients{
-    background: url('../Assets/Vector_21.png') top -220px right, url('../Assets/Vector_10.png') bottom -90px left, url('../Assets/Vector_9.png') bottom -480px right,  #e5e5e5;
+    background: url('../Assets/Vector_21.png') top -250px right, url('../Assets/Vector_10.png') bottom -90px left, url('../Assets/Vector_9.png') bottom -480px right,  #e5e5e5;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
@@ -32,10 +32,9 @@ body{
 .slick-prev{
 	position: absolute;
 	display: flex;
-    padding-top: 60vh;
+    top: 65vh;
     left: 30vw;
-	z-index: 5;
-	
+	z-index: 10;
 }
 .slick-prev:before{
 	content: url('../Assets/prev.svg');
@@ -48,17 +47,17 @@ body{
 .slick-next{
 	position: absolute;
     display: flex;
-    padding-top: 60vh;
+    top: 65vh;
 	right: 30vw;
-    z-index: 5;
+    z-index: 10;
 }
 .slick-dots{
 	display: flex;
     align-items: center;
     justify-content: center;
     padding: 0;
-    padding-top: 60vh;
-    z-index: 5;
+    top: 64vh;
+    z-index: 10;
 }
 .slick-dots li button:before {
 	content: url('../Assets/gray_square.svg');
@@ -73,7 +72,7 @@ body{
     font-weight: 700;
     font-size: 3vw;
     margin-bottom: 0px;
-    padding-top: 15vh;
+    top: 60vh;
     z-index: 10;
 }
 .name{
@@ -145,6 +144,12 @@ body{
     }
     .name{
         font-size: 75%;
+    }
+    .slick-next{
+        right: 25vw;
+    }
+    .slick-prev{
+        left: 25vw;
     }
 }
 @media(max-width: 1200px){
@@ -257,5 +262,16 @@ body{
         font-size: 65%;
         letter-spacing: -0.015em;
         z-index: 10;
+    }
+    .slick-next{
+        right: 3vw;
+        top: 72.5vh;
+    }
+    .slick-prev{
+        left: 3vw;
+        top: 72.5vh;
+    }
+    .slick-dots{
+        top: 70vh;
     }
 }
