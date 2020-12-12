@@ -42,7 +42,7 @@ class App extends Component {
 			
 				{backdrop}
 				<main style={{marginTop: '64px'}}>					
-					<div>
+					{/* <div>
 						<Banner/>
 					</div>
 					<div>
@@ -56,10 +56,10 @@ class App extends Component {
 					</div>
 					<div>
 						<p>OurBlog</p>						
-					</div>
-					<div>
+					</div> */}
+					<>
 						<Contact/>
-					</div>
+					</>
 					<div>
 						<Footer/>
 					</div>

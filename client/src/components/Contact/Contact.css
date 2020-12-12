@@ -24,7 +24,8 @@
   position: relative; 
 }
 
-.info h1 {
+.info_contact {
+  text-align: left;
   font-family: Poppins;
   font-style: bold;
   font-size: 230%;
@@ -35,6 +36,7 @@
 }
 
 .info p {
+  text-align: left;
   font-family: Poppins;  
   font-size: 1.7vh;
   color: #2b2b2b;
@@ -181,7 +183,7 @@
   height: 80vh;
 }
 
-button {
+.info button {
   align-self: flex-end;
   position: absolute;
   bottom: 5vh;
@@ -198,7 +200,7 @@ button {
   transition: .5s;
 }
 
-button:hover{
+.info button:hover{
   background-color: #0850b4;
 }
 
@@ -212,7 +214,7 @@ button:hover{
     align-items: center;  
   }
 
-  .info h1 {
+  .info_contact {
     margin: 0;
     color: #ebecee;
   }
@@ -252,7 +254,7 @@ button:hover{
     margin-left: 0;
   }
 
-  button {
+  .info button {
     background-color: #ebecee;
     align-self: center;
     color: #032C66;

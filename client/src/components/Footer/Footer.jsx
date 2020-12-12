@@ -21,7 +21,7 @@ function Footer() {
   }, []);
 
   return (
-    <div className="footer">
+    <>
       {footer?.map(({address, phone, instagram}) => (
         <div className="footer_section">
           <div className="footer_infos">
@@ -36,12 +36,11 @@ function Footer() {
               </p>
               <p>Nos acompanhe nas redes sociais!</p>
             </div>                   
-            <div className="adress_credits">
-              <p>Endereço: {address}</p>
+            <div className="address_credits">
+              <p id="address" >Endereço: {address}</p>
               <div className="credits">
-                <p>Made with and </p>
-                <img src={Heart}/>
-                <p> by</p>
+                <p>Made with <strong>&lt; &#x0002F; &gt;
+                  </strong> and <strong>&hearts;</strong> by </p>
                 <img src={Logo_CITi}/>
               </div>
             </div> 
@@ -51,7 +50,7 @@ function Footer() {
           </div> 
         </div>
       ))}
-    </div>
+    </>
   );
 }
 
