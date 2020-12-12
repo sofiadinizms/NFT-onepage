@@ -8,7 +8,7 @@ function Banner() {
   const [banners, setBanners] = useState([]);
 
   const loadBanners = async() => {
-    const res = await axios.get('http://localhost:3001/api/banners');
+    const res = await axios.get('https://delta-odontologia.herokuapp.com/api/banners');
     setBanners(res.data);
   }
 
