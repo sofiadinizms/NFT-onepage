@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-body{
-    background-color: #e5e5e5;
-}
-.clientMobile{
+.OurClients .clientMobile{
     display: none;
 }
 .OurClients{
@@ -14,44 +11,44 @@ body{
     z-index: 2;
     margin: 0px;
 }
-.slick-slider{
+.OurClients .slick-slider{
 	max-width: 70vw;
     align-items: center;
 	left: 15%;
 	display: block;
 	position: relative;
 }
-.slick-slide {
+.OurClients .slick-slide {
   position: relative;
 }
 
-.slick-prev:before,
+.OurClients .slick-prev:before,
 .slick-next:before {
   color: #777777;
 }
-.slick-prev{
+.OurClients .slick-prev{
 	position: absolute;
 	display: flex;
     top: 65vh;
     left: 30vw;
 	z-index: 10;
 }
-.slick-prev:before{
+.OurClients .slick-prev:before{
 	content: url('../Assets/prev.svg');
 	
 }
-.slick-next:before{
+.OurClients .slick-next:before{
 	content: url('../Assets/next.svg');
 	
 }
-.slick-next{
+.OurClients .slick-next{
 	position: absolute;
     display: flex;
     top: 65vh;
 	right: 30vw;
     z-index: 10;
 }
-.slick-dots{
+.OurClients .slick-dots{
 	display: flex;
     align-items: center;
     justify-content: center;
@@ -59,10 +56,10 @@ body{
     top: 64vh;
     z-index: 10;
 }
-.slick-dots li button:before {
+.OurClients .slick-dots li button:before {
 	content: url('../Assets/gray_square.svg');
 }
-.slick-dots li.slick-active button:before{
+.OurClients .slick-dots li.slick-active button:before{
 	content: url('../Assets/blue_square.svg');
 }
 #title{
@@ -75,7 +72,7 @@ body{
     top: 60vh;
     z-index: 10;
 }
-.name{
+.OurClients .name{
     color: #032c66;
     font-family: Poppins;
     font-size: 100%;
@@ -83,21 +80,21 @@ body{
     letter-spacing: -0.015em;
     z-index: 10;
 }
-.client{
+.OurClients .client{
     margin-top: 5vh;
     align-content: center;
     display: flex;
     flex-direction: row;
     z-index: 10;
 }
-.image{
+.OurClients .image{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0;
     z-index: 10;
 }
-.client_photo{
+.OurClients .client_photo{
     display: block;
     height: 270px;
     width: 306px;
@@ -105,7 +102,7 @@ body{
     object-fit: cover;
     justify-content: center;
 }
-.testimony{
+.OurClients .testimony{
     color: #1A1A1A;
     font-family: Poppins;
     font-style: normal;
@@ -114,41 +111,41 @@ body{
     letter-spacing: -0.015em;
     z-index: 10;
 }
-.right{
+.OurClients .right{
     margin-right: 306px;
     text-align: left;
 }
-.left{
+.OurClients .left{
     margin-left: 306px;
     text-align: right;
 }
-.nameLeft{
+.OurClients .nameLeft{
     margin-left: 306px;
 }
-.text{
+.OurClients .text{
     display: block;
     margin: 1vw;
     z-index: 10;
 }
 @media(max-width: 1480px){
-    .testimony{
+    .OurClients .testimony{
         font-size: 90%;
     }
-    .name{
+    .OurClients .name{
         font-size: 90%;
     }
 }
 @media(max-width: 1360px){
-    .testimony{
+    .OurClients .testimony{
         font-size: 75%;
     }
-    .name{
+    .OurClients .name{
         font-size: 75%;
     }
-    .slick-next{
+    .OurClients .slick-next{
         right: 25vw;
     }
-    .slick-prev{
+    .OurClients .slick-prev{
         left: 25vw;
     }
 }
@@ -162,23 +159,23 @@ body{
         font-size: 5vw;
         padding: 0;
     }
-    .testimony{
+    .OurClients .testimony{
         font-size: 60%;
     }
-    .name{
+    .OurClients .name{
         font-size: 60%;
     }
-    .image .client_photo{
+    .OurClients .image .client_photo{
         height: 210px;
         width: 238px;
     }
-    .right{
+    .OurClients .right{
         margin-right: 238px;
     }
-    .left{
+    .OurClients .left{
         margin-left: 238px;
     }
-    .nameLeft{
+    .OurClients .nameLeft{
         margin-left: 238px;
     }
 }
@@ -192,23 +189,23 @@ body{
         font-size: 4vw;
         padding: 0;
     }
-    .testimony{
+    .OurClients .testimony{
         font-size: 45%;
     }
-    .name{
+    .OurClients .name{
         font-size: 45%;
     }
-    .image .client_photo{
+    .OurClients .image .client_photo{
         height: 150px;
         width: 170px;
     }
-    .right{
+    .OurClients .right{
         margin-right: 170px;
     }
-    .left{
+    .OurClients .left{
         margin-left: 170px;
     }
-    .nameLeft{
+    .OurClients .nameLeft{
         margin-left: 170px;
     }
 }
@@ -222,23 +219,23 @@ body{
         align-items: center;
         align-content: center;
     }
-    .client{
+    .OurClients .client{
         display: none;
     }
-    .clientMobile{
+    .OurClients .clientMobile{
         margin-top: 5vh;
         align-content: center;
         display: block;
         z-index: 10;
     }
-    .imageMobile{
+    .OurClients .imageMobile{
         display: inline;
         align-items: center;
         justify-content: center;
         padding: 0;
         z-index: 10;
     }
-    .clientPhotoMobile{
+    .OurClients .clientPhotoMobile{
         display: block;
         height: 45vw;
         width: 90vw;
@@ -246,7 +243,7 @@ body{
         object-fit: cover;
         justify-content: center;
     }
-    .nameMobile{
+    .OurClients .nameMobile{
         color: #032c66;
         font-family: Poppins;
         font-size: 60%;
@@ -254,7 +251,7 @@ body{
         letter-spacing: -0.015em;
         z-index: 10;
     }
-    .testimonyMobile{
+    .OurClients .testimonyMobile{
         color: #1A1A1A;
         font-family: Poppins;
         font-style: normal;
@@ -263,15 +260,15 @@ body{
         letter-spacing: -0.015em;
         z-index: 10;
     }
-    .slick-next{
+    .OurClients .slick-next{
         right: 3vw;
         top: 72.5vh;
     }
-    .slick-prev{
+    .OurClients .slick-prev{
         left: 3vw;
         top: 72.5vh;
     }
-    .slick-dots{
+    .OurClients .slick-dots{
         top: 70vh;
     }
 }
