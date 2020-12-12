@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import {
+	WhoWeAre,
+	Footer,
   OurServices,
   Contact,
 	Banner,
-	OurBlog,
-	WhoWeAre
+	OurBlog,	
 } from './components';
 
 import drawerToogleButton from './components/SideDrawer/DrawerToggleButton';
@@ -53,7 +54,8 @@ function App () {
 				
 						<Contact/>
 					
-						<p>Footer</p>						
+					
+						<Footer/>
 					
 				</main>
 			</div>

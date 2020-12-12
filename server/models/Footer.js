@@ -8,12 +8,7 @@ const Footer = new Keystone.List('Footers', {
 	nodelete: true,
 });
 
-Footer.add({
-	link: {
-		type: Types.Url,
-		required: true,
-		initial: true,
-	},
+Footer.add({	
 	address: {
 		type: Types.Text,
 		required: true,
@@ -21,6 +16,11 @@ Footer.add({
 		multiline: true,
 	},
 	phone: {
+		type: Types.Text,
+		required: true,
+		initial: true,
+	},
+	instagram: {
 		type: Types.Text,
 		required: true,
 		initial: true,
