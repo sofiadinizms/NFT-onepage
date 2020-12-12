@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+<svg width="268" height="580" viewBox="0 0 268 580" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M94.9837 404.874L156.47 565.009L233.151 453.539L94.9837 404.874Z" stroke="#D5D5D5" stroke-width="5"/>
+<path d="M-48.121 555.822L82.0579 403.965L144.474 569.359L-48.121 555.822Z" stroke="#D5D5D5" stroke-width="5"/>
+<path d="M95.9827 390.661L233.968 441.91L172.412 301.247L95.9827 390.661Z" stroke="#D5D5D5" stroke-width="5"/>
+<path d="M39.0519 258.114L86.2777 380.89L162.616 292.768L39.0519 258.114Z" stroke="#D5D5D5" stroke-width="5"/>
+<path d="M72.0805 398.07L-61.0468 554.914L-170.925 380.99L72.0805 398.07Z" stroke="#D5D5D5" stroke-width="5"/>
+<path d="M-267.86 540.377L-73.9726 554.005L-183.012 386.632L-267.86 540.377Z" stroke="#D5D5D5" stroke-width="5"/>
+<path d="M25.0151 254.53L74.2812 385.24L-173.985 369.089L-105.536 245.354L25.0151 254.53Z" stroke="#D5D5D5" stroke-width="5"/>
+<path d="M-194.464 383.231L-277.746 533.19L-339.554 414.582L-194.464 383.231Z" stroke="#D5D5D5" stroke-width="5"/>
+<path d="M-338.646 401.662L-192.263 370.401L-258.018 270.993L-338.646 401.662Z" stroke="#D5D5D5" stroke-width="5"/>
+<path d="M-248.334 262.584L-182.761 364.576L-118.552 245.738L-248.334 262.584Z" stroke="#D5D5D5" stroke-width="5"/>
+<path d="M33.5879 243.447L153.365 276.536L-18.2633 112.555L33.5879 243.447Z" stroke="#D5D5D5" stroke-width="5"/>
+<path d="M-98.2554 234.18L20.6621 242.538L-31.0075 109.062L-98.2554 234.18Z" stroke="#D5D5D5" stroke-width="5"/>
+<path d="M-112.474 233.18L-42.8224 110.829L-239.761 251.501L-112.474 233.18Z" stroke="#D5D5D5" stroke-width="5"/>
+<path d="M-138.852 17.0833L-247.154 245.787L-41.8234 96.6161L-138.852 17.0833Z" stroke="#D5D5D5" stroke-width="5"/>
+<path d="M89.9354 33.1644L-17.2643 98.3423L162.958 269.42L89.9354 33.1644Z" stroke="#D5D5D5" stroke-width="5"/>
+=======
 <svg width="354" height="795" viewBox="0 0 354 795" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M220.44 426.596L59.2247 368L93.0925 498.99L220.44 426.596Z" stroke="#D5D5D5" stroke-width="5"/>
 <path d="M200.328 219.57L229.602 417.433L63.8074 356.091L200.328 219.57Z" stroke="#D5D5D5" stroke-width="5"/>
@@ -14,4 +32,5 @@
 <path d="M486.107 382.571L532.799 515.391L555.75 274.461L486.107 382.571Z" stroke="#D5D5D5" stroke-width="5"/>
 <path d="M666.547 504.371L564.911 272.627L542.874 525.465L666.547 504.371Z" stroke="#D5D5D5" stroke-width="5"/>
 <path d="M504.371 666.547L525.465 542.874L278.124 566.742L504.371 666.547Z" stroke="#D5D5D5" stroke-width="5"/>
+>>>>>>> d5d1db1c2da211b0e47e18b50fcc82fbe06fd82c
 </svg>

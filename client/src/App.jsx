@@ -2,9 +2,11 @@ import React, { useState, useEffect } from 'react'
 import {
   OurServices,
   Contact,
-  Banner,
+	Banner,
+	OurBlog,
 	WhoWeAre
 } from './components';
+
 import drawerToogleButton from './components/SideDrawer/DrawerToggleButton';
 import Toolbar from './components/Toolbar/Toolbar'
 import SideDrawer from './components/SideDrawer/SideDrawer'
@@ -41,13 +43,13 @@ function App () {
 					
 						<Banner/>
 					
-						<p>WhoWeAre</p>
+						<WhoWeAre/>
 				
 						<OurServices/>
 				
 						<p>OurClients</p>
 					
-						<p>OurBlog</p>						
+						<OurBlog/>						
 				
 						<Contact/>
 					

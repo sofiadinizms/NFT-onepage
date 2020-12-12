@@ -20,29 +20,29 @@
   color: #EBECEE;
 }
 
-.slick-list {
+.ourServicesSection .slick-list {
   height: 65vh;
   margin-left: 12vw;
   margin-right: 12vw;
   margin-top: 2.5vh;
 }
 
-.slick-slider {
+.ourServicesSection .slick-slider {
   align-self: center;
   width: 90vw;  
 }
 
-.slick-slide {
+.ourServicesSection .slick-slide {
   min-width: 65vw;
   transition: .5s;
 }
 
-.slick-prev:before,
-.slick-next:before {
+.ourServicesSection .slick-prev:before,
+.ourServicesSection .slick-next:before {
   color: #777777;
 }
 
-.slick-prev{
+.ourServicesSection .slick-prev{
 	position: absolute;
 	display: flex;
 	flex-direction: row;
@@ -51,37 +51,38 @@
   top: 71.5vh;  	
 }
 
-.slick-next{
+.ourServicesSection .slick-next{
 	position: absolute;
 	display: flex;
 	flex-direction: row;
-	right: 31.5vw;
+	right: 38.5vw;
   z-index: 10;
-  top: 71.5vh;
+  top: 70vh;
 }
 
-.slick-prev:before{
+.ourServicesSection .slick-prev:before{
 	content: url('../Assets/Path_prev_services.png');
 	
 }
-.slick-next:before{
+.ourServicesSection .slick-next:before{
 	content: url('../Assets/Path_next_services.png');
 	
 }
 
-.slick-dots li button{
-  margin-bottom: -8vh;
+.ourServicesSection .slick-dots {
+  margin-bottom: -2.2vh;
 }
 
-.slick-dots li button:before {
+
+.ourServicesSection .slick-dots li button:before {
 	content: url('../Assets/RectangleLighter_services.png');
 }
-.slick-dots li.slick-active button:before{
+.ourServicesSection .slick-dots li.slick-active button:before{
 	content: url('../Assets/Rectangle_services.png');
 }
 
 
-.slick-slide img {
+.ourServicesSection .slick-slide img {
   z-index: -1;
 }
 
@@ -91,7 +92,7 @@
     font-size: 120%;
   }
   
-  .slick-list {
+  .ourServicesSection .slick-list {
     height: 90vh;
     margin-left: 0;
     margin-right: 0;
@@ -99,28 +100,28 @@
     /* background-color: red; */
   }
   
-  .slick-slider {
+  .ourServicesSection .slick-slider {
     align-self: center;
     width: 90vw;  
   }
   
-  .slick-slide {
+  .ourServicesSection .slick-slide {
     min-width: 65vw;
     transition: .5s;
   }
 
-  .service-card {
+  .ourServicesSection .service-card {
     margin-top: 0;
     width: 90vw;
     height: 70vh;
   }
 
-  .service-card img {
+  .ourServicesSection .service-card img {
     height: 100%;
     width: auto;    
   }
 
-  .service-card h1 {
+  .ourServicesSection .service-card h1 {
     z-index: 0;
     font-family: Poppins;
     font-style: normal;
@@ -131,7 +132,7 @@
     margin-left: 4vw;
   }
 
-  .service-card p {
+  .ourServicesSection .service-card p {
     top: 40vh;
     margin-left: 4vw; 
     margin-right: 4vw;
@@ -139,17 +140,17 @@
     font-weight: 400;
   }
 
-  .slick-prev{
+  .ourServicesSection .slick-prev{
     left: 25vw;
-    top: 76vh;  	
+    top: 77vh;  	
   }
   
-  .slick-next{
+  .ourServicesSection .slick-next{
     right: 25vw;
     top: 76vh;
   }
 
-  .slick-list {
+  .ourServicesSection .slick-list {
     height: 70.5vh;
     margin-top: 2.5vh;
     z-index: 10;

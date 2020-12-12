@@ -1,0 +1,131 @@
+
+.carouselBlog .slick-slider{
+	max-width: 70vw;
+  align-items: center;
+	left: 17%;
+	display: block;
+	position: relative;
+}
+.carouselBlog .slick-slide {
+  /*text-align: center;*/
+	position: relative;
+}
+
+.carouselBlog .slick-prev:before,
+.slick-next:before {
+  color: #777777;
+}
+
+
+.carouselBlog .slick-prev{
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	left: 33vw;
+	z-index: 10;
+	
+}
+
+.carouselBlog .slick-prev:before{
+	content: url('../Assets/prev.svg');
+	
+}
+
+.carouselBlog .slick-next:before{
+	content: url('../Assets/next.svg');
+	
+}
+
+.carouselBlog .slick-next{
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	right: 43vw;
+	z-index: 10;
+}
+
+/*
+.slick-arrow{
+	width: 10px;
+	border-radius: 100px;
+	top: 30vh;
+}
+*/
+
+.carouselBlog .slick-prev, .slick-next{
+	
+	height: 0px;
+	top: 100%
+}
+
+.carouselBlog .slick-dots{
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  top: auto;
+	padding: 0;
+	right: 5vw;
+}
+
+
+.carouselBlog .slick-dots li button:before {
+	content: url('../Assets/RectangleSem.svg');
+}
+
+.carouselBlog .slick-dots li.slick-active button:before{
+	content: url('../Assets/RectangleCom.svg');
+}
+
+@media screen and (max-width: 1085px){
+	.carouselBlog .slick-next{
+		right: 40vw;
+	}
+
+	.carouselBlog .slick-prev{
+		left: 30vw;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.carouselBlog .slick-dots{
+		top: auto;
+	}
+
+	.carouselBlog .slick-next{
+		right: 35vw;
+	}
+
+	.carouselBlog .slick-prev{
+		left: 27vw;
+	}
+}
+
+@media screen and (max-width: 487px){
+	.carouselBlog .slick-next{
+		left: 60vw;
+	}
+
+	.carouselBlog .slick-prev{
+		left: 15vw;
+	}
+}
+
+@media screen and (max-width: 349px){
+	.carouselBlog .slick-next{
+		right: 10vw;
+	}
+
+	.carouselBlog .slick-prev{
+		left: 10vw;
+	}
+}
+
+@media screen and (max-width: 280px){
+	.carouselBlog .slick-next{
+		right: 8vw;
+	}
+
+	.carouselBlog .slick-prev{
+		left: 8vw;
+	}
+}
