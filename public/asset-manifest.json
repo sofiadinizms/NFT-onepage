@@ -1,20 +1,39 @@
 {
   "files": {
-    "main.css": "/static/css/main.a7af0a60.chunk.css",
-    "main.js": "/static/js/main.2ac1b77b.chunk.js",
-    "main.js.map": "/static/js/main.2ac1b77b.chunk.js.map",
+    "main.css": "/static/css/main.7cb84497.chunk.css",
+    "main.js": "/static/js/main.4688c1a3.chunk.js",
+    "main.js.map": "/static/js/main.4688c1a3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.120840cb.js",
     "runtime-main.js.map": "/static/js/runtime-main.120840cb.js.map",
-    "static/js/2.539704fa.chunk.js": "/static/js/2.539704fa.chunk.js",
-    "static/js/2.539704fa.chunk.js.map": "/static/js/2.539704fa.chunk.js.map",
+    "static/css/2.5c9a30e7.chunk.css": "/static/css/2.5c9a30e7.chunk.css",
+    "static/js/2.d1a62565.chunk.js": "/static/js/2.d1a62565.chunk.js",
+    "static/js/2.d1a62565.chunk.js.map": "/static/js/2.d1a62565.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.a7af0a60.chunk.css.map": "/static/css/main.a7af0a60.chunk.css.map",
-    "static/js/2.539704fa.chunk.js.LICENSE.txt": "/static/js/2.539704fa.chunk.js.LICENSE.txt"
+    "static/css/2.5c9a30e7.chunk.css.map": "/static/css/2.5c9a30e7.chunk.css.map",
+    "static/css/main.7cb84497.chunk.css.map": "/static/css/main.7cb84497.chunk.css.map",
+    "static/js/2.d1a62565.chunk.js.LICENSE.txt": "/static/js/2.d1a62565.chunk.js.LICENSE.txt",
+    "static/media/WhoWeAre.css": "/static/media/Representatividade.58c76b83.svg",
+    "static/media/Deltaodontologia-logo02.93d19dc8.png": "/static/media/Deltaodontologia-logo02.93d19dc8.png",
+    "static/media/Instagram_icon.5edd9a6a.svg": "/static/media/Instagram_icon.5edd9a6a.svg",
+    "static/media/Toolbar.css": "/static/media/LogoAzul.74df1377.svg",
+    "static/media/OurBlog.css": "/static/media/PrevMob.486a090b.svg",
+    "static/media/Phone_icon.6296e4e3.svg": "/static/media/Phone_icon.6296e4e3.svg",
+    "static/media/OurBlogSlide.css": "/static/media/RectangleSem.eeb30acc.svg",
+    "static/media/OurClients.css": "/static/media/prev.3ceed751.svg",
+    "static/media/Banner.css": "/static/media/banner_image.d21a7c2b.jpg",
+    "static/media/cd01.daf697b2.jpg": "/static/media/cd01.daf697b2.jpg",
+    "static/media/cd02.d31c1d6a.jpg": "/static/media/cd02.d31c1d6a.jpg",
+    "static/media/cd03.9353d342.jpg": "/static/media/cd03.9353d342.jpg",
+    "static/media/cd04.a6eb8a13.jpg": "/static/media/cd04.a6eb8a13.jpg",
+    "static/media/contact.b60fcd6a.jpg": "/static/media/contact.b60fcd6a.jpg",
+    "static/media/quemSomos.2b447979.jpg": "/static/media/quemSomos.2b447979.jpg",
+    "static/media/slick-theme.css": "/static/media/slick.c94f7671.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.120840cb.js",
-    "static/js/2.539704fa.chunk.js",
-    "static/css/main.a7af0a60.chunk.css",
-    "static/js/main.2ac1b77b.chunk.js"
+    "static/css/2.5c9a30e7.chunk.css",
+    "static/js/2.d1a62565.chunk.js",
+    "static/css/main.7cb84497.chunk.css",
+    "static/js/main.4688c1a3.chunk.js"
   ]
 }
