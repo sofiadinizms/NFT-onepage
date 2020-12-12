@@ -1,6 +1,7 @@
-import React, {useState} from 'react';
-import './Contact.css'
 import contact from "./../Assets/contact.jpg"
+import React, {useState} from 'react';
+import axios from 'axios';
+import './Contact.css'
 
 
 
@@ -16,6 +17,30 @@ function Contact () {
   const [phone, setPhone] = useState('') ;
   const [subject, setSubject] = useState('') ;
   const [value, setValue] = useState('');
+
+  const handleSubmit = async (event) => {
+    try {
+      event.preventDefault();
+
+      await axios.post('http://localhost:3001/api/contact', {
+        name:username,
+        email,
+        phone,
+        subject,
+        message:value,
+      });
+
+      setUsername('');
+      setEmail('');
+      setPhone('');
+      setSubject('');
+      setValue('');
+
+      console.log('Email enviado com sucesso!');
+    } catch (err) {
+      console.log(err?.response || err);
+    }
+  }
 
   function handleUsernameChange(text) {
     setUsername(text);
@@ -68,15 +93,15 @@ function Contact () {
   }
 
   return (
-    <div className="contact">
+    <form method='POST' className="contact" onSubmit={(e) => handleSubmit(e)}>
       <div className="info">
         <h1>Contato</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <div className="label-float">
           <input 
             type="text"
-            username={username}
-            onChange={(e) => handleUsernameChange(e.target.username)}
+            value={username}
+            onChange={(e) => handleUsernameChange(e.target.value)}
             placeholder=""/>
             <label className={ isUsernameActive ? "usernameActive" : "usernameInactive"}>Nome</label>
         </div>
@@ -84,7 +109,7 @@ function Contact () {
           <div className="label-float">
             <input
             type="text"
-            email={email}
+            value={email}
             onChange={(e) => handleEmailChange(e.target.value)}
             placeholder=""/>
             <label className={ isEmailActive ? "emailActive" : "email_phone"}>E-mail</label>
@@ -92,7 +117,7 @@ function Contact () {
           <div className="label-float">
             <input
             type="text"
-            phone={phone}
+            value={phone}
             onChange={(e) => handlePhoneChange(e.target.value)}
             placeholder=""/>
             <label className={ isPhoneActive ? "phoneActive" : "email_phone"}>Telefone</label>
@@ -101,7 +126,7 @@ function Contact () {
         <div className="label-float">
           <input
           type="text"
-          subject={subject}
+          value={subject}
           onChange={(e) => handleSubjectChange(e.target.value)}
           placeholder=""/>
           <label className={ isSubjectActive ? "subjectActive" : ""}>Assunto</label>
@@ -119,7 +144,7 @@ function Contact () {
       <div className="image_delta">
         <img src ={contact} alt=""/>        
       </div>
-    </div>
+    </form>
   )
 }
 
