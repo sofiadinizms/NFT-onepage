@@ -7,19 +7,19 @@ const OurClients = new keystone.List('OurClients');
 OurClients.add({
   name: {
     type: Types.Text,
-    required: true,
     initial: true,
+    required: true,
     index: true,
   },
   image: {
     type: Types.CloudinaryImages,
-    require: true,
     initial: true,
+    required: true,
   },
   testimony: {
     type: Types.Text,
-    required: true,
     initial: true,
+    required: true,
     index: true,
   }
 });

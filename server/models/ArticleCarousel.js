@@ -2,7 +2,11 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const ArticleCarousel = new keystone.List('ArticleCarousel');
+const ArticleCarousel = new keystone.List('ArticleCarousel', {
+	map: {name: 'title'},
+  nocreate: true,
+  nodelete: true,
+});
 
 ArticleCarousel.add({
   title: {
@@ -12,7 +16,7 @@ ArticleCarousel.add({
     index: true,
   },
   image: {
-    type: Types.CloudinaryImages,
+    type: Types.CloudinaryImage,
     require: true,
     initial: true,
   },

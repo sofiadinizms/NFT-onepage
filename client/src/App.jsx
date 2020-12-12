@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import {
-  OurServices,
+	WhoWeAre,
+	Footer,
+	OurServices,
+	OurClients,
   Contact,
-  Banner,
-	WhoWeAre
+	Banner,
+	OurBlog,	
 } from './components';
+
 import drawerToogleButton from './components/SideDrawer/DrawerToggleButton';
 import Toolbar from './components/Toolbar/Toolbar'
 import SideDrawer from './components/SideDrawer/SideDrawer'
@@ -41,17 +45,17 @@ function App () {
 					
 						<Banner/>
 					
-						<p>WhoWeAre</p>
+						<WhoWeAre/>
 				
 						<OurServices/>
 				
-						<p>OurClients</p>
+						<OurClients/>
 					
-						<p>OurBlog</p>						
+						<OurBlog/>						
 				
-						<Contact/>
+						<Contact/>					
 					
-						<p>Footer</p>						
+						<Footer/>
 					
 				</main>
 			</div>
