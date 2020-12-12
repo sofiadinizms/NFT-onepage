@@ -51,14 +51,8 @@ function App () {
 				
 						<p>OurClients</p>
 					
-<<<<<<< HEAD
-						<p>OurBlog</p>		
-					
-					
-=======
 						<OurBlog/>						
 				
->>>>>>> develop
 						<Contact/>
 					
 					
