@@ -50,7 +50,7 @@ function OurBlog(){
 
 	return(
 		<div>
-			<div className="tudo">
+			<div className="tudo" id="NossoBlog">
 				<div className="partes">
 				<h1>Nosso blog</h1>
 				

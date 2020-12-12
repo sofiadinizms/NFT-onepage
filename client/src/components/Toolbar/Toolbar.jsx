@@ -26,11 +26,11 @@ return (
 			<div className="spacer" />
 			<div className={navbar ? 'toolbar_navigation-items active' : 'toolbar_navigation-items'}>
 				<ul>
-					<li><a href="/">Quem somos</a></li>
-					<li><a href="/">Nossos serviços</a></li>
-					<li><a href="/">Nossos clientes</a></li>
-					<li><a href="/">Blog</a></li>
-					<li><a href="/">Contato</a></li>
+					<li><a href='#QuemSomosNos'>Quem somos</a></li>
+					<li><a href='#NossosServicos'>Nossos serviços</a></li>
+					<li><a href='/'>Nossos clientes</a></li>
+					<li><a href='#NossoBlog'>Blog</a></li>
+					<li><a href='#NossoContato'>Contato</a></li>
 				</ul>
 			</div>
 			<div>

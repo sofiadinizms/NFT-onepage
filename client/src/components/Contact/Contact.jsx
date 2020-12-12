@@ -93,7 +93,7 @@ function Contact () {
   }
 
   return (
-    <form method='POST' className="contact" onSubmit={(e) => handleSubmit(e)}>
+    <form method='POST' className="contact" onSubmit={(e) => handleSubmit(e)} id="NossoContato">
       <div className="info">
         <h1>Contato</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>

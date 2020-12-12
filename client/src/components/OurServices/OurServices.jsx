@@ -40,7 +40,7 @@ function OurServices (){
     slidesToScroll: 1
   };
   return (
-    <div className="ourServicesSection">
+    <div className="ourServicesSection" id="NossosServicos">
       <h1>Nossos serviços</h1>
         <Slider {...settings}>
         {services?.map(( OurServices, index) => (
