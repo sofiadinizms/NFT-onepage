@@ -20,18 +20,6 @@ function OurServices (){
     loadServices();
   }, []);
 
-  // const settings = {
-  //   className: "center",
-  //   centerMode: true,
-  //   infinite: true,
-  //   centerPadding: "10vw",
-  //   slidesToShow: 1,
-  //   speed: 900,    
-  //   arrows: true,
-  //   dots: true,
-  //   slidesToScroll: 1,
-  // };
-
   const settings = {
     dots: true,
     infinite: true,
@@ -41,7 +29,7 @@ function OurServices (){
   };
   return (
     <div className="ourServicesSection" id="NossosServicos">
-      <h1>Nossos serviços</h1>
+      <h1 className="titleServices">Nossos serviços</h1>
         <Slider {...settings}>
         {services?.map(( OurServices, index) => (
           <Services

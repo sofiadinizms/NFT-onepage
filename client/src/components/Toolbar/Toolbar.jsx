@@ -28,7 +28,7 @@ return (
 				<ul>
 					<li><a href='#QuemSomosNos'>Quem somos</a></li>
 					<li><a href='#NossosServicos'>Nossos serviços</a></li>
-					<li><a href='/'>Nossos clientes</a></li>
+					<li><a href='#NossosClientes'>Nossos clientes</a></li>
 					<li><a href='#NossoBlog'>Blog</a></li>
 					<li><a href='#NossoContato'>Contato</a></li>
 				</ul>
