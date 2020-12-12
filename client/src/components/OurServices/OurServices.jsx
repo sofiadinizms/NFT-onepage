@@ -12,7 +12,7 @@ function OurServices (){
   const [services, setServices] = useState([]);
 
   const loadServices = async () => {
-    const res = await axios.get('http://localhost:3001/api/services');
+    const res = await axios.get('https://delta-odontologia.herokuapp.com/api/services');
     setServices(res.data);
   };
 
@@ -45,32 +45,3 @@ function OurServices (){
 
 
 export default OurServices;
-
-
-// import {
-//   Services
-// } from '../';
-
-
-
-// function OurServices() {
-//   const [services, setServices] = useState([]);
-
-//   const loadServices = async () => {
-//     const res = await axios.get('http://localhost:3001/api/services');
-//     setServices(res.data);
-//   };
-
-//   useEffect(() => {
-//     loadServices();
-//   }, []);
-
-//   return (
-//     <div className="ourServicesSection">
-//       <h1>Nossos serviços</h1>
-//       <Services/>
-//       <div className="">botões</div>
-//     </div>  
-//   );
-// }
-

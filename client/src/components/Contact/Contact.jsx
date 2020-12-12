@@ -22,7 +22,7 @@ function Contact () {
     try {
       event.preventDefault();
 
-      await axios.post('http://localhost:3001/api/contact', {
+      await axios.post('https://delta-odontologia.herokuapp.com/api/contact', {
         name:username,
         email,
         phone,

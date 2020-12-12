@@ -13,7 +13,7 @@ function OurBlogSlide (){
 	const [blogs, setBlogs] = useState([]);
 
   const loadBlogs = async () => {
-    const res = await axios.get('http://localhost:3001/api/ourblogs');
+    const res = await axios.get('https://delta-odontologia.herokuapp.com/api/ourblogs');
     setBlogs(res.data);
   };
 

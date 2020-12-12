@@ -10,7 +10,7 @@ function WhoWeAre (props) {
 	const [imgs, setImgs] = useState([]);
 
 	const loadImgs = async () => {
-		const res = await axios.get('http://localhost:3001/api/WhoWeAre');
+		const res = await axios.get('https://delta-odontologia.herokuapp.com/api/WhoWeAre');
 		setImgs(res.data);
 };
 
