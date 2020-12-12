@@ -5,8 +5,7 @@ import {
   OurServices,
   Contact,
 	Banner,
-	OurBlog,
-	WhoWeAre
+	OurBlog,	
 } from './components';
 
 import drawerToogleButton from './components/SideDrawer/DrawerToggleButton';
