@@ -4,8 +4,11 @@ import {
 	Footer,
   OurServices,
   Contact,
-  Banner,	
+	Banner,
+	OurBlog,
+	WhoWeAre
 } from './components';
+
 import drawerToogleButton from './components/SideDrawer/DrawerToggleButton';
 import Toolbar from './components/Toolbar/Toolbar'
 import SideDrawer from './components/SideDrawer/SideDrawer'
@@ -42,15 +45,20 @@ function App () {
 					
 						<Banner/>
 					
-						<p>WhoWeAre</p>
+						<WhoWeAre/>
 				
 						<OurServices/>
 				
 						<p>OurClients</p>
 					
+<<<<<<< HEAD
 						<p>OurBlog</p>		
 					
 					
+=======
+						<OurBlog/>						
+				
+>>>>>>> develop
 						<Contact/>
 					
 					

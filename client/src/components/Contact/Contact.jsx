@@ -93,7 +93,7 @@ function Contact () {
   }
 
   return (
-    <form method='POST' className="contact" onSubmit={(e) => handleSubmit(e)}>
+    <form method='POST' className="contact" onSubmit={(e) => handleSubmit(e)} id="NossoContato">
       <div className="info">
         <h1 className="info_contact">Contato</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -139,7 +139,7 @@ function Contact () {
           placeholder=""/>
           <label className={ isActive ? "active" : ""}>Mensagem</label>
         </div>
-        <button type="submit">Enviar</button>
+        <button className="button_ontact" type="submit">Enviar</button>
       </div>
       <div className="image_delta">
         <img src ={contact} alt=""/>        

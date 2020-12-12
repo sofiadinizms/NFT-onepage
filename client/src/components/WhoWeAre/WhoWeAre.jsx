@@ -19,7 +19,7 @@ useEffect(()=>{
 }, []);
 
 return (
-	<div className="wwa">
+	<div className="wwa" id="QuemSomosNos">
 		
 		<div className="container">
 		{imgs?.map(({_id, description, image}) => (
