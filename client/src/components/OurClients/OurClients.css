@@ -62,14 +62,22 @@
 .OurClients .slick-dots li.slick-active button:before{
 	content: url('../Assets/blue_square.svg');
 }
-#title{
+
+.titleOurClientsBox {
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    margin: 0;
+}
+
+#titleOurClients{
+    align-self: flex-end;
     font-family: Poppins;
     color: #032c66;
     text-align: center;
     font-weight: 700;
     font-size: 3vw;
     margin-bottom: 0px;
-    top: 60vh;
     z-index: 10;
 }
 .OurClients .name{
@@ -120,6 +128,7 @@
     text-align: right;
 }
 .OurClients .nameLeft{
+    text-align: end;
     margin-left: 306px;
 }
 .OurClients .text{
@@ -155,7 +164,7 @@
         align-items: center;
         align-content: center;
     }
-    #title{
+    #titleOurClients{
         font-size: 5vw;
         padding: 0;
     }
@@ -185,7 +194,7 @@
         align-items: center;
         align-content: center;
     }
-    #title{
+    #titleOurClients{
         font-size: 4vw;
         padding: 0;
     }
@@ -210,7 +219,7 @@
     }
 }
 @media(max-width: 700px){
-    #title{
+    #titleOurClients{
         padding: 3%;
         text-align: center;
     }

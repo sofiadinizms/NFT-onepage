@@ -53,8 +53,7 @@ function App () {
 					
 						<OurBlog/>						
 				
-						<Contact/>
-					
+						<Contact/>					
 					
 						<Footer/>
 					
