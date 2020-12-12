@@ -1,9 +1,10 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect } from 'react'
 import {
-  PostList,
+  OurServices,
   Contact,
 	Banner,
 	OurBlog,
+	WhoWeAre
 } from './components';
 
 import drawerToogleButton from './components/SideDrawer/DrawerToggleButton';
@@ -12,77 +13,52 @@ import SideDrawer from './components/SideDrawer/SideDrawer'
 import Backdrop from './components/Backdrop/Backdrop'
 import sideDrawer from './components/SideDrawer/SideDrawer';
 
-class App extends Component {
-	state = {
-		sideDrawerOpen: false
+function App () {
+
+	const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
+
+	const drawerToggleClickHandler = () => {
+		setSideDrawerOpen(!sideDrawerOpen)
 	}
 
-	drawerToggleClickHandler = () => {
-		this.setState((prevState) => {
-			return {sideDrawerOpen: !prevState.sideDrawerOpen}
-		});
+	const backdropClickHandler = () => {
+		setSideDrawerOpen(false)
 	}
 
-	backdropClickHandler = () => {
-		this.setState({sideDrawerOpen: false});
-	}
-
-	render() {
+	
 		//let sideDrawer;
 		let backdrop;
 
-		if(this.state.sideDrawerOpen){
+		if(sideDrawerOpen){
 			//sideDrawer = <SideDrawer></SideDrawer>;
-			backdrop = <Backdrop click={this.backdropClickHandler}></Backdrop>;
+			backdrop = <Backdrop click={backdropClickHandler}></Backdrop>;
 		}
 		return (
 			<div style={{height: '100%'}}>
-				<Toolbar drawerClickHandler={this.drawerToggleClickHandler}></Toolbar>
-				<SideDrawer show={this.state.sideDrawerOpen}></SideDrawer>
+				<Toolbar drawerClickHandler={drawerToggleClickHandler}></Toolbar>
+				<SideDrawer show={sideDrawerOpen}></SideDrawer>
 			
 				{backdrop}
-				<main style={{marginTop: '64px'}}>
-					<div>
+				<main style={{marginTop: '64px'}}>					
+					
 						<Banner/>
-					</div>
-					<div>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-					</div>
-					<div>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-					</div>
-					<div>
-						<OurBlog />
-					</div>
-					<div>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-					</div>
-					<div>
+					
+						<WhoWeAre/>
+				
+						<OurServices/>
+				
+						<p>OurClients</p>
+					
+						<OurBlog/>						
+				
 						<Contact/>
-					</div>
-					<div>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-						<p>dfsdfsdfsdfsdfsdfdsfsdf</p>
-					</div>
+					
+						<p>Footer</p>						
+					
 				</main>
 			</div>
 		);
-	};	
+	
 }
 
 export default App;

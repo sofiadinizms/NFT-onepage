@@ -5,8 +5,8 @@ const Types = Keystone.Field.Types;
 
 const Service = new Keystone.List('Services', {
 	map: {name: "title"},
-	//nocreate: true,
-	//nodelete: true,
+	nocreate: true,
+	nodelete: true,
 });
 
 Service.add({
@@ -19,9 +19,13 @@ Service.add({
 	image: {
     type: Types.CloudinaryImage,
 		require: true,
-		index: true,
+		//index: true,
 		initial: true,
-		singleImage: true,
 	},
+	description: {
+		type: Types.Text,
+		require: true,
+		initial: true,		
+	}
 });
 Service.register();

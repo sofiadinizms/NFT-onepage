@@ -13,6 +13,16 @@ const OurBlog = keystone.list('OurBlog');
 const ArticleCarousel = keystone.list('ArticleCarousel');
 const WhoWeAre = keystone.list('WhoWeAre')
 
+const mailServer = require('../MailServer/mailServer');
+const dotenv = require('dotenv');
+const createRouter = require('keystone/lib/core/createRouter');
+
+const router = require('express').Router();
+const mailController = require('../MailServer/mailController');
+
+//router.route('/form').post(mailController);
+
+//module.exports = router;
 
 module.exports = (app) => {
   app.use(cors());
@@ -53,6 +63,16 @@ module.exports = (app) => {
 
   app.get('/api/posts', (req, res) => {
     Post.model.find((err, data) => {
+      if (err) {
+        res.status(500).send('DB Error');
+      } else {
+        res.send(data);
+      }
+    });
+	});
+
+	app.get('/api/WhoWeAre', (req, res) => {
+    WhoWeAre.model.find((err, data) => {
       if (err) {
         res.status(500).send('DB Error');
       } else {
@@ -108,5 +128,6 @@ module.exports = (app) => {
 		res.redirect('/');
   });
   
-  
+  app.post('/api/contact', mailController);
 };
+
