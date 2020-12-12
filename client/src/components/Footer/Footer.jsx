@@ -19,7 +19,6 @@ function Footer() {
   useEffect(() => {
     loadFooter();
   }, []);
-
   return (
     <>
       {footer?.map(({address, phone, instagram}) => (
@@ -30,13 +29,13 @@ function Footer() {
                 <img src={Phone_icon}/>
                 {phone}
               </p>
-              <p>
-                <img src={Instagram_icon}/>
-                <a href="https://instagram.com/">{instagram}</a>              
+              <p>                
+                <img src={Instagram_icon}/>                
+                <a href={instagram}>delta.odonto</a>              
               </p>
               <p>Nos acompanhe nas redes sociais!</p>
             </div>                   
-            <div className="address_credits">
+            <div className="address_credits">              
               <p id="address" >Endereço: {address}</p>
               <div className="credits">
                 <p>Made with <strong>&lt; &#x0002F; &gt;

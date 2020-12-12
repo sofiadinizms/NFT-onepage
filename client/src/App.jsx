@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect } from 'react'
 import {
 	WhoWeAre,
 	Footer,
@@ -12,61 +12,54 @@ import SideDrawer from './components/SideDrawer/SideDrawer'
 import Backdrop from './components/Backdrop/Backdrop'
 import sideDrawer from './components/SideDrawer/SideDrawer';
 
-class App extends Component {
-	state = {
-		sideDrawerOpen: false
+function App () {
+
+	const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
+
+	const drawerToggleClickHandler = () => {
+		setSideDrawerOpen(!sideDrawerOpen)
 	}
 
-	drawerToggleClickHandler = () => {
-		this.setState((prevState) => {
-			return {sideDrawerOpen: !prevState.sideDrawerOpen}
-		});
+	const backdropClickHandler = () => {
+		setSideDrawerOpen(false)
 	}
 
-	backdropClickHandler = () => {
-		this.setState({sideDrawerOpen: false});
-	}
-
-	render() {
+	
 		//let sideDrawer;
 		let backdrop;
 
-		if(this.state.sideDrawerOpen){
+		if(sideDrawerOpen){
 			//sideDrawer = <SideDrawer></SideDrawer>;
-			backdrop = <Backdrop click={this.backdropClickHandler}></Backdrop>;
+			backdrop = <Backdrop click={backdropClickHandler}></Backdrop>;
 		}
 		return (
 			<div style={{height: '100%'}}>
-				<Toolbar drawerClickHandler={this.drawerToggleClickHandler}></Toolbar>
-				<SideDrawer show={this.state.sideDrawerOpen}></SideDrawer>
+				<Toolbar drawerClickHandler={drawerToggleClickHandler}></Toolbar>
+				<SideDrawer show={sideDrawerOpen}></SideDrawer>
 			
 				{backdrop}
 				<main style={{marginTop: '64px'}}>					
-					{/* <div>
+					
 						<Banner/>
-					</div>
-					<div>
+					
 						<p>WhoWeAre</p>
-					</div>
-					<div>
+				
 						<OurServices/>
-					</div>
-					<div>
+				
 						<p>OurClients</p>
-					</div>
-					<div>
-						<p>OurBlog</p>						
-					</div> */}
-					<>
+					
+						<p>OurBlog</p>		
+					
+					
 						<Contact/>
-					</>
-					<div>
+					
+					
 						<Footer/>
-					</div>
+					
 				</main>
 			</div>
 		);
-	};	
+	
 }
 
 export default App;
