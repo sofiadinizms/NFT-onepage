@@ -21,13 +21,6 @@ Banner.add({
     required: true,
   },
 
-  image: {
-    type: Types.CloudinaryImage,
-    initial: true,
-    required: true,
-    singleImage: true,
-  },
-
 });
 
 Banner.register();

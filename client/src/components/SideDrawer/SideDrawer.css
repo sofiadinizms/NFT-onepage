@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.side-drawer{
+	height: 80%;
+	background: white;
+	
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 50%;
+	/*max-width: 400px;*/
+	z-index: 200;
+	transform: translateY(-100%);
+	transition: transform 0.3s ease-out;
+	left: 50vw;
+	color: #1A1A1A;
+}
+
+.side-drawer.open{
+	transform: translateY(0);
+	left: 50vw;
+	font-family: 'Poppins', sans-serif;
+	color: #1A1A1A;
+	width: 50vw;
+	text-align: initial;
+	font-weight: 500;
+	height: 90vh;
+}
+
+.side-drawer ul{
+	height: 100vh;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #1A1A1A;
+	margin-left: 15%;
+	margin-right: 10%;
+}
+
+.side-drawer li{
+	margin: 0.5rem 0;
+}
+
+.side-drawer a{
+	text-decoration: none;
+	font-size: 2.3vh;
+	color: #1A1A1A;
+}
+
+.side-drawer a:hover,
+.side-drawer a:active{
+	color: #032C66;
+}
+
+@media (min-width: 769px){
+	.side-drawer{
+		display: none;
+	}
+}

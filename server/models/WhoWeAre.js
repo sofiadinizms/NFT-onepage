@@ -2,17 +2,29 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const WhoWeAre = new keystone.List('WhoWeAre');
+const WhoWeAre = new keystone.List('WhoWeAre', {
+
+  map: {name: 'title'},
+  nocreate: true,
+  nodelete: true,
+
+});
 
 WhoWeAre.add({
-  description: {
-    type: Types.Text,
+  title: {
+    type:Types.Text,
+    required: true,
     initial: true,
+    index: true,
+  },
+  description: {
+		type: Types.Text,
+		initial: true,
     required: true,
   },
   image: {
-    type: Types.CloudinaryImages,
-    initial: true,
+		type: Types.CloudinaryImage,
+		initial: true,
     required: true,
   },
 });
