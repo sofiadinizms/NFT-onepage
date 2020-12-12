@@ -40,12 +40,12 @@ class App extends Component {
 				<SideDrawer show={this.state.sideDrawerOpen}></SideDrawer>
 			
 				{backdrop}
-				<main style={{marginTop: '64px'}}>					
+				<main style={{marginTop: '64px'}}>
 					<div>
 						<Banner/>
 					</div>
 					<div>
-						<p>WhoWeAre</p>
+						<WhoWeAre/>
 					</div>
 					<div>
 						<OurServices/>
