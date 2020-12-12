@@ -31,7 +31,7 @@
 	display: flex;
     top: 65vh;
     left: 30vw;
-	z-index: 10;
+	z-index: 20;
 }
 .OurClients .slick-prev:before{
 	content: url('../Assets/prev.svg');
@@ -46,7 +46,7 @@
     display: flex;
     top: 65vh;
 	right: 30vw;
-    z-index: 10;
+    z-index: 20;
 }
 .OurClients .slick-dots{
 	display: flex;
@@ -155,7 +155,7 @@
         right: 25vw;
     }
     .OurClients .slick-prev{
-        left: 25vw;
+        left: 25vw;        
     }
 }
 @media(max-width: 1200px){
