@@ -9,7 +9,10 @@
 .ourServicesSection {  
   display: flex;
   flex-direction: column;
-  background-color:#032C66;
+  background: #032C66;
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
 }
