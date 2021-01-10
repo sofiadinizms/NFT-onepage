@@ -4,7 +4,7 @@ import {
 	Footer,
 	OurServices,
 	OurClients,
-  Contact,
+  	Contact,
 	Banner,
 	OurBlog,	
 } from './components';
@@ -50,9 +50,9 @@ function App () {
 			
 					<OurServices/>
 					<div id="ConnectedSections"> 
-					<OurClients/>
+						<OurClients/>
 
-					<OurBlog/>	
+						<OurBlog/>	
 					</div>
 						
 			
