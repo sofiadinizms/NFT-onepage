@@ -10,11 +10,11 @@ const sideDrawer = props => {
 	return (
 	<nav className={drawerClasses}>
 		<ul>
-			<li><a href="/">Quem Somos</a></li>
-			<li><a href="/">Nossos serviços</a></li>
-			<li><a href="/">Nossos clientes</a></li>
-			<li><a href="/">Blog</a></li>
-			<li><a href="/">Contato</a></li>
+			<li><a href='#QuemSomosNos'>Quem somos</a></li>
+			<li><a href='#NossosServicos'>Nossos serviços</a></li>
+			<li><a href='#NossosClientes'>Nossos clientes</a></li>
+			<li><a href='#NossoBlog'>Blog</a></li>
+			<li><a href='#NossoContato'>Contato</a></li>
 		</ul>
 	</nav>
 	)
