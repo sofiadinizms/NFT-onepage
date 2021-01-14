@@ -183,7 +183,7 @@
   height: 80vh;
 }
 
-.button_ontact {
+.button_contact {
   align-self: flex-end;
   position: absolute;
   bottom: 5vh;
@@ -254,16 +254,15 @@
     margin-left: 0;
   }
 
-  .button_ontact {
+  .button_contact {
     background-color: #ebecee;
     align-self: center;
     color: #032C66;
     margin: 0;
-    bottom: 6vh;
+    bottom: 3vh;
     height: 6vh;
     width: 20vw;
     font-size: 2.5vh;
-    position: sticky;
   }
 
   .image_delta img {
