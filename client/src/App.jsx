@@ -49,13 +49,13 @@ function App () {
 					<WhoWeAre/>
 			
 					<OurServices/>
+					
 					<div id="ConnectedSections"> 
 						<OurClients/>
-
-						<OurBlog/>	
+						
+						<OurBlog/>
 					</div>
 						
-			
 					<Contact/>					
 				
 					<Footer/>

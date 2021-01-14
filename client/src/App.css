@@ -1,5 +1,5 @@
 #ConnectedSections{
-    background: url("./components/Assets/ToothTwoSections1.png") top right, url("./components/Assets/ToothTwoSections2.png") left, url("./components/Assets/ToothTwoSections3.png") right, #EBECEE;
+    background: url("./components/Assets/ToothTwoSections1.png") top -250px right 0px, url("./components/Assets/ToothTwoSections2.png") top 500px left 0px, url("./components/Assets/ToothTwoSections3.png")top 700px right 0px, #EBECEE;
 	background-repeat: no-repeat;
-	background-size: 235px;
+    background-size: 250px, 300px, 400px;
 }
