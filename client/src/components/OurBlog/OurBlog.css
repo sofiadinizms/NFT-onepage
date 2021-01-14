@@ -94,6 +94,10 @@
 	.content p{
 		display: none;
 	}
+
+	.partes h1 {
+		font-size: 120%;
+	}
 	.free-content p{
 		font-size: 0.8rem;
 	}
