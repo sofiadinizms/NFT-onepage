@@ -22,7 +22,7 @@ function OurBlog(){
 		arrows: false,
 		responsive: [
 			{
-				breakpoint: 768,
+				breakpoint: 1024,
 				settings: {
 					slidesToShow: 2,
 					infinite: true,
