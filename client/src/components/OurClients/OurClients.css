@@ -278,7 +278,7 @@
         height: 18vh;       
     }
     #titleOurClients {
-        font-size: 120%; 
+        font-size: 180%; 
     }
     /* .OurClients{
         background: #e5e5e5;
@@ -325,7 +325,7 @@
         margin-top: 1vh;
         color: #032c66;
         font-family: Poppins;
-        font-size: 75%;
+        font-size: 150%;
         font-weight: bold;
         letter-spacing: -0.015em;
         z-index: 10;
@@ -334,8 +334,8 @@
     .OurClients .testimonyMobile{
         margin-top: 2vh;
         color: #1A1A1A;
-        font-family: Poppin28;
-        font-size: 75%;
+        font-family: Poppins;
+        font-size: 150%;
         line-height: 21px;
         letter-spacing: -0.015em;
         z-index: 10;
@@ -351,5 +351,18 @@
     }
     .OurClients .slick-dots{
         top: 70vh;
+    }
+}
+
+@media(max-width: 760px) {
+    #titleOurClients {
+        font-size: 120%; 
+    }
+
+    .OurClients .nameMobile{
+        font-size: 75%;
+    }
+    .OurClients .testimonyMobile{
+        font-size: 75%;
     }
 }
