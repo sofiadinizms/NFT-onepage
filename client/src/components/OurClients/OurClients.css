@@ -153,8 +153,8 @@
 }
 .OurClients .client_photo{
     display: block;
-    height: 270px;
-    width: 306px;
+    height: 26vh;
+    width: 16vw;
     margin: auto;
     object-fit: cover;
     justify-content: center;
@@ -334,9 +334,7 @@
     .OurClients .testimonyMobile{
         margin-top: 2vh;
         color: #1A1A1A;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: normal;
+        font-family: Poppin28;
         font-size: 75%;
         line-height: 21px;
         letter-spacing: -0.015em;
