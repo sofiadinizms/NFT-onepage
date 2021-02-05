@@ -4,16 +4,17 @@ import {
 	Footer,
 	OurServices,
 	OurClients,
-  Contact,
+  	Contact,
 	Banner,
 	OurBlog,	
 } from './components';
-
+import './App.css';
 import drawerToogleButton from './components/SideDrawer/DrawerToggleButton';
 import Toolbar from './components/Toolbar/Toolbar'
 import SideDrawer from './components/SideDrawer/SideDrawer'
 import Backdrop from './components/Backdrop/Backdrop'
 import sideDrawer from './components/SideDrawer/SideDrawer';
+
 
 function App () {
 
@@ -43,19 +44,21 @@ function App () {
 				{backdrop}
 				<main style={{marginTop: '64px'}}>					
 					
-						<Banner/>
+					<Banner/>
+				
+					<WhoWeAre/>
+			
+					<OurServices/>
 					
-						<WhoWeAre/>
-				
-						<OurServices/>
-				
+					<div id="ConnectedSections"> 
 						<OurClients/>
-					
-						<OurBlog/>						
+						
+						<OurBlog/>
+					</div>
+						
+					<Contact/>					
 				
-						<Contact/>					
-					
-						<Footer/>
+					<Footer/>
 					
 				</main>
 			</div>
