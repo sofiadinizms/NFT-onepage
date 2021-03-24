@@ -2,7 +2,11 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const Content = new keystone.List('Content');
+const Content = new keystone.List('Content', {
+  map: {name: 'title'},
+  nocreate: true,
+  nodelete: true,
+});
 
 Content.add({
   title: {
