@@ -90,6 +90,10 @@
 	justify-content: center;
 }
 
+/* #container {
+	margin-top: 20%;
+} */
+
 @media screen and (max-width: 768px){
 	.content p{
 		display: none;

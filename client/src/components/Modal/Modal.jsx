@@ -50,8 +50,8 @@ return(
   <Popup
     trigger={
 		<div className="content">
-			<img src={props.image} />
-			<p>{props.name}</p>
+			<img src={props.image[0]?.url} alt='conteudo'/>
+			<p>{props.title}</p>
 		</div>
 		}
     modal
