@@ -1,4 +1,4 @@
-import contact from "./../Assets/contact.jpg"
+import contact from "./../assets/contact.jpg"
 import React, {useState} from 'react';
 import axios from 'axios';
 import './Contact.css'

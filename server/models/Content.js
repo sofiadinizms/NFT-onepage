@@ -2,10 +2,10 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const OurClients = new keystone.List('OurClients');
+const Content = new keystone.List('Content');
 
-OurClients.add({
-  name: {
+Content.add({
+  title: {
     type: Types.Text,
     initial: true,
     required: true,
@@ -16,11 +16,11 @@ OurClients.add({
     initial: true,
     required: true,
   },
-  testimony: {
-    type: Types.Text,
+  link: {
+    type: Types.Url,
     initial: true,
     required: true,
   }
 });
 
-OurClients.register();
+Content.register();

@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import '../Modal/Modal.css'
+import imagem from '../Assets/cd01.jpg';
 
 
 function Modal (props) {
@@ -50,8 +51,8 @@ return(
   <Popup
     trigger={
 		<div className="content">
-			<img src={props.image} />
-			<p>{props.name}</p>
+			<img src= {props.image[0]?.url} alt='conteudo'/>
+			<p>{props.title}</p>
 		</div>
 		}
     modal
@@ -94,7 +95,7 @@ return(
 								/>
 								<label className={ isPhoneActive ? "usernameActive" : "usernameInactive"}>Telefone</label>
 							</div>
-							<button className="BotaoBaixar" type="submit">Baixar pdf</button>
+							<button className="BotaoBaixar" type="submit"><a href={props.link} className='link'>Baixar PDF</a></button>
 						</form>
 					</div>
           
