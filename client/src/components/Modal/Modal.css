@@ -162,7 +162,13 @@
 	transition: .5s;
 	left: 75%;
 }
-
+.link{
+  color: #ebecee;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 95%;
+}
 .BotaoBaixar:hover{
   background-color: #0850b4;
 }

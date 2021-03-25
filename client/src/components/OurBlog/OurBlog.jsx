@@ -1,17 +1,26 @@
-import React from 'react';
-import OurBlogSlide from '../OurBlogSlide/OurBlogSlide'
-import '../OurBlog/OurBlog.css'
-import Cd01 from '../Assets/cd01.jpg'
-import Cd02 from '../Assets/cd02.jpg'
-import Cd03 from '../Assets/cd03.jpg'
-import Cd04 from '../Assets/cd04.jpg'
-import Sliderr from 'react-slick'
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
+import {React, useState, useEffect} from 'react';
+import OurBlogSlide from '../OurBlogSlide/OurBlogSlide';
+import '../OurBlog/OurBlog.css';
+import Sliderr from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import axios from 'axios';
+import logo from '../Assets/Deltaodontologia-logo02.png';
 
 import Modal from '../Modal/Modal'
 
 function OurBlog(){
+	const [ourContents, setOurContents] = useState([]);
+
+  const loadOurContents = async () => {
+    const res = await axios.get('http://localhost:3001/api/content');
+    setOurContents(res.data);
+		console.log(res.data);
+  };
+
+  useEffect(() => {
+    loadOurContents();
+  }, []);
 
 	var settings = {
     dots: false,
@@ -63,30 +72,19 @@ function OurBlog(){
 					<p className="acesseCnt">Acesse conteúdos gratuitos:</p>
 					<div className="contents">
 						<Sliderr className="slide-content" {...settings}>
-						<div>
-						<Modal
-							image = {Cd01}
-							name = "Nome do conteúdo"
-						/>
-						</div>
-						<div>
-						<Modal 
-							image = {Cd02}
-							name = "Nome do conteúdo"
-						/>
-						</div>
-						<div>
-						<Modal 
-							image = {Cd03}
-							name = "Nome do conteúdo"
-						/>
-						</div>
-						<div>
-						<Modal 
-							image = {Cd04}
-							name = "Nome do conteúdo"
-						/>
-						</div>
+							{ourContents?.map(({_id, title, link, image}) => {
+								return(
+									<>
+									<Modal
+										image = {image}
+										title = {title}
+										link = {link}
+										key = {_id}
+									/>
+								</>
+							);
+						})}
+						<h1>-</h1>
 						</Sliderr>
 					</div>
 					</div>

@@ -64,6 +64,10 @@
 	font-size: 1rem;
 }
 
+.hidden {
+	display: none;
+}
+
 
 
 .content p {
@@ -93,6 +97,10 @@
         background: #e5e5e5;
 	}
 }
+
+/* #container {
+	margin-top: 20%;
+} */
 
 @media screen and (max-width: 768px){
 	.content p{
