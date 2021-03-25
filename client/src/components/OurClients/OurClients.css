@@ -35,7 +35,6 @@
     justify-content: center;
     align-items: center;
 }
-
 .OurClients .slick-list {
     width: 100%;
     height: auto;
@@ -163,7 +162,7 @@
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 100%;
     letter-spacing: -0.015em;
     z-index: 10;
 }
@@ -342,7 +341,7 @@
     }
     .OurClients .slick-next{
         right: 3vw;
-        top: 70.5vh;
+        top: 72.5vh;
     }
     .OurClients .slick-prev{
         left: 3vw;

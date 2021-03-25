@@ -17,7 +17,7 @@ ArticleCarousel.add({
   },
   image: {
     type: Types.CloudinaryImage,
-    required: true,
+    require: true,
     initial: true,
   },
   link: {
