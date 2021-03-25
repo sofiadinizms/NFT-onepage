@@ -31,7 +31,7 @@ function OurBlogSlide (){
 		arrows: true,
 		responsive: [
 			{
-				breakpoint: 768,
+				breakpoint: 1024,
 				settings: {
 					slidesToShow: 1,
 				}
