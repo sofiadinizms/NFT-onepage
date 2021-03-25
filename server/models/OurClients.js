@@ -20,6 +20,7 @@ OurClients.add({
     type: Types.Text,
     initial: true,
     required: true,
+    index: true,
   }
 });
 

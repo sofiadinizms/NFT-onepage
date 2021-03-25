@@ -7,6 +7,7 @@ const WhoWeAre = new keystone.List('WhoWeAre', {
   map: {name: 'title'},
   nocreate: true,
   nodelete: true,
+
 });
 
 WhoWeAre.add({

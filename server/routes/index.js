@@ -1,16 +1,17 @@
 const path = require('path');
 const keystone = require('keystone');
 const cors = require('cors');
+
+const Post = keystone.list('Posts');
 const Banner = keystone.list('Banners');
 
 const Service = keystone.list('Services');
 const Footer = keystone.list('Footers');
-const Content = keystone.list('Content');
 
 const OurClients = keystone.list('OurClients');
 const OurBlog = keystone.list('OurBlog');
 const ArticleCarousel = keystone.list('ArticleCarousel');
-const WhoWeAre = keystone.list('WhoWeAre');
+const WhoWeAre = keystone.list('WhoWeAre')
 
 const mailServer = require('../MailServer/mailServer');
 const dotenv = require('dotenv');
@@ -40,16 +41,6 @@ module.exports = (app) => {
     });
   });
 
-  app.get('/api/content', (req, res) => {
-    Content.model.find((err, data) => {
-      if (err) {
-        res.status(500).send('DB Error');
-      } else {
-        res.send(data);
-      }
-    });
-  });
-
   app.get('/api/ourblogs', (req, res) => {
     OurBlog.model.find((err, data) => {
       if (err) {
@@ -60,8 +51,8 @@ module.exports = (app) => {
     });
   });
 
-  app.get('/api/articlecarousel', (req, res) => {
-    ArticleCarousel.model.find((err, data) => {
+  app.get('/api/articlecarousels', (req, res) => {
+    Post.model.find((err, data) => {
       if (err) {
         res.status(500).send('DB Error');
       } else {
@@ -69,6 +60,16 @@ module.exports = (app) => {
       }
     });
   });
+
+  app.get('/api/posts', (req, res) => {
+    Post.model.find((err, data) => {
+      if (err) {
+        res.status(500).send('DB Error');
+      } else {
+        res.send(data);
+      }
+    });
+	});
 
 	app.get('/api/WhoWeAre', (req, res) => {
     WhoWeAre.model.find((err, data) => {
@@ -114,17 +115,6 @@ module.exports = (app) => {
   
   app.get('/api/whoWeAre', (req, res) => {
     WhoWeAre.model.find((err, data) => {
-
-      if (err) {
-        res.status(500).send('DB Error');
-      } else {
-        res.send(data);
-      }
-    });
-  });
-
-  app.get('/api/content', (req, res) => {
-    Content.model.find((err, data) => {
 
       if (err) {
         res.status(500).send('DB Error');
