@@ -139,7 +139,7 @@ function Contact () {
           placeholder=""/>
           <label className={ isActive ? "active" : ""}>Mensagem</label>
         </div>
-        <button className="button_ontact" type="submit">Enviar</button>
+        <button className="button_contact" type="submit">Enviar</button>
       </div>
       <div className="image_delta">
         <img src ={contact} alt=""/>        
