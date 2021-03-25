@@ -33,7 +33,7 @@ function OurClients(){
     arrows: true,
     responsive: [
       {
-        breakpoint: 700,
+        breakpoint: 1280,
         settings: {
           slidesToShow: 1,
           rows: 1,
