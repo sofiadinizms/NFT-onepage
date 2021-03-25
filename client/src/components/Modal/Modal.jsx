@@ -12,7 +12,7 @@ const [isUsernameActive, setIsUsernameActive] = useState(false);
 const [isEmailActive, setIsEmailActive] = useState(false);
 const [isPhoneActive, setIsPhoneActive] = useState(false);
 
-const [link, setLink] = useState(false)
+const [link, setLink] = useState(true)
 const [username, setUsername] = useState('') ;
 const [email, setEmail] = useState('') ;
 const [phone, setPhone] = useState('') ;
@@ -120,7 +120,8 @@ return(
 								/>
 								<label className={ isPhoneActive ? "usernameActive" : "usernameInactive"}>Telefone</label>
 							</div>
-							{link ? <a href={props.link}><button className="BotaoBaixar" type="submit" onClick={() => setLink(!link)}>Acessar Conteúdo</button></a> : <button className="BotaoBaixar" type="submit" onClick={() => setLink(!link)}>Enviar</button>}
+							<button className="BotaoBaixar" type="submit" onClick={() => setLink(!link)}>{link ? 'Enviar' : <a href={props.link} className='link'>Acessar conteúdo</a>}</button>
+							
 						</form>
 					</div>
           
