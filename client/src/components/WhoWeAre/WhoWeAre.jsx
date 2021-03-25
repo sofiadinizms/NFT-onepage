@@ -59,13 +59,13 @@ return (
 						</div>
 						
 						<div className="square">
-							<div className="icon" id="Representatividade"></div>
-							<div className="subTitle">Representatividade</div>
+							<div className="icon" id="Cooperacao"></div>
+							<div className="subTitle">Cooperação</div>
 						</div>
 						
 						<div className="square">
-							<div className="icon" id="Crescimento"></div>
-							<div className="subTitle">Crescimento</div>
+							<div className="icon" id="Representatividade"></div>
+							<div className="subTitle">Representatividade</div>
 						</div>
 						
 					</div>

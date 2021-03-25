@@ -9,9 +9,13 @@
 .ourServicesSection {  
   display: flex;
   flex-direction: column;
-  background-color:#032C66;
+  background: url('../Assets/BlueTooth1.png') top 6px left 20px, url('../Assets/BlueTooth2.png') top right, #032C66;
+  background-size: 960px;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-attachment: fixed;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
 }
 
 .ourServicesSection h1{
@@ -125,7 +129,11 @@
 }
 
 @media (max-width: 1280px){
+  .ourServicesSection{
+    background: #032C66;
+  }
   .ourServicesSection h1 {
+    background: #032C66;
     margin-top: 10vh;
     font-size: 120%;
   }

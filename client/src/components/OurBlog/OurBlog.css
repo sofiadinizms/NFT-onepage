@@ -6,7 +6,6 @@
 	background-size: 200px;
 	display: flex;
 	flex-direction: column;
-	background-color: #EBECEE;
 	justify-content: center;
 	height: 100vh;
 }
@@ -88,6 +87,11 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
+@media screen and (max-width: 1024px){
+	.tudo{
+        background: #e5e5e5;
+	}
 }
 
 @media screen and (max-width: 768px){
