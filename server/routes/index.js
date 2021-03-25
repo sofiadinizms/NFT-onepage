@@ -10,7 +10,7 @@ const Content = keystone.list('Content');
 const OurClients = keystone.list('OurClients');
 const OurBlog = keystone.list('OurBlog');
 const ArticleCarousel = keystone.list('ArticleCarousel');
-const WhoWeAre = keystone.list('WhoWeAre')
+const WhoWeAre = keystone.list('WhoWeAre');
 
 const mailServer = require('../MailServer/mailServer');
 const dotenv = require('dotenv');

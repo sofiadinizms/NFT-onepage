@@ -4,8 +4,8 @@ const { Types } = keystone.Field;
 
 const Content = new keystone.List('Content', {
   map: {name: 'title'},
-  nocreate: true,
-  nodelete: true,
+  // nocreate: true,
+  // nodelete: true,
 });
 
 Content.add({

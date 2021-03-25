@@ -1,11 +1,11 @@
 import {React, useState, useEffect} from 'react';
 import OurBlogSlide from '../OurBlogSlide/OurBlogSlide';
-import Cd04 from '../Assets/cd04.jpg';
 import '../OurBlog/OurBlog.css';
 import Sliderr from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import axios from 'axios';
+import logo from '../Assets/Deltaodontologia-logo02.png';
 
 import Modal from '../Modal/Modal'
 
@@ -74,18 +74,17 @@ function OurBlog(){
 						<Sliderr className="slide-content" {...settings}>
 							{ourContents?.map(({_id, title, link, image}) => {
 								return(
+									<>
 									<Modal
 										image = {image}
 										title = {title}
 										link = {link}
 										key = {_id}
 									/>
+								</>
 							);
 						})}
-						<Modal 
-							image = {Cd04}
-							title = "Nome do conteúdo"
-						/>
+						<h1>-</h1>
 						</Sliderr>
 					</div>
 					</div>
