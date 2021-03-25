@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import '../Modal/Modal.css'
-import imagem from '../Assets/cd01.jpg';
 
 
 function Modal (props) {
@@ -51,7 +50,7 @@ return(
   <Popup
     trigger={
 		<div className="content">
-			<img src= {props.image[0]?.url} alt='conteudo'/>
+			<img src={props.image[0]?.url} alt='conteudo'/>
 			<p>{props.title}</p>
 		</div>
 		}

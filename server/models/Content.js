@@ -15,11 +15,13 @@ Content.add({
     required: true,
     index: true,
   },
+
   image: {
     type: Types.CloudinaryImages,
     initial: true,
     required: true,
   },
+
   link: {
     type: Types.Url,
     initial: true,

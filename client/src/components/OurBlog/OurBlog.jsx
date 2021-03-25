@@ -1,7 +1,7 @@
-import {React, useEffect, useState} from 'react';
+import {React, useState, useEffect} from 'react';
 import OurBlogSlide from '../OurBlogSlide/OurBlogSlide';
-import '../OurBlog/OurBlog.css';
 import Cd04 from '../Assets/cd04.jpg';
+import '../OurBlog/OurBlog.css';
 import Sliderr from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
