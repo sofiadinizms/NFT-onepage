@@ -22,7 +22,7 @@ function Contact () {
     try {
       event.preventDefault();
 
-      await axios.post('http://localhost:3001/api/contact', {
+      await axios.post('https://delta-odontologia.herokuapp.com/api/contact', {
         name:username,
         email,
         phone,
@@ -96,7 +96,7 @@ function Contact () {
     <form method='POST' className="contact" onSubmit={(e) => handleSubmit(e)} id="NossoContato">
       <div className="info">
         <h1 className="info_contact">Contato</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p></p>
         <div className="label-float">
           <input 
             type="text"

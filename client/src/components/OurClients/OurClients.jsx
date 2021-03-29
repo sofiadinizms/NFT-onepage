@@ -13,7 +13,7 @@ function OurClients(){
   const [ourClients, setOurClients] = useState([]);
 
   const loadOurClients = async () => {
-    const res = await axios.get('http://localhost:3001/api/ourclients');
+    const res = await axios.get('https://delta-odontologia.herokuapp.com/api/ourclients');
     setOurClients(res.data);
   };
 

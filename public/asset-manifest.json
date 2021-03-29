@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.73f59061.chunk.css",
+    "main.js": "/static/js/main.a42b7d10.chunk.js",
+    "main.js.map": "/static/js/main.a42b7d10.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.120840cb.js",
+    "runtime-main.js.map": "/static/js/runtime-main.120840cb.js.map",
+    "static/css/2.5c9a30e7.chunk.css": "/static/css/2.5c9a30e7.chunk.css",
+    "static/js/2.d1a62565.chunk.js": "/static/js/2.d1a62565.chunk.js",
+    "static/js/2.d1a62565.chunk.js.map": "/static/js/2.d1a62565.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.5c9a30e7.chunk.css.map": "/static/css/2.5c9a30e7.chunk.css.map",
+    "static/css/main.73f59061.chunk.css.map": "/static/css/main.73f59061.chunk.css.map",
+    "static/js/2.d1a62565.chunk.js.LICENSE.txt": "/static/js/2.d1a62565.chunk.js.LICENSE.txt",
+    "static/media/Contact.css": "/static/media/BlueTooth2.ba8d813f.png",
+    "static/media/WhoWeAre.css": "/static/media/ToothWhoWeAre2.68bc2201.png",
+    "static/media/Deltaodontologia-logo02.93d19dc8.png": "/static/media/Deltaodontologia-logo02.93d19dc8.png",
+    "static/media/OurBlog.css": "/static/media/PrevMob.68ba3519.svg",
+    "static/media/Instagram_icon.782647b5.svg": "/static/media/Instagram_icon.782647b5.svg",
+    "static/media/Toolbar.css": "/static/media/LogoAzul.8b47b5e2.svg",
+    "static/media/Phone_icon.e1df1af6.svg": "/static/media/Phone_icon.e1df1af6.svg",
+    "static/media/OurBlogSlide.css": "/static/media/RectangleSem.bdb2f745.svg",
+    "static/media/App.css": "/static/media/ToothTwoSections3.9ceb5e3a.png",
+    "static/media/Banner.css": "/static/media/banner_image.d21a7c2b.jpg",
+    "static/media/OurClients.css": "/static/media/prev.81813cb7.svg",
+    "static/media/contact.b60fcd6a.jpg": "/static/media/contact.b60fcd6a.jpg",
+    "static/media/quemSomos.2b447979.jpg": "/static/media/quemSomos.2b447979.jpg",
+    "static/media/slick-theme.css": "/static/media/slick.c94f7671.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.120840cb.js",
+    "static/css/2.5c9a30e7.chunk.css",
+    "static/js/2.d1a62565.chunk.js",
+    "static/css/main.73f59061.chunk.css",
+    "static/js/main.a42b7d10.chunk.js"
+  ]
+}

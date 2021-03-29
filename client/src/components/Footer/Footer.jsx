@@ -12,7 +12,7 @@ function Footer() {
   const [footer, setFooter] = useState([]);
 
   const loadFooter = async () => {
-    const res = await axios.get('http://localhost:3001/api/footers');
+    const res = await axios.get('https://delta-odontologia.herokuapp.com/api/footers');
     setFooter(res.data);
   };
 

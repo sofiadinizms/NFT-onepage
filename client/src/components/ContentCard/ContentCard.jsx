@@ -5,7 +5,7 @@ function ContentCard(){
   const [content, setContent] = useState([]);
 
   const loadContent = async () => {
-    const res = await axios.get('http://localhost:3001/api/content');
+    const res = await axios.get('https://delta-odontologia.herokuapp.com/content');
     setContent(res.data);
   };
 

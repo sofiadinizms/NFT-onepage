@@ -13,7 +13,7 @@ function OurBlog(){
 	const [ourContents, setOurContents] = useState([]);
 
   const loadOurContents = async () => {
-    const res = await axios.get('http://localhost:3001/api/content');
+    const res = await axios.get('https://delta-odontologia.herokuapp.com/api/content');
     setOurContents(res.data);
 		console.log(res.data);
   };
