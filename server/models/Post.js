@@ -13,8 +13,7 @@ Post.add({
   },
   image: {
     type: Types.CloudinaryImages,
-		require: true,
-		singleImage: true,
+    require: true,
   },
 });
 
