@@ -1,10 +1,14 @@
 import {
-  PostList,
+  Section,
 } from './components';
+import GlobalStyle from './global/globalStyles';
 
 function App() {
   return (
-    <PostList />
+    <div>
+      <GlobalStyle />
+      <Section />
+    </div>
   );
 }
 

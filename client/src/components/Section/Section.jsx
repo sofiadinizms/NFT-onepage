@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Title1, Title2 } from './Section';
 
-import './PostList.css';
+import './Section.css';
 
-function PostList() {
+function Section() {
   const [posts, setPosts] = useState([]);
 
   const loadPosts = async () => {
@@ -21,10 +22,11 @@ function PostList() {
         <div key={_id} className="post-card">
           <img src={image[0]?.url} alt="Post de Exemplo"/>
           <p>{name}</p>
+          <Title1>Oioioi</Title1>
         </div>
       ))}
     </div>
   );
 }
 
-export default PostList;
+export default Section;
