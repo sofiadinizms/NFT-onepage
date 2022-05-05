@@ -1,10 +1,17 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Title1, Title2 } from './Section';
+import { Title1 } from './Section.elements';
 
-import './Section.css';
 
-function Section() {
+type SectionProps = {
+  text: string,
+  image: string
+}
+
+const Section: React.FC<SectionProps> = ({
+  text,
+  image
+} : SectionProps) => {
   const [posts, setPosts] = useState([]);
 
   const loadPosts = async () => {
@@ -20,7 +27,7 @@ function Section() {
     <div className="post-list">
       {posts?.map(({ _id, name, image }) => (
         <div key={_id} className="post-card">
-          <img src={image[0]?.url} alt="Post de Exemplo"/>
+          {/* <img src={image[0]?.url} alt="Post de Exemplo"/> */}
           <p>{name}</p>
           <Title1>Oioioi</Title1>
         </div>
