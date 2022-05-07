@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import Theme from './theme';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -13,6 +12,7 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     background: '#FFF';
     color: '#000000';
+    overflow-x: hidden;
   }
   body, input, button, h1, h2, h3, p, textarea {
     font-family: 'Jost';
@@ -24,17 +24,9 @@ const GlobalStyle = createGlobalStyle`
   button {
     cursor: pointer,
   }
-  /* #root {
+  #root {
     position: relative;
-    /* min-height: calc(100vh - 75px); */
-    /* margin: 75px 0 0 0; 
-  } */
-  ::-webkit-scrollbar {
-    width: .4rem;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: ${Theme.colors.pink};
-    border-radius: .3rem;
+    min-height: calc(100vh - 75px);
   }
 `;
 
