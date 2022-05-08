@@ -1,15 +1,17 @@
 import React from 'react';
 import {
-  Section,
+  GenericSections
 } from './components';
 import GlobalStyle from './global/globalStyles';
+import { ThemeProvider } from 'styled-components';
+import { Theme } from './global/theme';
 
 const App:React.FC = () => {
   return (
-    <div>
+    <ThemeProvider theme={Theme}>
       <GlobalStyle />
-      <Section text={'opa textinho'} image={'imagem e tals'} />
-    </div>
+      <GenericSections />
+    </ThemeProvider>
   );
 }
 
