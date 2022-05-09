@@ -15,7 +15,7 @@ export const Container = styled.div<Props>`
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	background-color: ${Theme.colors.darkPurple};
+	background-color: ${Props => Props.bkgColor};
 `
 
 export const TextContainer = styled.div<Props>`
@@ -28,23 +28,23 @@ export const TextContainer = styled.div<Props>`
 	order: ${props => props.orderText};
 `
 
-export const Title1 = styled.h1`
+export const Title1 = styled.h2<Props>`
 	color: ${Theme.colors.lilac};
 	font-weight: 500;
-	font-size: 50px;
-	text-align: left;
+	font-size: 35px;
+	text-align: ${Props => Props.orderText === 2 ? 'right' : 'left'};
 `
 
-export const Subtitle = styled.h2`
+export const Subtitle = styled.h3`
 	color: ${Theme.colors.lilac};
 	font-weight: 500;
-	font-size: 25px;
+	font-size: 20px;
 	text-align: left;
 `
 
 export const Description = styled.p`
 	color: ${Theme.colors.lilac};
-	font-weight: 500;
+	font-weight: 400;
 	font-size: 20px;
 	text-align: left;
 	overflow-wrap: break-word;

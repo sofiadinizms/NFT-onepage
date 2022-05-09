@@ -1,6 +1,8 @@
 import React from 'react';
 import {
-  GenericSections
+  GenericSections,
+  Footer,
+  Banner
 } from './components';
 import GlobalStyle from './global/globalStyles';
 import { ThemeProvider } from 'styled-components';
@@ -10,7 +12,9 @@ const App:React.FC = () => {
   return (
     <ThemeProvider theme={Theme}>
       <GlobalStyle />
+      <Banner />
       <GenericSections />
+      <Footer />
     </ThemeProvider>
   );
 }

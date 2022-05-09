@@ -2,11 +2,11 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const BasicSection = new keystone.List('BasicSections', {
+const BasicSections = new keystone.List('BasicSections', {
   map: {name: 'title'}
 })
 
-BasicSection.add({
+BasicSections.add({
   title: {
     type: Types.Text,
     required: true,
@@ -16,17 +16,33 @@ BasicSection.add({
   subtitle: {
     type: Types.Text,
     required: true,
-    initial: true,
+    initial: true
   },
   text: {
     type: Types.Text,
     required: true,
-    initial: true,
+    initial: true
   },
   image: {
     type: Types.CloudinaryImage,
-    initial: true,
+    require: true,
+    initial: true
   },
+  orderImg:{
+    type: Types.Number,
+    require: true,
+    initial: true
+  },
+  orderText:{
+    type: Types.Number,
+    require: true,
+    initial: true
+  },
+  background: {
+    type: Types.Text,
+    require: true,
+    initial: true
+  }
 });
 
-BasicSection.register();
+BasicSections.register();
