@@ -86,7 +86,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Made with 💜 by Isaque Diniz (itd), Pedro Manoel (pmdbma), Sofia Diniz (sdms), Vitória Pinheiro (vps3)👋
+Made with 💜 by Sofia Diniz (sdms) and Vitória Pinheiro (vps3)👋
 
 - - -
 
