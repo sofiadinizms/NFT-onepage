@@ -12,14 +12,13 @@ export const Container = styled.div<Props>`
 	width: 100vw;
 	overflow-x: hidden;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	background-color: ${Props => Props.bkgColor};
 `
 
 export const TextContainer = styled.div<Props>`
-	height: 30vh;
+	height: fit-content;
 	width: 40vw;
 	display: flex;
 	flex-direction: column;
@@ -45,13 +44,14 @@ export const Subtitle = styled.h3`
 export const Description = styled.p`
 	color: ${Theme.colors.lilac};
 	font-weight: 400;
+	margin-top: 20px;
 	font-size: 20px;
 	text-align: left;
 	overflow-wrap: break-word;
 `
 
 export const Picture = styled.img<Props>`
-	width: 30vw;
-	min-width: 50px;
+	width: 28vw;
+	height:fit-content ;
 	order: ${props => props.orderImg};
 `
