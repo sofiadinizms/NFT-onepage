@@ -1,5 +1,5 @@
 {
-  "name": "keystone-admin",
+  "name": "nft-admin",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -34,5 +34,8 @@
     "babel-preset-react": "^6.24.1",
     "webpack": "^4.41.0",
     "webpack-cli": "^3.3.9"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
