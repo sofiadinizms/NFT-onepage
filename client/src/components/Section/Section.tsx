@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React from 'react';
 import { 
   Title1, 
   Container,
@@ -7,17 +6,16 @@ import {
   Description,
   Picture,
   TextContainer
- } from './Section.elements';
+} from './Section.elements';
 
-import testImage from '../../Assets/test_image.svg';
-
- type SectionProps = {
-  title: string,
-  subtitle: string,
-  text: string,
-  image: string,
-  orderImg: number,
-  orderText: number
+type SectionProps = {
+title: any,
+subtitle: any,
+text: any,
+image: any,
+orderImg: number,
+orderText: number,
+bkgColor: string
 }
 
 const Section: React.FC<SectionProps> = ({
@@ -26,24 +24,12 @@ const Section: React.FC<SectionProps> = ({
   text,
   image,
   orderImg,
-  orderText
+  orderText,
+  bkgColor
 } : SectionProps) => {
-  // const [posts, setPosts] = useState([]);
-
-  // const loadPosts = async () => {
-  //   const res = await axios.get('http://localhost:3001/api/posts');
-  //   setPosts(res.data);
-  // };
-
-  // useEffect(() => {
-  //   loadPosts();
-  // }, []);
 
   return (
-    <Container bkgColor='darkPurple'>
-      {/* {posts?.map(({ _id, name, image }) => ( */}
-        {/* <div key={_id} className="post-card"> */}
-          {/* <img src={image[0]?.url} alt="Post de Exemplo"/> */}
+    <Container bkgColor={bkgColor}>
           <Picture src={image} orderImg={orderImg}></Picture>
           <TextContainer orderText={orderText}>
             <Title1>{title}</Title1>
