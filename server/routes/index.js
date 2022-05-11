@@ -5,6 +5,8 @@ const cors = require('cors');
 const Post = keystone.list('Posts');
 const Section = keystone.list('BasicSections');
 const MenuCard = keystone.list('MenuCards');
+const Footer = keystone.list('Footers');
+const Banner = keystone.list('Banners');
 
 module.exports = (app) => {
   app.use(cors());
@@ -35,6 +37,26 @@ module.exports = (app) => {
 
   app.get('/api/menucard', (req, res) => {
     MenuCard.model.find((err, data) => {
+      if (err) {
+        res.status(500).send('DB Error');
+      } else {
+        res.send(data);
+      }
+    });
+  });
+
+  app.get('/api/footer', (req, res) => {
+    Footer.model.find((err, data) => {
+      if (err) {
+        res.status(500).send('DB Error');
+      } else {
+        res.send(data);
+      }
+    });
+  });
+
+  app.get('/api/banner', (req, res) => {
+    Banner.model.find((err, data) => {
       if (err) {
         res.status(500).send('DB Error');
       } else {

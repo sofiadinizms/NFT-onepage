@@ -7,10 +7,12 @@ interface Props{
 }
 
 export const FooterText = styled.p<Props>`
+  max-width: 20vw;
   font-weight: ${Props => Props.weight};
   color: ${Theme.colors.darkPurple};
-  font-size: 12px;
+  font-size: 13px;
   text-align: ${Props => Props.align};
+  overflow-wrap: break-word;
 `
 
 export const Container = styled.footer`

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 import {
   Container,
@@ -16,24 +17,44 @@ import apple from '../../Assets/apple-logo.png';
 import android from '../../Assets/play-store.png';
 
 const Banner: React.FC = () => {
+  const [banner, setBanner] = useState([])
+
+  const loadBanner = async() => {
+    const res = await axios.get('http://localhost:3001/api/banner');
+    setBanner(res.data);
+  };
+
+  useEffect(() => {
+    loadBanner()
+  }, []);
+
+
   return(
-    <Container>
-      <SideContainer1>
-        <Title1>Oioioi</Title1>
-        <Title2>Subtituloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</Title2>
-      </SideContainer1>
-      <SideContainer2>
-        <ImageContainer src={phone}/>
-        <DownloadBtn>
-          <StoreIcon src={apple} />
-          App Store
-        </DownloadBtn>
-        <DownloadBtn>
-          <StoreIcon src={android} />
-          Play Store
-          </DownloadBtn>
-      </SideContainer2>
-    </Container>
+    <div>
+        {banner?.map(({title, subtitle, appleLink, androidLink}) => (
+          <Container>
+            <SideContainer1>
+              <Title1>{title}</Title1>
+              <Title2>{subtitle}</Title2>
+            </SideContainer1>
+            <SideContainer2>
+              <ImageContainer src={phone}/>
+                <DownloadBtn>
+                  <StoreIcon src={apple} />
+                  <a href={appleLink}>
+                    App Store
+                  </a>
+                </DownloadBtn>
+                <DownloadBtn>
+                  <StoreIcon src={android} />
+                    <a href={androidLink}>
+                      Play Store
+                    </a>
+                </DownloadBtn>
+            </SideContainer2>
+          </Container>
+      ))}
+    </div>
   );
 }
 
