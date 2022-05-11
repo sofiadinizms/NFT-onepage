@@ -15,8 +15,6 @@ const GenericSections: React.FC = () => {
   useEffect(() => {
     loadSections();
   }, []);
-  console.log(section);
-  
 
   return (
     <div>
