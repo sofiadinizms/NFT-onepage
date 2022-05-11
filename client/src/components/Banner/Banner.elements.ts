@@ -51,6 +51,7 @@ export const DownloadBtn = styled.button`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  outline: none;
 `
 export const StoreIcon = styled.img`
   width: 18px;

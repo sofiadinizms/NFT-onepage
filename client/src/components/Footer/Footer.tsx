@@ -10,15 +10,6 @@ import {
 
 import logo from '../../Assets/dollar.png';
 
-
-type FooterProps = {
-socialMedia1: any,
-socialMedia2: string,
-appleDownload: string,
-androidDownload: string,
-paragraph: string
-}
-
 const Footer: React.FC = () => {
   
   const [footer, setFooter] = useState([]);
