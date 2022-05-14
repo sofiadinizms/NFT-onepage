@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
+  Navbar,
+  Sidebar,
   GenericSections,
   Footer,
   Banner
@@ -7,14 +9,24 @@ import {
 import GlobalStyle from './global/globalStyles';
 import { ThemeProvider } from 'styled-components';
 import { Theme } from './global/theme';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 const App:React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen)
+  }
   return (
     <ThemeProvider theme={Theme}>
-      <GlobalStyle />
-      <Banner />
-      <GenericSections />
-      <Footer />
+      <Router>
+        <GlobalStyle />
+        <Sidebar isOpen={isOpen} toggle={toggle}/>
+        <Navbar toggle={toggle}/>
+        <Banner />
+        <GenericSections />
+        <Footer />
+      </Router>
     </ThemeProvider>
   );
 }
