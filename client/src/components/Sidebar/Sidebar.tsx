@@ -23,10 +23,10 @@ const Sidebar: React.FC<SidebarProps> = ({toggle, isOpen}) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="footer" onClick={toggle}> About </SidebarLink>
-          <SidebarLink to="footer" onClick={toggle}> Discover </SidebarLink>
-          <SidebarLink to="footer" onClick={toggle}> Services </SidebarLink>
-          <SidebarLink to="footer" onClick={toggle}> Sign Up </SidebarLink>
+          <SidebarLink to="footer"> About </SidebarLink>
+          <SidebarLink to="footer"> Discover </SidebarLink>
+          <SidebarLink to="footer"> Services </SidebarLink>
+          <SidebarLink to="footer"> Sign Up </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
           <SidebarRoute to='footer'>Sign In</SidebarRoute>

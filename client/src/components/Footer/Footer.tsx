@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
   const [footer, setFooter] = useState([]);
 
   const loadFooter = async() => {
-    const res = await axios.get('http://localhost:3001/api/footer');
+    const res = await axios.get('https://projeto-nft-o-jogo.herokuapp.com/api/footer');
     setFooter(res.data);
   };
 
