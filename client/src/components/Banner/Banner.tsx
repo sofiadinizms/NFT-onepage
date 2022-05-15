@@ -20,7 +20,7 @@ const Banner: React.FC = () => {
   const [banner, setBanner] = useState([])
 
   const loadBanner = async() => {
-    const res = await axios.get('https://projeto-nft-o-jogo.herokuapp.com/api/banner');
+    const res = await axios.get('http://localhost:3000/api/banner');
     setBanner(res.data);
   };
 

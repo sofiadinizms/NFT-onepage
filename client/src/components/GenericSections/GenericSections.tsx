@@ -8,7 +8,7 @@ const GenericSections: React.FC = () => {
   const [section, setSection] = useState([]);
 
   const loadSections = async () => {
-    const res = await axios.get('https://projeto-nft-o-jogo.herokuapp.com/api/sections');
+    const res = await axios.get('http://localhost:3000/api/sections');
     setSection(res.data);
   };
 
