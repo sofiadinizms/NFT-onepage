@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { ReactComponent as AppIcon } from '../../Assets/AppIcon2.svg';
+import { ReactComponent as AppIcon } from '../../Assets/AppIcon.svg';
 import { ReactComponent as Cubes } from '../../Assets/Cubes.svg';
 
 import {
