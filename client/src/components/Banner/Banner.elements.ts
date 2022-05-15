@@ -3,6 +3,7 @@ import { Theme } from '../../global/theme';
 
 interface Props{
   fill?: boolean,
+  star?: boolean
 }
 
 export const Container = styled.div`
@@ -12,7 +13,6 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-top: 80px; */
 `
 
 export const StyledContainer = styled.div`
@@ -89,21 +89,42 @@ export const ImageContainer = styled.img`
 
 export const DownloadBtn = styled.button<Props>`
   width: 180px;
-  height: ${Props => Props.fill ? '42px' : '40px'};;
+  height: ${Props => Props.fill ? '42px' : '40px'};
   margin-top: 20px;
   border-radius: 10px;
   border: 1px solid ${Theme.colors.green1000};
   background-color: ${Props => Props.fill ? `${Theme.colors.green1000}` : `${Theme.colors.green400}`};
   color: ${Props => Props.fill ? `${Theme.colors.white}` : `${Theme.colors.green1000}`};
   font-size: 18px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   outline: none;
+  cursor: pointer;
 `
-export const StoreIcon = styled.img`
-  width: 18px;
-  height: 18px;
+
+export const FunIconsContainer = styled.div<Props>`
+  position: absolute;
+  top: ${Props => Props.star ? '8vh' : '80vh'};
+  left:  ${Props => Props.star ? '2vw' : '73vw'};
+  animation: rotation 30s infinite linear;
+
+  svg{
+    width: 5vw;
+  }
+
+  @media screen and (max-width: 768px){
+    svg{
+      width: 10vw;
+    }
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
 `
 
 export const SideContainer2 = styled.div`
@@ -132,8 +153,10 @@ export const IconContainer = styled.div`
   }
   
   @media screen and (max-width: 415px){
+    height: 10vh;
+   
     svg{
-      height: 10vw;
+      width: 30vw;
     }
   }
 
@@ -145,7 +168,7 @@ export const IconContainer = styled.div`
 
 export const AppIconContainer = styled.div`
   width: 20vw;
-  min-width: 130px;
+  min-width: 90px;
   height: 20vw;
   display: flex;
   justify-content: center;

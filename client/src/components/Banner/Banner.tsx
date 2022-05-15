@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { ReactComponent as AppIcon } from '../../Assets/AppIcon.svg';
 import { ReactComponent as Cubes } from '../../Assets/Cubes.svg';
+import { ReactComponent as Star } from '../../Assets/Star.svg';
+import { ReactComponent as Flower } from '../../Assets/Flower.svg';
 
 import {
   Container,
@@ -13,12 +15,9 @@ import {
   AppIconContainer,
   StyledContainer,
   Line,
-  IconContainer
+  IconContainer,
+  FunIconsContainer
 } from './Banner.elements';
-
-import phone from '../../Assets/banner_img.png';
-import apple from '../../Assets/apple-logo.png';
-import android from '../../Assets/play-store.png';
 
 const Banner: React.FC = () => {
   const [banner, setBanner] = useState([])
@@ -35,8 +34,14 @@ const Banner: React.FC = () => {
 
   return(
     <div>
-        {banner?.map(({subtitle, appleLink, androidLink}) => (
+        {banner?.map(({appleLink, androidLink}) => (
           <Container>
+            <FunIconsContainer star>
+              <Star />
+            </FunIconsContainer>
+            <FunIconsContainer>
+              <Flower />
+            </FunIconsContainer>
             <StyledContainer>
               <SideContainer1>
                 <IconContainer>
