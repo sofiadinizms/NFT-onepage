@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS} from 'react-scroll';
 import { Theme } from '../../global/theme';
 
@@ -7,7 +6,6 @@ export const Nav = styled.nav`
   background: ${Theme.colors.white};
   border-bottom: 1px solid black;
   height: 80px;
-  /* margin-top: -80px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,7 +29,7 @@ export const NavbarContainer = styled.div`
   max-width: 1100px;
 `
 
-export const NavLogo = styled(LinkR)`
+export const NavLogo = styled(LinkS)`
   color: #001405;
   justify-self: flex-start;
   cursor: pointer;
@@ -94,38 +92,6 @@ export const NavLinks = styled(LinkS)`
   }
 `
 
-
-
-
-
-
-
-
-// export const Bars = styled(FaBars)`
-//   display: none;
-//   color: #fff;
-
-//   @media screen and (max-width: 768px) {
-//     display: block;
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     transform: translate(-100%, 75%);
-//     font-size: 1.8rem;
-//     cursor: pointer;
-//   }
-// `
-
-// export const NavMenu = styled.div`
-//   display: flex;
-//   align-items: center;
-//   margin-right: -24px;
-
-//   @media screen and (max-width: 768px){
-//     display: none;
-//   }
-// `
-
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
@@ -135,7 +101,7 @@ export const NavBtn = styled.nav`
   }
 `
 
-export const NavBtnLink = styled(LinkR)`
+export const NavBtnLink = styled(LinkS)`
   border-radius: 50px;
   background: #A4C3B2;
   white-space: nowrap;
