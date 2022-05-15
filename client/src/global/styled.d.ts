@@ -7,7 +7,9 @@ declare module 'styled-components'{
       darkPurple: string,
       white: string,
       lilac: string,
-      mediumPurple: string
+      mediumPurple: string,
+      green400: string,
+      green1000: string
     },
 
     fonts: {

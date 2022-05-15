@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { ReactComponent as AppIcon } from '../../Assets/AppIcon2.svg';
+import { ReactComponent as Cubes } from '../../Assets/Cubes.svg';
 
 import {
   Container,
@@ -7,9 +9,11 @@ import {
   Title2,
   SideContainer1,
   SideContainer2,
-  ImageContainer,
   DownloadBtn,
-  StoreIcon
+  AppIconContainer,
+  StyledContainer,
+  Line,
+  IconContainer
 } from './Banner.elements';
 
 import phone from '../../Assets/banner_img.png';
@@ -31,27 +35,34 @@ const Banner: React.FC = () => {
 
   return(
     <div>
-        {banner?.map(({title, subtitle, appleLink, androidLink}) => (
+        {banner?.map(({subtitle, appleLink, androidLink}) => (
           <Container>
-            <SideContainer1>
-              <Title1>{title}</Title1>
-              <Title2>{subtitle}</Title2>
-            </SideContainer1>
-            <SideContainer2>
-              <ImageContainer src={phone}/>
-                <DownloadBtn>
-                  <StoreIcon src={apple} />
+            <StyledContainer>
+              <SideContainer1>
+                <IconContainer>
+                  <Title1>NFT</Title1>
+                  <Cubes />
+                </IconContainer>
+                <Title1>O JOGO</Title1>
+                <Title2>Explore o mundo dos NFTs através de uma experiência única.</Title2>
+                <Line />
+                <DownloadBtn fill>
                   <a href={appleLink}>
                     App Store
                   </a>
                 </DownloadBtn>
                 <DownloadBtn>
-                  <StoreIcon src={android} />
                     <a href={androidLink}>
                       Play Store
                     </a>
                 </DownloadBtn>
-            </SideContainer2>
+              </SideContainer1>
+              <SideContainer2>
+                <AppIconContainer>
+                  <AppIcon />
+                </AppIconContainer>
+              </SideContainer2>
+            </StyledContainer>
           </Container>
       ))}
     </div>
