@@ -17,6 +17,11 @@ MenuCard.add({
     type: Types.Url,
     required: true,
     initial: true,
+  },
+  text: {
+    type: Types.Text,
+    required: true,
+    initial: true
   }
 })
 
