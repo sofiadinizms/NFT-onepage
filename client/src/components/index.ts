@@ -4,6 +4,7 @@ import Footer from './Footer';
 import Banner from './Banner';
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
+import References from './References';
 
 export{
   Section,
@@ -11,5 +12,6 @@ export{
   Footer,
   Banner,
   Navbar,
-  Sidebar
+  Sidebar,
+  References
 }
