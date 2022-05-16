@@ -8,7 +8,9 @@ export const Theme:DefaultTheme = {
     lilac: '#EFECFB',
     mediumPurple: '#5F60D8',
     green400: '#EAF4F4',
-    green1000: '#001405'
+    green500: '#CCE3DE',
+    green1000: '#001405',
+
   },
 
   fonts: {

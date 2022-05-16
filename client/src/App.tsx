@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import {
   Navbar,
   Sidebar,
-  GenericSections,
   Footer,
-  Banner
+  Banner,
+  References
 } from './components';
 import GlobalStyle from './global/globalStyles';
 import { ThemeProvider } from 'styled-components';
@@ -24,7 +24,7 @@ const App:React.FC = () => {
         <Sidebar isOpen={isOpen} toggle={toggle}/>
         <Navbar toggle={toggle}/>
         <Banner />
-        <GenericSections />
+        <References />
         <Footer />
       </Router>
     </ThemeProvider>

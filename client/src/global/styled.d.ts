@@ -9,6 +9,7 @@ declare module 'styled-components'{
       lilac: string,
       mediumPurple: string,
       green400: string,
+      green500: string,
       green1000: string
     },
 
