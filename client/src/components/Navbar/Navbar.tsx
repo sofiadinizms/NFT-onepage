@@ -1,4 +1,3 @@
-//@ts-nocheck
 import React from 'react';
 import { FaBars } from 'react-icons/fa';
 import {
@@ -28,20 +27,17 @@ const Navbar: React.FC<NavbarProps> = ({toggle}) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to='about'>About</NavLinks>
+              <NavLinks to='/footer' onClick={toggle}>Inicio</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='discover'>Discover</NavLinks>
+              <NavLinks to='footer' onClick={toggle}>Sobre nós</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='services'>services</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to='signup'>sign up</NavLinks>
+              <NavLinks to='footer' onClick={toggle}>Conteúdos</NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to='/signin'>Sign In</NavBtnLink>
+            <NavBtnLink to='/footer' onClick={toggle}>Download</NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>
