@@ -20,7 +20,7 @@ const References: React.FC = () => {
   const [content, setContent] = useState([]);
 
   const loadContent = async() => {
-    const response = await axios.get('http://localhost:3001/api/menucard');
+    const response = await axios.get('http://localhost:3001/api/contentcard');
     setContent(response.data);
   };
 
@@ -33,8 +33,8 @@ const References: React.FC = () => {
       <Title>Aprofunde seus conhecimentos</Title>
       <ContentContainer>
         {content?.map(({_id, title, link, text}, i) => (
-          <a href={link}>
-            <ContentCard key={_id}>
+          <a href={link} key={_id}>
+            <ContentCard>
               <ContentMedia>
                 <ContentIconBackground />
                 <ContentIconContainer>
