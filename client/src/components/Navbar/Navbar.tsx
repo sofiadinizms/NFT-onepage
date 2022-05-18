@@ -12,6 +12,8 @@ import {
   NavLinks
 } from './Navbar.elements';
 
+import {ReactComponent as Logo} from '../../Assets/ColoredLogo.svg';
+
 type NavbarProps = {
   toggle: () => void
 }
@@ -21,7 +23,7 @@ const Navbar: React.FC<NavbarProps> = ({toggle}) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to='/'>Logo</NavLogo>
+          <NavLogo to='/'><Logo /></NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>

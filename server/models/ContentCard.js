@@ -2,11 +2,11 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const MenuCard = new keystone.List('MenuCards', {
+const ContentCard = new keystone.List('ContentCards', {
   map: {name: 'title'}
 });
 
-MenuCard.add({
+ContentCard.add({
   title: {
     type: Types.Text,
     required: true,
@@ -25,4 +25,4 @@ MenuCard.add({
   }
 })
 
-MenuCard.register();
+ContentCard.register();

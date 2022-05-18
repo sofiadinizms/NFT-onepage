@@ -11,12 +11,6 @@ Footer.add({
     initial: true,
     index: true
   },
-  socialMedia2: {
-    type: Types.Url,
-    required: true,
-    initial: true,
-    index: true
-  },
   appleDownload: {
     type: Types.Url,
     required: true,

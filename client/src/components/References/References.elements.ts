@@ -3,10 +3,11 @@ import { Theme } from '../../global/theme';
 
 export const SectionWrapper = styled.section`
   width: 100vw;
-  height: 65vh;
+  height: 70vh;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  padding-top: 30px;
 
   @media screen and (max-width: 1024px){
     height: fit-content;
