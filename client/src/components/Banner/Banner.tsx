@@ -34,8 +34,8 @@ const Banner: React.FC = () => {
 
   return(
     <>
-        {banner?.map(({id_,appleLink, androidLink}) => (
-          <Container key={id_}>
+        {banner?.map(({_id,appleLink, androidLink}) => (
+          <Container key={_id}>
             <FunIconsContainer star>
               <Star />
             </FunIconsContainer>
@@ -51,12 +51,12 @@ const Banner: React.FC = () => {
                 <Title1>O JOGO</Title1>
                 <Title2>Explore o mundo dos NFTs através de uma experiência única.</Title2>
                 <Line />
-                <DownloadBtn fill key={id_}>
+                <DownloadBtn fill>
                   <a href={appleLink}>
                     App Store
                   </a>
                 </DownloadBtn>
-                <DownloadBtn key={id_}>
+                <DownloadBtn>
                     <a href={androidLink}>
                       Play Store
                     </a>
