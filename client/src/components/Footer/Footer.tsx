@@ -8,7 +8,7 @@ import {
   Logo
 } from './Footer.elements'
 
-import logo from '../../Assets/dollar.png';
+import { ReactComponent as LogoIcon} from '../../Assets/ColoredLogo.svg';
 
 const Footer: React.FC = () => {
   
@@ -34,24 +34,26 @@ const Footer: React.FC = () => {
 
   return (
     <Container>
-      {footer?.map(({socialMedia1, socialMedia2, appleDownload, androidDownload}) => (
-      <SideContainer>
-        <FooterText weight={500} align='left'><a href={socialMedia1}>Instagram</a></FooterText>
-        <FooterText weight={500} align='left'><a href={socialMedia2}>LinkedIn</a></FooterText>
-        <FooterText weight={500} align='left'><a href={appleDownload}>Baixe nosso app na App Store!</a></FooterText>
-        <FooterText weight={500} align='left'><a href={androidDownload}>Baixe nosso app na App Store!</a></FooterText>
+      {footer?.map(({_id,appleDownload, androidDownload}) => (
+      <SideContainer key={_id}>
+        <FooterText align='left'><a href={appleDownload}>Baixe nosso app na App Store</a></FooterText>
+        <FooterText align='left'><a href={androidDownload}>Baixe nosso app na Play Store</a></FooterText>
+        <FooterText weight align='left'>Made with<strong>&lt; &#x0002F; &gt;</strong>and <strong>&hearts;</strong> by Sofia Diniz e Vitória Pinheiro</FooterText>
       </SideContainer>
       ))}
       
-      <SideContainer>
-        <Logo src={logo}/>
-      </SideContainer>
-        {footer?.map(({paragraph}) => (
+
+        <Logo>
+          <LogoIcon />
+        </Logo>
+
         <SideContainer>
-          <FooterText weight={500} align='right'>{paragraph}</FooterText>
+
+          {footer?.map(({_id,paragraph}) => (
+            <FooterText align='right' key={_id}>{paragraph}</FooterText>    
+          ))}
         </SideContainer>    
 
-        ))}
     </Container>
   );
 }
