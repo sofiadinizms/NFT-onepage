@@ -16,8 +16,7 @@ export const Container = styled.section`
   
   svg{
     position: absolute;
-    z-index: -5;
-    margin-top: 450px;
+    margin-top: 650px;
     animation: wave 30s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
     height: 100vh;
 
@@ -102,11 +101,13 @@ export const Title = styled.h2`
 
   @media screen and (max-width: 768px) {
     text-align: center;
+    width: 100vw;
   }
 `
 export const GoalCard = styled.div`
   width: 150px;
   height: 145px;
+  z-index: 10;
   background: linear-gradient(215.23deg, #00AA8B 7.41%, #41B2B9 49.86%, #5491C9 88.92%);
   display: flex;
   justify-content: center;

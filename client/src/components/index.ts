@@ -5,6 +5,7 @@ import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 import References from './References';
 import Goals from './Goals';
+import Journey from './Journey';
 
 export{
   Section,
@@ -13,5 +14,6 @@ export{
   Navbar,
   Sidebar,
   References,
-  Goals
+  Goals,
+  Journey
 }
