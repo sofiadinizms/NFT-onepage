@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.js": "/static/js/main.70d30f59.chunk.js",
+    "main.js.map": "/static/js/main.70d30f59.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.7451b9a1.js",
+    "runtime-main.js.map": "/static/js/runtime-main.7451b9a1.js.map",
+    "static/js/2.f8a51e5c.chunk.js": "/static/js/2.f8a51e5c.chunk.js",
+    "static/js/2.f8a51e5c.chunk.js.map": "/static/js/2.f8a51e5c.chunk.js.map",
+    "index.html": "/index.html",
+    "static/js/2.f8a51e5c.chunk.js.LICENSE.txt": "/static/js/2.f8a51e5c.chunk.js.LICENSE.txt",
+    "static/media/3DPrinter.5dae6514.svg": "/static/media/3DPrinter.5dae6514.svg",
+    "static/media/AppIcon.2963beca.svg": "/static/media/AppIcon.2963beca.svg",
+    "static/media/ColoredLogo.1deb4b58.svg": "/static/media/ColoredLogo.1deb4b58.svg",
+    "static/media/Cubes.ebf7f8aa.svg": "/static/media/Cubes.ebf7f8aa.svg",
+    "static/media/DenseStar.500f1317.svg": "/static/media/DenseStar.500f1317.svg",
+    "static/media/Float.c328546f.svg": "/static/media/Float.c328546f.svg",
+    "static/media/Flower.4280b1ee.svg": "/static/media/Flower.4280b1ee.svg",
+    "static/media/Process.691a41d1.svg": "/static/media/Process.691a41d1.svg",
+    "static/media/Sparkle.226404c1.svg": "/static/media/Sparkle.226404c1.svg",
+    "static/media/Star.20c0a603.svg": "/static/media/Star.20c0a603.svg",
+    "static/media/ThinFlower.96a5952a.svg": "/static/media/ThinFlower.96a5952a.svg",
+    "static/media/line.e483a77b.svg": "/static/media/line.e483a77b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7451b9a1.js",
+    "static/js/2.f8a51e5c.chunk.js",
+    "static/js/main.70d30f59.chunk.js"
+  ]
+}
