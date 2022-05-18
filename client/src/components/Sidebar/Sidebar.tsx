@@ -16,6 +16,7 @@ type SidebarProps = {
 }
 
 const Sidebar: React.FC<SidebarProps> = ({toggle, isOpen}) => {
+
   return(
     <SidebarContainer isOpen={isOpen}>
       <Icon onClick={toggle} data-testid='iconButton'>
