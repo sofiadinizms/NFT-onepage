@@ -5,7 +5,8 @@ import {
   Footer,
   Banner,
   References,
-  Goals
+  Goals,
+  Journey
 } from './components';
 import GlobalStyle from './global/globalStyles';
 import { ThemeProvider } from 'styled-components';
@@ -26,6 +27,7 @@ const App:React.FC = () => {
          <Navbar toggle={toggle}/>
          <Banner />
          <Goals />
+         <Journey />
          <References />
          <Footer />
        </Router>
