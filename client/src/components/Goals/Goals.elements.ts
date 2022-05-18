@@ -19,19 +19,29 @@ export const Container = styled.section`
     margin-top: 450px;
     animation: wave 30s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
     height: 100vh;
+
+    @media screen and (max-width:768px){
+      display: none;
+    }
   }
 
   @keyframes wave {
-  0% {
-    margin-left: 100%;
+    0% {
+      margin-left: 100%;
+    }
+    50% {
+      margin-left: 300%;
+    }
+    100%{
+      margin-left: 100%;
+    }
   }
-  50% {
-    margin-left: 300%;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: fit-content;
   }
-  100%{
-    margin-left: 100%;
-  }
-}
 `
 
 export const EvalContainer = styled.div`
@@ -41,6 +51,11 @@ export const EvalContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    height: 230px;
+    margin-bottom: 40px;
+  }
 `
 export const NumberContainer = styled.div`
   width: 260px;
@@ -62,6 +77,11 @@ export const Evaluation = styled.h2<EvalProp>`
   font-weight: 500;
   font-size: ${EvalProp => EvalProp.star ? '50px' : '130px'};
   line-height: ${EvalProp => EvalProp.star ? '40px' : '95px'};
+
+  @media screen and (max-width: 768px) {
+    font-size: ${EvalProp => EvalProp.star ? '50px' : '100px'};
+    line-height: ${EvalProp => EvalProp.star ? '40px' : '80px'};
+  }
 `
 
 export const EvalText = styled.p`
@@ -78,6 +98,10 @@ export const Title = styled.h2`
   font-size: 40px;
   height: 100px;
   width: 510px;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
 `
 export const GoalCard = styled.div`
   width: 150px;
@@ -105,8 +129,9 @@ export const GoalContainer = styled.div`
 
   @media screen and (max-width: 415px){
     height: 495px;
-    width: 100vw;
-    align-items: space-between;
+    width: 90vw;
+    flex-direction: column;
+    align-items: center;
   }
 `
 
@@ -118,5 +143,15 @@ export const GoalSide = styled.div`
   justify-content: center;
   align-items: center;
   padding-bottom: 180px;
+
+  @media screen and (max-width: 768px) {
+    height: 300px;
+    padding: 0;
+  }
+
+  @media screen and (max-width: 415px) {
+    height: 100vh;
+    padding: 0;
+  }
 `
 
