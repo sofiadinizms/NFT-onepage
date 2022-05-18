@@ -4,7 +4,8 @@ import {
   Sidebar,
   Footer,
   Banner,
-  References
+  References,
+  Goals
 } from './components';
 import GlobalStyle from './global/globalStyles';
 import { ThemeProvider } from 'styled-components';
@@ -19,14 +20,15 @@ const App:React.FC = () => {
   }
   return (
     <ThemeProvider theme={Theme}>
-      <Router>
-        <GlobalStyle />
-        <Sidebar isOpen={isOpen} toggle={toggle}/>
-        <Navbar toggle={toggle}/>
-        <Banner />
-        <References />
-        <Footer />
-      </Router>
+       <Router>
+         <GlobalStyle />
+         <Sidebar isOpen={isOpen} toggle={toggle}/>
+         <Navbar toggle={toggle}/>
+         <Banner />
+         <Goals />
+         <References />
+         <Footer />
+       </Router>
     </ThemeProvider>
   );
 }
