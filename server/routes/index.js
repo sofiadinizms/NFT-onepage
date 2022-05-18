@@ -3,7 +3,7 @@ const keystone = require('keystone');
 const cors = require('cors');
 
 const Post = keystone.list('Posts');
-const Section = keystone.list('BasicSections');
+const Goal = keystone.list('Goals');
 const MenuCard = keystone.list('MenuCards');
 const Footer = keystone.list('Footers');
 const Banner = keystone.list('Banners');
@@ -25,8 +25,8 @@ module.exports = (app) => {
     });
   });
 
-  app.get('/api/sections', (req, res) => {
-    Section.model.find((err, data) => {
+  app.get('/api/goals', (req, res) => {
+    Goal.model.find((err, data) => {
       if (err) {
         res.status(500).send('DB Error');
       } else {
