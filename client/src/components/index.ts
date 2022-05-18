@@ -1,4 +1,3 @@
-import Section from './Section';
 import Footer from './Footer';
 import Banner from './Banner';
 import Navbar from './Navbar';
@@ -8,7 +7,6 @@ import Goals from './Goals';
 import Journey from './Journey';
 
 export{
-  Section,
   Footer,
   Banner,
   Navbar,
