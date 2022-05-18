@@ -11,6 +11,7 @@ export const Container = styled.section`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: ${Theme.colors.white};
 
   
   svg{
