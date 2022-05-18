@@ -33,9 +33,9 @@ const Banner: React.FC = () => {
 
 
   return(
-    <div>
+    <>
         {banner?.map(({id_,appleLink, androidLink}) => (
-          <Container>
+          <Container key={id_}>
             <FunIconsContainer star>
               <Star />
             </FunIconsContainer>
@@ -70,7 +70,7 @@ const Banner: React.FC = () => {
             </StyledContainer>
           </Container>
       ))}
-    </div>
+    </>
   );
 }
 

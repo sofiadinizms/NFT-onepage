@@ -19,9 +19,18 @@ const Footer: React.FC = () => {
     setFooter(res.data);
   };
 
+  
   useEffect(() => {
-    loadFooter();
-  }, []);
+    let run = true
+
+    if (run){
+      loadFooter();
+    } else{
+      return
+    }
+    return () => { 
+      run = false;
+    }}, []);
 
   return (
     <Container>
