@@ -46,7 +46,7 @@ const References: React.FC = () => {
                     <Float />}
                 </ContentIconContainer>
               </ContentMedia>
-              <ContentTitle>{title}</ContentTitle>
+              <ContentTitle data-testid='titulo-conteudo'>{title}</ContentTitle>
               <ContentText>{text}</ContentText>
             </ContentCard>
           </a>

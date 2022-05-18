@@ -47,23 +47,13 @@ export const PhotoSide = styled.div`
   height: 90vh;
   width: 60vw;
   display: flex;
-  justify-content: flex-end;
-  background: linear-gradient(220.21deg, #E2F4EA 2.99%, #A3CBC4 67.5%);
+  justify-content: center;
+  align-items: center;
   border-radius: 0 20px 20px 0;
-
-  svg{
-    position: relative;
-    top: 580px;
-    left: 30px;
-    width: 4vw;
-  }
-
+  background: linear-gradient(220.21deg, #E2F4EA 2.99%, #A3CBC4 67.5%);
+  
   @media screen and (max-width: 768px){
     width: 100vw;
-    
-    svg{
-      display: none;
-    }
   }
 `
 
@@ -106,5 +96,19 @@ export const FunIconsContainer = styled.div<PropsIcon>`
     svg{
       display: none;
     }
+  }
+`
+
+export const PagesContainer = styled.div`
+  height: 90%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  svg{
+    position: static;
+    height: 60%;
+    transform: rotate(-20deg);
   }
 `

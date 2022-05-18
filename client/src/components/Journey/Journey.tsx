@@ -5,18 +5,25 @@ import {
   Container,
   PhotoSide,
   TextSide,
-  FunIconsContainer
+  FunIconsContainer,
+  PagesContainer
 } from './Journey.elements';
 
-import { ReactComponent as DenseStar } from '../../Assets/DenseStar.svg';
 import { ReactComponent as ThinFlower } from '../../Assets/ThinFlower.svg';
 import { ReactComponent as Sparkle } from '../../Assets/Sparkle.svg'; 
+import { ReactComponent as AppScreen1 } from '../../Assets/AppPage1.svg';
+import { ReactComponent as AppScreen2 } from '../../Assets/AppPage2.svg';
+import { ReactComponent as AppScreen3 } from '../../Assets/AppPage3.svg';
 
 const Journey:React.FC = () => {
   return(
     <Container>
       <PhotoSide>
-        <DenseStar />
+        <PagesContainer>
+          <AppScreen1 />
+          <AppScreen2 />
+          <AppScreen3 />
+        </PagesContainer>
       </PhotoSide>
       
       <FunIconsContainer left='95vw' top='220vh'>

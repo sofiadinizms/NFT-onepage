@@ -35,7 +35,7 @@ const Goals:React.FC = () => {
         <Title>Nossos objetivos</Title>
         <GoalContainer>
         {goal?.map(({_id,title}) => (
-          <GoalCard key={_id}>
+          <GoalCard key={_id} data-testid='goalTitle'>
             <GoalName>{title}</GoalName>
           </GoalCard>
         ))}

@@ -43,8 +43,8 @@ const Footer: React.FC = () => {
       ))}
       
 
-        <Logo>
-          <LogoIcon />
+        <Logo data-testid='LogoFooter'>
+          <LogoIcon/>
         </Logo>
 
         <SideContainer>
