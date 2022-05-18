@@ -13,7 +13,7 @@ import {
 } from './Navbar.elements';
 
 type NavbarProps = {
-  toggle: React.MouseEventHandler<HTMLButtonElement>
+  toggle: () => void
 }
 
 const Navbar: React.FC<NavbarProps> = ({toggle}) => {
@@ -37,7 +37,7 @@ const Navbar: React.FC<NavbarProps> = ({toggle}) => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to='/footer' onClick={toggle}>Download</NavBtnLink>
+            <NavBtnLink to='/footer' data-testid='download-button'>Download</NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>
