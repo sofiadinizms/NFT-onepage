@@ -50,7 +50,7 @@ export const PhotoSide = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 0 20px 20px 0;
-  background: linear-gradient(220.21deg, #E2F4EA 2.99%, #A3CBC4 67.5%);
+  background:  ${Theme.colors.green1000};
   
   @media screen and (max-width: 768px){
     width: 100vw;
@@ -60,7 +60,7 @@ export const PhotoSide = styled.div`
 export const TextSide = styled.div`
   height: 70vh;
   width: 40vw;
-  background: #F5FFF5;
+  background:  ${Theme.colors.green500};
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -86,7 +86,8 @@ export const TextSide = styled.div`
 export const FunIconsContainer = styled.div<PropsIcon>`
   position: absolute;
   top: ${Props => Props.top};
-  left:  ${Props => Props.left};
+  left: ${Props => Props.left};
+  animation: rotation 3s infinite linear ease-in-out;
 
   svg{
     width: 4vw;
@@ -95,6 +96,15 @@ export const FunIconsContainer = styled.div<PropsIcon>`
   @media screen and (max-width: 768px){
     svg{
       display: none;
+    }
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(12deg);
     }
   }
 `
@@ -109,6 +119,5 @@ export const PagesContainer = styled.div`
   svg{
     position: static;
     height: 60%;
-    transform: rotate(-20deg);
   }
 `

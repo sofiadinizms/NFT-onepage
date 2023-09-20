@@ -15,7 +15,7 @@ export const SectionWrapper = styled.section`
 `
 
 export const Title = styled.h2`
-  color: ${Theme.colors.green1000};
+  color:;
   font-weight: 600;
   font-size: 40px;
   text-align: center;
@@ -47,7 +47,8 @@ export const ContentCard = styled.div`
   height: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
 `
 
 export const ContentIconBackground = styled.div`
@@ -60,10 +61,11 @@ export const ContentIconBackground = styled.div`
 export const ContentIconContainer = styled.div`
   width: 110px;
   height: 110px;
+  z-index: 1000;
   border-radius: 10px;
   position: relative;
   bottom: 60px;
-  left: 95px;
+  left: 125px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,13 +73,15 @@ export const ContentIconContainer = styled.div`
   background: ${Theme.colors.white};
 
   svg{
-    height: 65%;
+    height: 55%;
   }
 `
 
 export const ContentMedia = styled.div`
   height: 180px;
   width: 300px;
+  justify-content: center;
+  align-items: center;
 `
 
 export const ContentContainer = styled.div`

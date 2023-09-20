@@ -17,16 +17,7 @@ import {
 import {ReactComponent as Line} from '../../Assets/line.svg';
 
 const Goals:React.FC = () => {
-  const [goal, setGoal] = useState([])
-
-  const loadGoal = async() => {
-    const res = await axios.get('http://localhost:3001/api/goals');
-    setGoal(res.data);
-  };
-
-  useEffect(() => {
-    loadGoal()
-  }, []);
+  const [goal, setGoal] = useState(["Alinhar", "Organizar", "Documentar"])
 
   return(
     <Container>
@@ -34,21 +25,21 @@ const Goals:React.FC = () => {
       <GoalSide>
         <Title>Nossos objetivos</Title>
         <GoalContainer>
-        {goal?.map(({_id,title}) => (
-          <GoalCard key={_id} data-testid='goalTitle'>
-            <GoalName>{title}</GoalName>
+        {goal?.map((goals) => (
+          <GoalCard data-testid='goalTitle'>
+            <GoalName>{goals}</GoalName>
           </GoalCard>
         ))}
         </GoalContainer>
       </GoalSide>
       <EvalContainer>
         <NumberContainer>
-          <Evaluation>4.8</Evaluation>
+          <Evaluation>5.0</Evaluation>
           <Evaluation star>&#9733;</Evaluation>
         </NumberContainer>
         <EvalDivider />
         <EvalText>
-        Média dos feedbacks enviados pelos nossos usuários na App Store e Play Store
+        Média dos feedbacks enviados pelos nossos usuários na App Store
         </EvalText>
       </EvalContainer>
     </Container>

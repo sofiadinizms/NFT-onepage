@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React from 'react';
 import { ReactComponent as AppIcon } from '../../Assets/AppIcon.svg';
-import { ReactComponent as Cubes } from '../../Assets/Cubes.svg';
 import { ReactComponent as Star } from '../../Assets/Star.svg';
 import { ReactComponent as Flower } from '../../Assets/Flower.svg';
 
@@ -20,22 +18,10 @@ import {
 } from './Banner.elements';
 
 const Banner: React.FC = () => {
-  const [banner, setBanner] = useState([])
-
-  const loadBanner = async() => {
-    const res = await axios.get('http://localhost:3001/api/banner');
-    setBanner(res.data);
-  };
-
-  useEffect(() => {
-    loadBanner()
-  }, []);
-
 
   return(
     <>
-        {banner?.map(({_id,appleLink, androidLink}) => (
-          <Container key={_id}>
+          <Container>
             <FunIconsContainer star>
               <Star />
             </FunIconsContainer>
@@ -45,21 +31,15 @@ const Banner: React.FC = () => {
             <StyledContainer>
               <SideContainer1>
                 <IconContainer>
-                  <Title1>NFT</Title1>
-                  <Cubes />
+                  <Title1>Needle</Title1>
                 </IconContainer>
-                <Title1>O JOGO</Title1>
-                <Title2>Explore o mundo dos NFTs através de uma experiência única.</Title2>
+                <Title1>não deixe pontas soltas</Title1>
+                <Title2>Documente os processos da sua equipe e garanta o alinhamento do seu time</Title2>
                 <Line />
                 <DownloadBtn fill>
-                  <a href={appleLink}>
-                    App Store
+                  <a href={"https://apps.apple.com/br/app/needleapp/id6459739412?l=en-GB&mt=12"}>
+                  Baixe Agora
                   </a>
-                </DownloadBtn>
-                <DownloadBtn>
-                    <a href={androidLink}>
-                      Play Store
-                    </a>
                 </DownloadBtn>
               </SideContainer1>
               <SideContainer2>
@@ -69,7 +49,6 @@ const Banner: React.FC = () => {
               </SideContainer2>
             </StyledContainer>
           </Container>
-      ))}
     </>
   );
 }

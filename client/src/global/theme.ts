@@ -4,8 +4,8 @@ export const Theme:DefaultTheme = {
   colors: {
     white: '#FBFBFB',
     lilac: '#EFECFB',
-    green400: '#EAF4F4',
-    green500: '#CCE3DE',
+    green400: '#F1FFDF',
+    green500: '#F1FFDF',
     green1000: '#001405',
 
   },

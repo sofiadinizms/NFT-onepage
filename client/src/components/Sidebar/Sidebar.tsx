@@ -25,8 +25,9 @@ const Sidebar: React.FC<SidebarProps> = ({toggle, isOpen}) => {
       <SidebarWrapper data-testid='sidebar'>
         <SidebarMenu>
           <SidebarLink to="/api/banner" onClick={toggle}> Início </SidebarLink>
-          <SidebarLink to="/api/goals" onClick={toggle}> Sobre nós </SidebarLink>
-          <SidebarLink to="/api/contentcard" onClick={toggle}> Conteúdos </SidebarLink>
+          <SidebarLink to="/api/goals" onClick={toggle}> Nossos objetivos </SidebarLink>
+          <SidebarLink to="/api/contentcard" onClick={toggle}> Benefícios </SidebarLink>
+          <SidebarLink to="/api/contentcard" onClick={toggle}> Contate-nos </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
           <SidebarRoute to='footer'>Download</SidebarRoute>

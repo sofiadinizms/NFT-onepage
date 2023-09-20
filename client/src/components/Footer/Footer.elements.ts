@@ -42,7 +42,7 @@ export const Container = styled.footer`
 `
 
 export const SideContainer = styled.div`
-  width: 280px;
+  width: 320px;
   height: 100px;
   display: flex;
   flex-direction: column;

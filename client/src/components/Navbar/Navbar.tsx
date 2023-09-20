@@ -32,10 +32,13 @@ const Navbar: React.FC<NavbarProps> = ({toggle}) => {
               <NavLinks to='/footer' onClick={toggle}>Inicio</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='footer' onClick={toggle}>Sobre nós</NavLinks>
+              <NavLinks to='/footer' onClick={toggle}>Nosso objetivos</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='footer' onClick={toggle}>Conteúdos</NavLinks>
+              <NavLinks to='/footer' onClick={toggle}>Benefícios</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to='/footer' onClick={toggle}>Contate-nos</NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>

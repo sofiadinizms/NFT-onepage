@@ -105,18 +105,21 @@ export const Title = styled.h2`
   }
 `
 export const GoalCard = styled.div`
-  width: 150px;
-  height: 145px;
+  width: 160px;
+  height: 155px;
   z-index: 10;
-  background: linear-gradient(215.23deg, #00AA8B 7.41%, #41B2B9 49.86%, #5491C9 88.92%);
+  background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
+  border-color: ${Theme.colors.green1000};
+  border-width: 2px;
+  border-style: solid;
   border-radius: 20px;
 `
 export const GoalName = styled.p`
-  color: ${Theme.colors.lilac};
+  color: ${Theme.colors.green1000};
   font-size: 28px;
   font-weight: 500;
 `

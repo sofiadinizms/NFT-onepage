@@ -9,31 +9,29 @@ import {
   PagesContainer
 } from './Journey.elements';
 
-import { ReactComponent as ThinFlower } from '../../Assets/ThinFlower.svg';
-import { ReactComponent as Sparkle } from '../../Assets/Sparkle.svg'; 
-import { ReactComponent as AppScreen1 } from '../../Assets/AppPage1.svg';
-import { ReactComponent as AppScreen2 } from '../../Assets/AppPage2.svg';
-import { ReactComponent as AppScreen3 } from '../../Assets/AppPage3.svg';
+import { ReactComponent as Yarn } from '../../Assets/yarn.svg'; 
+import { ReactComponent as AppScreen } from '../../Assets/PC.svg';
+import { ReactComponent as Star } from '../../Assets/Star.svg';
 
 const Journey:React.FC = () => {
   return(
     <Container>
       <PhotoSide>
         <PagesContainer>
-          <AppScreen1 />
-          <AppScreen2 />
-          <AppScreen3 />
+          <AppScreen />
         </PagesContainer>
       </PhotoSide>
       
-      <FunIconsContainer left='95vw' top='220vh'>
-        <Sparkle />
+      <FunIconsContainer left='90vw' top='220vh'>
+        <Star />
       </FunIconsContainer>
       
       <TextSide>
-          <ThinFlower />
-        <Titulo>Escolha sua jornada!</Titulo>
-        <Text>Defina seu modo de jogo e dê o primeiro passo na sua jornada!</Text>
+        <FunIconsContainer left='98vw' top='0vh'>
+          <Yarn />
+        </FunIconsContainer>
+        <Titulo>O poder da documentação ao seu alcance</Titulo>
+        <Text>Acesso rápido a documentação de suas tasks, organize compartilhe e acesse com facilidade</Text>
       </TextSide>
     </Container>
   )

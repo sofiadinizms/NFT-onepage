@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import {
   Title,
   ContentIconBackground,
@@ -10,33 +10,40 @@ import {
   ContentContainer,
   SectionWrapper
 } from './References.elements';
-import { ReactComponent as Printer } from '../../Assets/3DPrinter.svg';
-import { ReactComponent as Process } from '../../Assets/Process.svg';
-import { ReactComponent as Float } from '../../Assets/Float.svg';
-import axios from 'axios';
-
+import { ReactComponent as Printer } from '../../Assets/Documentacao.svg';
+import { ReactComponent as Process } from '../../Assets/Alinhados.svg';
+import { ReactComponent as Float } from '../../Assets/gerencie.svg';
+import { ReactComponent as Folder } from '../../Assets/Folder.svg';
 
 const References: React.FC = () => {
-  const [content, setContent] = useState([]);
+  const [content, setContent] = useState([
+    {
+      title: "Documentação Otimizada",
+      link: "https://www.linkedin.com/in/vitoria-pinheiro/",
+      text: "Maximize a eficiência da sua documentação com nosso app."
+    },
+    {
+      title: "Equipes Alinhadas",
+      link: "https://www.linkedin.com/in/vitoria-pinheiro/",
+      text: "O alinhamento eficaz de equipes é o alicerce de uma empresa sólida"
+    },
+    {
+      title: "Gerencie Tarefas",
+      link: "https://www.linkedin.com/in/vitoria-pinheiro/",
+      text: "Organize a documentação das suas tasks de forma inteligente"
+    }
 
-  const loadContent = async() => {
-    const response = await axios.get('http://localhost:3001/api/contentcard');
-    setContent(response.data);
-  };
-
-  useEffect(() => {
-    loadContent();
-  }, []);
+  ]);
 
   return(
     <SectionWrapper>
-      <Title>Aprofunde seus conhecimentos</Title>
+      <Title>Comece a documentar agora</Title>
       <ContentContainer>
-        {content?.map(({_id, title, link, text}, i) => (
-          <a href={link} key={_id}>
+        {content?.map(({ title, link, text}, i) => (
+          <a href={link} >
             <ContentCard>
               <ContentMedia>
-                <ContentIconBackground />
+                <Folder width={360} height={140} />
                 <ContentIconContainer>
                   {i === 0 &&
                     <Printer />}
